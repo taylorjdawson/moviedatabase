@@ -1,0 +1,16 @@
+1) select movies.title, movies.year from movies
+where lower(right(title, 6)) = 'george'
+
+2) 
+
+9) select movies.title, year
+from movies
+order by length(title) ASC
+LIMIT 1
+
+10) select movies.title from movies, writers, participant
+where movie_id = writer and participant_id = "george fox"
+
+17) select DISTINCT movies.genre from movies, acts_in, participant
+where movie_id = acts_in.film_id and acts_in.participant_id = 'Ronald Reagan'
+

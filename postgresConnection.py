@@ -1,5 +1,7 @@
 #!/usr/bin/python
 import psycopg2
+import json
+
 
 def connect():
     """ Connect to the PostgreSQL database server """
@@ -23,12 +25,14 @@ def connect():
         # execute a statement
         print('PostgreSQL database version:')
 
-        # film_id = 0
-        # for film in moviesJSON:
-        #     cur.execute('insert into movies', (film[film_id], film['title'], film['year']))
-        #     film_id+=1
+        film_id = 0
+        # Needs the name of the actual JSON file
+        with open('movies.json', 'r') as moviesJSON:
+            for film in moviesJSON:
+                cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year) VALUES (" + film_ID + ", " + film['title'] + ", " + film['year'] + ")")
+                film_id+=1
 
-        cur.execute('insert into cust_name', ('M. T. Head'))
+        #cur.execute('insert into cust_name', ('M. T. Head'))
 
         # display the PostgreSQL database server version
         db_version = cur.fetchone()
