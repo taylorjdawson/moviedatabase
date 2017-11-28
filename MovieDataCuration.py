@@ -5,7 +5,7 @@ import json
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import re
-
+import pickle
 
 
 
@@ -24,9 +24,7 @@ def xml2df(xml_data):
         # pickle.dump(movieDataFrame, f)
 
 def moviesxmlToJSON():
-    # TODO: Regex for dates
     # re.sub('@','','@1984') get rid of @ sign in dates
-    # TODO: Awards
     DUP_IDS = ['CC80',
                'ECn107',
                'FNm10',
@@ -81,19 +79,53 @@ def moviesxmlToJSON():
                'MiM10',
                'NtB10',
                'SfG1']
+    CATEGORIES = dict(ctxx='uncategorized',
+                      actn='violence',
+                      camp='camp',
+                      comd='comedy',
+                      disa='disaster',
+                      epic='epic',
+                      horr='horror',
+                      noir='black',
+                      scfi='science fiction',
+                      west='western',
+                      advt='adventure',
+                      cart='cartoon',
+                      docu='documentary',
+                      faml='family',
+                      musc='musical',
+                      porn='pornography',
+                      surl='surreal',
+                      surr='surreal',
+                      avga='avant garde',
+                      cnr='cops and robbers',
+                      cnrb='cops and robbers',
+                      dram='drama',
+                      hist='history',
+                      myst='mystery',
+                      romt='romantic',
+                      susp='thriller',
+                      biop='biographical Picture',
+                      fant='fantasy',
+                      west1='western',
+                      tv='television show',
+                      tvmini='television mini series',
+
+                      )
     movies_xml_data = open('Data/movies.xml').read()
     soup = BeautifulSoup(movies_xml_data, 'xml')
     movie_data = {}
     i = 0
     for film in soup.movies.find_all('film'):
         if film.fid not in DUP_IDS:
+            str()
             film_id   = film.fid.text if film.fid else 'Null'
             title     = film.t.text if film.t else 'Null'
-            year      = film.year.text if film.year else 'Null'
+            year      = (film.year.text if isValidYear(re.sub('@', '', film.year.text)) else 'Null') if film.year else 'Null'
             directors = [{'key':d.dirk.text if d.dirk else 'Null', 'name': d.dirn.text if d.dirn else 'Null'} for d in film.find_all('dir')]
             producers = [{'name': p.pname.text if p.pname else 'Null', 'key': p.prodk.text if p.prodk else 'Null'} for p in film.find_all('prod')]
             studios   = [{'studio': s.studio.text if s.studio else 'Indie'} for s in film.find_all('studios')]
-            category  = [{'category': cat.text if cat else 'Null'} for cat in film.find_all('cats')]
+            genres  = [{'genre': ( CATEGORIES[cat.text.lower().strip()] if cat.text.lower().strip() in CATEGORIES else 'data_error ' + cat.text) if cat else 'Null'} for cat in film.find_all('cat')]
             awards    = [{  'award_type': a.awtype.text if a.awtype else 'Null',
                             'award_attribute': a.awattr.text if a.awattr else 'Null',
                             'award_reference': a.awref.text if a.awref else 'Null'} for a in film.find_all('awards')]
@@ -103,7 +135,7 @@ def moviesxmlToJSON():
                                       directors=directors,
                                       producers=producers,
                                       studios=studios,
-                                      category=category,
+                                      genres=genres,
                                       awards=awards)
             i += 1
     with open('movies.json', 'w') as f:
@@ -111,7 +143,7 @@ def moviesxmlToJSON():
 
 
 def peopleToJSON():
-    people_xml_data = open('Data/movies.xml').read()
+    people_xml_data = open('Data/people.xml').read()
     soup = BeautifulSoup(people_xml_data, 'xml')
     people_data = {}
     i = 0
@@ -138,7 +170,6 @@ def castToJSON():
         film_title = cast.t.text if cast.t else 'Null'
         name       = cast.a.text if cast.a else 'Null'
         role       = cast.r.text if cast.r else 'Null'
-
         i += 1
 
 
@@ -151,18 +182,17 @@ def remakesToJSON():
 def isValidYear(year):
     return bool(re.match('^\d{4}$', year))
 
-
+def createFilmIdList():
+    with open('movieData.json') as json_data:
+        movie_ids = json.load(json_data)
+        film_ids = [fid['fid'] for fid in movie_ids.values()]
+        with open('film_ids', 'wb') as fp:
+            pickle.dump(film_ids, fp)
 
 # moviesxmlToJSON()
+peopleToJSON()
 
-# movieDataFrame = '' #xml2df(xml_data)
 
 
-import pickle
 
-with open('movieData.json') as json_data:
-    movie_ids = json.load(json_data)
-    film_ids = [fid['fid'] for fid in md.values()]
 
-with open('film_ids', 'wb') as fp:
-    pickle.dump(film_ids, fp)
