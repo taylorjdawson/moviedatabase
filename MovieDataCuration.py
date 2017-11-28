@@ -119,7 +119,7 @@ def moviesxmlToJSON():
     for film in soup.movies.find_all('film'):
         if film.fid not in DUP_IDS:
             str()
-            film_id   = film.fid.text if film.fid else 'Null'
+            film_id   = film.fid.text.lower().strip() if film.fid else 'Null'
             title     = film.t.text if film.t else 'Null'
             year      = (film.year.text if isValidYear(re.sub('@', '', film.year.text)) else 'Null') if film.year else 'Null'
             directors = [{'key':d.dirk.text if d.dirk else 'Null', 'name': d.dirn.text if d.dirn else 'Null'} for d in film.find_all('dir')]
@@ -160,18 +160,29 @@ def peopleToJSON():
 
 def castToJSON():
     # TODO: Reg integrity between film_id and movies.json
-    # TODO: Makre sure names are lower case
+    # TODO: Make sure names are lower case
+
+    # Get the list of film_ids that appear in movies.json
+    with open('film_ids', 'rb') as f:
+        film_ids = pickle.load(f)
+
+
     cast_xml_data = open('Data/casts.xml').read()
     soup = BeautifulSoup(cast_xml_data, 'xml')
     cast_data = {}
     i = 0
+
     for cast in soup.find_all('m'):
-        film_id    = cast.f.text if cast.f else 'Null'
-        film_title = cast.t.text if cast.t else 'Null'
-        name       = cast.a.text if cast.a else 'Null'
-        role       = cast.r.text if cast.r else 'Null'
+        film_id        = ({'id': cast.f.text.lower().strip(), 'in_movie': cast.f.text.lower().strip() in film_ids}) if cast.f else 'Null'
+        film_title     = cast.t.text if cast.t else 'Null'
+        actor_name     = cast.a.text if cast.a else 'Null'
+        character_name = cast.n.text if cast.n else 'Null'
+        role           = cast.r.text if cast.r else 'Null'
+        cast_data[str(i)] = dict(film_id=film_id, film_title=film_title, actor_name=actor_name, character_name=character_name, role=role)
         i += 1
 
+    with open('casts.json', 'w') as f:
+        json.dump(cast_data, f, indent=True)
 
 def remakesToJSON():
     # TODO: Check Ref integrity between film_id remake_id and movies.json
@@ -183,15 +194,16 @@ def isValidYear(year):
     return bool(re.match('^\d{4}$', year))
 
 def createFilmIdList():
-    with open('movieData.json') as json_data:
+    with open('movies.json') as json_data:
         movie_ids = json.load(json_data)
-        film_ids = [fid['fid'] for fid in movie_ids.values()]
+        film_ids = [fid['film_id'] for fid in movie_ids.values()]
         with open('film_ids', 'wb') as fp:
             pickle.dump(film_ids, fp)
 
+# createFilmIdList()
 # moviesxmlToJSON()
-peopleToJSON()
-
+# peopleToJSON()
+castToJSON()
 
 
 
