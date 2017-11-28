@@ -23,10 +23,10 @@ def connect():
         # execute a statement
         print('PostgreSQL database version:')
 
-        # film_id = 0
-        # for film in moviesJSON:
-        #     cur.execute('insert into movies', (film[film_id], film['title'], film['year']))
-        #     film_id+=1
+        film_id = 0
+        for film in moviesJSON:
+            cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year) VALUES (" + film_ID + ", " + film['title'] + ", " + film['year'] + ")")
+            film_id+=1
 
         cur.execute('insert into cust_name', ('M. T. Head'))
 
