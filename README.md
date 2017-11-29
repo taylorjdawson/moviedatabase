@@ -16,7 +16,7 @@ they have duplicate ids
 `original_id` reference film_ids located in [movies.json](Data_json/movies.json) file
 
 ## Todos
-- [x] Add stage name in the acts_in table
+- [ ] Add stage name in the acts_in table
 - [x] Add first and last name in participant table
 - [ ] Need to review the duplicate movie ids
 - [ ] Review .json files for erroneous data

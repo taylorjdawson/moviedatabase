@@ -10,9 +10,9 @@ def connect():
         # read connection parameters
         params = dict(
             host='dhansen.cs.georgefox.edu',
-            database ='teach_yourself',
-            user = 'csis314',
-            password ='php',
+            database ='themoviedatabase',
+            user = 'tdawson16',
+            password ='banker85=government=Maybe',
         )
 
         # connect to the PostgreSQL server
