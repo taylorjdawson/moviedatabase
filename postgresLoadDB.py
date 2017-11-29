@@ -45,7 +45,7 @@ def connect():
 
             for person in persons.values():
 
-                participants[participant_id] = person['stage_name'].lower()
+                participants.append(person['stage_name'].lower())
 
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
                             " VALUES (" + participant_id + "," + person['date_of_birth'] + "," + person['date_of_death']
@@ -58,7 +58,7 @@ def connect():
             participantJSON = json.load(f)
 
             for person in participantJSON.values():
-                participants[participant_id] = person['name']
+                participants.append(person['name'].lower())
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
                             " VALUES (" + participant_id + "," + person['date_of_birth'] + "," + person['date_of_death']
                             + ", null ," + person['name'] + "," + person['family_name'] + "," + person['given_name'] + ")")
@@ -72,7 +72,7 @@ def connect():
             moviesJSON = json.load(f)
 
             for film in moviesJSON.values():
-                movieList[film_id] = film['film_id']
+                movieList.append(film['film_id'])
                 cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year, genre) VALUES " +
                             "(" + film_id + ", " + film['title'] + ", " + film['year'] + "," + film['genres']['genre'] + ")")
                 # loads the director table
