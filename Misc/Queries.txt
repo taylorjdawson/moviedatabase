@@ -1,16 +1,74 @@
-1) select movies.title, movies.year from movies
+1) select movies.title, movies.year 
+from movies
 where lower(right(title, 6)) = 'george'
 
 2) 
+
+3) 
+
+4) select movies.title
+from movies, remakes
+where movies.title = remakes.original_title
+order by count (# of remakes) // put actual code here
+LIMIT 1
+
+5) select movies.title
+from movies, remakes
+where not exists (select movies.title 
+                  from movies, remakes 
+                  where movies.title = remakes.original_title)
+order by title
+
+6) select actors.stage_name, role, movies.title, year 
+from actors, movies, acts_in
+where movie_id = acts_in.film_id and award_type = 'Academy Award'
+order by year
+
+7) select movies.title 
+from movies
+where award_type = 'Academy Award' and year = '1970'
+order by title
+
+8)
 
 9) select movies.title, year
 from movies
 order by length(title) ASC
 LIMIT 1
 
-10) select movies.title from movies, writers, participant
-where movie_id = writer and participant_id = "george fox"
+10) select movies.title 
+from movies, writers, participant
+where movie_id = writer and participant_id = 'George Fox'
 
-17) select DISTINCT movies.genre from movies, acts_in, participant
+11)
+
+12)
+
+13) select movies.title, year, acts_in.role 
+from movies, acts_in, participant
+where movie_id = acts_in.film_id and participant_id = 'Tom Cruise'
+order by year
+
+14)
+
+15)
+
+16)
+
+17) select DISTINCT movies.genre 
+from movies, acts_in, participant
 where movie_id = acts_in.film_id and acts_in.participant_id = 'Ronald Reagan'
+
+18)
+
+19)
+
+20)
+
+21)
+
+22)
+
+23)
+
 
