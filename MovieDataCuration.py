@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 import pandas as pd
 import numpy as np
 import pickle
@@ -161,6 +163,19 @@ def peopleToJSON():
                                     date_of_death=date_of_death, awards=awards)
 
         i += 1
+
+    # Output any duplicate data
+    count = defaultdict(int)
+    for name in people_data.values():
+        count[name['name']] += 1
+
+    dups = []
+    for (k, v) in count.items():
+        if v > 1: dups.append((k, v))
+
+    with open('duplicate_people_names.txt', 'w') as out:
+        out.write(str(dups))
+
     with open('people.json', 'w') as f:
         json.dump(people_data, f, indent=True)
 
@@ -240,6 +255,19 @@ def actorsToJSON():
                                   role_type=role_type, gender=gender, family_name=family_name, first_name=first_name, awards=awards)
         i += 1
 
+    # Output any duplicate data
+    count = defaultdict(int)
+    for name in actor_data.values():
+        count[name['stage_name']] += 1
+
+    dups = []
+    for (k, v) in count.items():
+        if v > 1: dups.append((k, v))
+
+    with open('duplicate_actor_stagenames.txt', 'w') as out:
+        for dup in dups:
+            out.write(str(dup) +'\n')
+
 
     with open('actors.json', 'w') as f:
         json.dump(actor_data, f, indent=True)
@@ -256,7 +284,7 @@ def createFilmIdList():
 
 # createFilmIdList()
 # moviesxmlToJSON()
-peopleToJSON()
+# peopleToJSON()
 # castToJSON()
 # remakesToJSON()
 actorsToJSON()
