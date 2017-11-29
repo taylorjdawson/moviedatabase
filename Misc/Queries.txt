@@ -75,7 +75,7 @@ where movie_id = acts_in.film_id
 12) Are there any pairs of actors that appeared together in two different movies released in the same year? If so, list the movie titles, the years, the actor's names and the roles they played. Order by movie title, year, actor's names, and roles.
 select movies.title, year, actors.stage_name, role
 from actors, acts_in, movies
-where movie_id = acts_in.film_id and 
+where movie_id = acts_in.film_id 
 order by title, year, stage_name, role
 
 13) List the title, year, and role of movies that "Tom Cruise" appeared in ordered by the year.
@@ -87,15 +87,17 @@ order by year
 14) Is there an actor that has been a co-star with "Val Kilmer" and "Clint Eastwood" (not necessarily in the same movie)?!
 select actors.stage_name
 from actors, acts_in, movies
-where movie_id = acts_in.film_id and exists (select actors.stage_name
-                                             from actors, acts_in, movies, participants
-                                             where movie_id = acts_in.film_id and actors.stage_name = 'Val Kilmer')
-and exists (select actors.stage_name
-            from actors, acts_in, movies, participants
-            where movie_id = acts_in.film_id and actors.stage_name = 'Clint Eastwood')
+where movie_id = acts_in.film_id and exists (select stage_name
+                                             from actors, acts_in, movies
+                                             where movie_id = acts_in.film_id and stage_name = 'Val Kilmer')
+and exists (select stage_name
+            from actors, acts_in, movies 
+            where movie_id = acts_in.film_id and stage_name = 'Clint Eastwood')
 
 15) Give me the names of all actors within "six degrees" of "Kevin Bacon". Specifically, Bacon's co-stars (1st degree), the co-star's co-stars (2nd degree), etc. out to "six degrees". List the actors ordered by stagename.
-
+select actors.stage_name
+from actors, acts_in, movies
+where movie_id = acts_in.film_id and stage_name != 'Kevin Bacon' and (six degrees here)
 order by stage_name
 
 16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeared in his movies ordered by the count (descending) and their name (ascending).
