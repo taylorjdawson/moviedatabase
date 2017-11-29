@@ -46,9 +46,9 @@ from movies
 where award_type = 'Academy Award' and year = '1970'
 order by title
 
-This is what the query will look like when we execute. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed. (or tested, unfortunately)
+This is what the query will look like when we execute it. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed.
 
-8) Has any original movie and an immediate remake both won won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
+8) Has any original movie and an immediate remake both won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
 select movies.title, movies.year, remakes.title, remakes.year
 from movies, remakes
 where movie_id = remakes.original_id and movies.award_type = 'Academy Award' and remakes.award_type = 'Academy Award'
