@@ -40,18 +40,24 @@ def connect():
         #TODO Add duplicate entry protection
         participant_id = 0
         participants = []
-        with open('actors.json' , 'r') as actorJSON:
-            for person in actorJSON:
+        with open('Data_json/actors.json', 'r') as f:
+            persons = json.load(f)
+
+            for person in persons.values():
+
                 participants[participant_id] = person['stage_name'].lower()
+
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
                             " VALUES (" + participant_id + "," + person['date_of_birth'] + "," + person['date_of_death']
                             + "," + person['gender'] + "," + person['stage_name'] + "," + person['family_name'] + "," + person['first_name'] + ")")
-                participant_id+=1
+                participant_id += 1
 
         print('Loading Participants...')
         # Ingest other participants like directors, producers
-        with open('participant.json' , 'r') as participantJSON:
-            for person in participantJSON:
+        with open('Data_json/participant.json' , 'r') as f:
+            participantJSON = json.load(f)
+
+            for person in participantJSON.values():
                 participants[participant_id] = person['name']
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
                             " VALUES (" + participant_id + "," + person['date_of_birth'] + "," + person['date_of_death']
@@ -62,11 +68,13 @@ def connect():
         print('Loading Films...')
         film_id = 0
         movieList = []
-        with open('movies.json', 'r') as moviesJSON:
-            for film in moviesJSON:
+        with open('Data_json/movies.json', 'r') as f:
+            moviesJSON = json.load(f)
+
+            for film in moviesJSON.values():
                 movieList[film_id] = film['film_id']
                 cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year, genre) VALUES " +
-                            "(" + film_ID + ", " + film['title'] + ", " + film['year'] + "," + film['genres']['genre'] + ")")
+                            "(" + film_id + ", " + film['title'] + ", " + film['year'] + "," + film['genres']['genre'] + ")")
                 # loads the director table
                 direct_participant = participants.index(film['directors']['name'])
                 cur.execute("INSERT into directs (film_id , participant_id ) VALUES (" + film_id +"," + direct_participant + ")")
@@ -77,8 +85,10 @@ def connect():
 
         # Ingest Remakes
         print('Loading Remakes...')
-        with open('remakes.json', 'r') as remakesJSON:
-            for film in remakesJSON:
+        with open('Data_json/remakes.json', 'r') as f:
+            remakesJSON = json.load(f)
+
+            for film in remakesJSON.values():
                 old_Remake_ID = film['remake_id']
                 new_Remake_ID = movieList.index(old_Remake_ID)
                 fraction = film['remake_fraction']
@@ -89,8 +99,10 @@ def connect():
 
         # Ingest Cast Lists
         print('Loading Acts_in table')
-        with open('casts.json', 'r') as actsinJSON:
-            for person in actsinJSON:
+        with open('Data_json/casts.json', 'r') as f:
+            actsinJSON = json.load(f)
+
+            for person in actsinJSON.values():
                 actor_id = participants.index(person['actor_name'])
                 film_id = movieList.index(person['film_id']['id'])
                 cur.execute("INSERT INTO acts_in (participant_id, role, film_id, role_type) VALUES (" + actor_id + ","
