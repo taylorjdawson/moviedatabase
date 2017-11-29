@@ -1,3 +1,8 @@
+##PostgreSQL
+__Host:__ dhansen.cs.georgefox.edu \
+__Database:__ themoviedatabase \
+__User:__ tdawson16\
+__Password:__ banker85=government=Maybe=
 ## Notes
 
 - 54 movies missing from the movieData.json file because (See [duplicate_movie_ids.txt](duplicate_movie_ids.txt))
