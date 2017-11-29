@@ -2,9 +2,9 @@
 from movies
 where lower(right(title, 6)) = 'george'
 
-2) 
+2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
 
-3) 
+3) Which movie immediate remake is most simmilar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
 
 4) select movies.title
 from movies, remakes
@@ -29,7 +29,7 @@ from movies
 where award_type = 'Academy Award' and year = '1970'
 order by title
 
-8)
+8)Has any original movie and an immediate remake both won won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
 
 9) select movies.title, year
 from movies
@@ -40,35 +40,42 @@ LIMIT 1
 from movies, writers, participant
 where movie_id = writer and participant_id = 'George Fox'
 
-11)
+11) Are there any actors that have played more than one role in the same movie? If so, list the movie title, the actor's name and the roles they played. Order by movie title, actor's name, and role.
 
-12)
+12) Are there any pairs of actors that appeared together in two different movies released in the same year? If so, list the movie titles, the years, the actor's names and the roles they played. Order by movie title, year, actor's names, and roles.
 
 13) select movies.title, year, acts_in.role 
 from movies, acts_in, participant
 where movie_id = acts_in.film_id and participant_id = 'Tom Cruise'
 order by year
 
-14)
+14) Is there an actor that has been a co-star with "Val Kilmer" and "Clint Eastwood" (not necessarily in the same movie)?!
 
-15)
+15) Give me the names of all actors within "six degrees" of "Kevin Bacon". Specifically, Bacon's co-stars (1st degree), the co-star's co-stars (2nd degree), etc. out to "six degrees". List the actors ordered by stagename.
 
-16)
+16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeard in his movies ordered by the count (descending) and their name (ascending).
 
 17) select DISTINCT movies.genre 
 from movies, acts_in, participant
 where movie_id = acts_in.film_id and acts_in.participant_id = 'Ronald Reagan'
 
-18)
+18) select movies.studio, count(movies)
+from movies
+order by studio
+LIMIT 1
 
-19)
+19) select movies.genre
+from movies
+where movies.studio = 'Paramount'
+order by count(movies.genre)
+LIMIT 1
 
-20)
+20) Has any person directed and produced a movie they've also acted in? If so, give their stagename, the title of the movie they directed and produced, and the role they played.
 
-21)
+21) For all of the generic roletypes for actors, list the name of the roletype and a count of how many actors are classified by that type in descending order of the counts.
 
-22)
+22) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
 
-23)
+23) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
 
 
