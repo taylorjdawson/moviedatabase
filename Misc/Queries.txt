@@ -10,20 +10,16 @@ from movies, actors, acts_in, remakes
 where movie_id = acts_in.film_id and remake_id = acts_in.film_id 
 order by stage_name, movies.year, movies.title
 
-
 3) Which movie immediate remake is most similar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
 select remakes.fraction, movies.title, movies.year, movies.director, remakes.title, remakes.year, remakes.director
 from movies, remakes
 where movie_id = remakes.original_id and fraction = max(fraction)
-
-
 
 4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?select movies.title as been_remade
 from movies, remakes
 where movies.movie_id = remakes.original_id 
 order by count(been_remade)
 LIMIT 1
-
 
 5) Which movies are neither a remake nor have ever been remade? Order by title.
 select movies.title
@@ -32,7 +28,6 @@ where not exists (select movies.title
                   from movies, remakes 
                   where movies.movie_id = remakes.remake_id or movies.movie_id = remakes.original_id)
 order by movies.title
-
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
 select actors.stage_name, actors.role, movies.title, movies.year 
