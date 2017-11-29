@@ -48,7 +48,7 @@ def connect():
                 participants.append(person['stage_name'].lower())
 
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
-                            " VALUES (" + participant_id + "," + person['date_of_birth'] + "," + person['date_of_death']
+                            " VALUES (" + str(participant_id) + "," + person['date_of_birth'] + "," + person['date_of_death']
                             + "," + person['gender'] + "," + person['stage_name'] + "," + person['family_name'] + "," + person['first_name'] + ")")
                 participant_id += 1
 

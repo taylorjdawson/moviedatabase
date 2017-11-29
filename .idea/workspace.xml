@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511989919868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1511991018877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1511991607632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -63,8 +63,8 @@
       <file leaf-file-name="actors.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="9" column="3" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="440">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -116,14 +116,15 @@
       <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
+            <state relative-caret-position="697">
               <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
-                <marker date="1511991061142" expanded="true" signature="2769:2974" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1511991061142" expanded="true" signature="3132:3230" ph="INSERT into directs... " />
-                <marker date="1511991061142" expanded="true" signature="3385:3483" ph="INSERT into directs... " />
-                <marker date="1511991061142" expanded="true" signature="4030:4203" ph="INSERT into is_remake_of... " />
-                <marker date="1511991061142" expanded="true" signature="4578:4766" ph="INSERT INTO acts_in... " />
+                <marker date="1511991607607" expanded="true" signature="1285:1431" ph="INSERT into participant... " />
+                <marker date="1511991607607" expanded="true" signature="2759:2964" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1511991607607" expanded="true" signature="3122:3220" ph="INSERT into directs... " />
+                <marker date="1511991607607" expanded="true" signature="3375:3473" ph="INSERT into directs... " />
+                <marker date="1511991607607" expanded="true" signature="4020:4193" ph="INSERT into is_remake_of... " />
+                <marker date="1511991607607" expanded="true" signature="4568:4756" ph="INSERT INTO acts_in... " />
               </folding>
             </state>
           </provider>
@@ -195,6 +196,7 @@
         <option value="$PROJECT_DIR$/Misc/duplicate_actor_stagenames" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/postgresLoadDB.py" />
+        <option value="$PROJECT_DIR$/Data_json/actors.json" />
       </list>
     </option>
   </component>
@@ -579,7 +581,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -961,22 +963,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="440">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
+        <state relative-caret-position="697">
           <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <marker date="1511991061142" expanded="true" signature="2769:2974" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511991061142" expanded="true" signature="3132:3230" ph="INSERT into directs... " />
-            <marker date="1511991061142" expanded="true" signature="3385:3483" ph="INSERT into directs... " />
-            <marker date="1511991061142" expanded="true" signature="4030:4203" ph="INSERT into is_remake_of... " />
-            <marker date="1511991061142" expanded="true" signature="4578:4766" ph="INSERT INTO acts_in... " />
+            <marker date="1511991607607" expanded="true" signature="1285:1431" ph="INSERT into participant... " />
+            <marker date="1511991607607" expanded="true" signature="2759:2964" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1511991607607" expanded="true" signature="3122:3220" ph="INSERT into directs... " />
+            <marker date="1511991607607" expanded="true" signature="3375:3473" ph="INSERT into directs... " />
+            <marker date="1511991607607" expanded="true" signature="4020:4193" ph="INSERT into is_remake_of... " />
+            <marker date="1511991607607" expanded="true" signature="4568:4756" ph="INSERT INTO acts_in... " />
           </folding>
         </state>
       </provider>
