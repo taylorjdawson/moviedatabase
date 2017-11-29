@@ -125,7 +125,7 @@ def moviesxmlToJSON():
             directors = [{'key':d.dirk.text if d.dirk else 'Null', 'name': d.dirn.text if d.dirn else 'Null'} for d in film.find_all('dir')]
             producers = [{'name': p.pname.text if p.pname else 'Null', 'key': p.prodk.text if p.prodk else 'Null'} for p in film.find_all('prod')]
             studios   = [{'studio': s.studio.text if s.studio else 'Indie'} for s in film.find_all('studios')]
-            genres  = [{'genre': ( CATEGORIES[cat.text.lower().strip()] if cat.text.lower().strip() in CATEGORIES else 'data_error ' + cat.text) if cat else 'Null'} for cat in film.find_all('cat')]
+            genres    = [{'genre': ( CATEGORIES[cat.text.lower().strip()] if cat.text.lower().strip() in CATEGORIES else 'data_error ' + cat.text) if cat else 'Null'} for cat in film.find_all('cat')]
             awards    = [{  'award_type': a.awtype.text if a.awtype else 'Null',
                             'award_attribute': a.awattr.text if a.awattr else 'Null',
                             'award_reference': a.awref.text if a.awref else 'Null'} for a in film.find_all('awards')]
@@ -149,11 +149,17 @@ def peopleToJSON():
     i = 0
     for person in soup.people.find_all('person'):
         name = person.pname.text if person.pname else 'Null'
-        family_name = person.familynm.text if person.familynm else 'Null'
-        given_name = person.givennm.text if person.givennm else 'Null'
+        family_name   = person.familynm.text if person.familynm else 'Null'
+        given_name    = person.givennm.text if person.givennm else 'Null'
         date_of_birth = (person.dob.text if isValidYear(person.dob.text) else 'Null') if person.dob else 'Null'
         date_of_death = (person.dod.text if isValidYear(person.dod.text) else 'Null') if person.dod else 'Null'
-        people_data[str(i)] = dict( name=name, family_name=family_name, given_name=given_name, date_of_birth=date_of_birth, date_of_death=date_of_death)
+        awards        = [{  'award_type': a.awtype.text if a.awtype else 'Null',
+                            'award_attribute': a.awdet.text if a.awdet else 'Null',
+                            'award_reference': a.awf.text if a.awf else 'Null',
+                            'award_year': a.awyear.text if a.awyear else 'Null'} for a in person.find_all('aw')]
+        people_data[str(i)] = dict( name=name, family_name=family_name, given_name=given_name, date_of_birth=date_of_birth,
+                                    date_of_death=date_of_death, awards=awards)
+
         i += 1
     with open('people.json', 'w') as f:
         json.dump(people_data, f, indent=True)
@@ -225,8 +231,13 @@ def actorsToJSON():
         gender        = actor.gender.text if actor.gender else 'Null'
         family_name   = actor.familyname.text if actor.familyname else 'Null'
         first_name    = actor.firstname.text if actor.firstname else 'Null'
+        awards        = [{  'award_type': a.awtype.text if a.awtype else 'Null',
+                            'award_attribute': a.awattr.text if a.awattr else 'Null',
+                            'award_reference': a.awf.text if a.awf else 'Null',
+                            'award_year': a.awyear.text if a.awyear else 'Null'} for a in actor.find_all('award')]
+
         actor_data[str(i)] = dict(stage_name=stage_name,date_of_birth=date_of_birth, date_of_death=date_of_death,
-                                  role_type=role_type, gender=gender, family_name=family_name, first_name=first_name)
+                                  role_type=role_type, gender=gender, family_name=family_name, first_name=first_name, awards=awards)
         i += 1
 
 
@@ -245,7 +256,7 @@ def createFilmIdList():
 
 # createFilmIdList()
 # moviesxmlToJSON()
-# peopleToJSON()
+peopleToJSON()
 # castToJSON()
 # remakesToJSON()
 actorsToJSON()

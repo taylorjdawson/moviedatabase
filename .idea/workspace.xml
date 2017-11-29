@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/postgresConnection.py" afterPath="$PROJECT_DIR$/postgresLoadDB.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/remakes.json" afterPath="$PROJECT_DIR$/Data_json/remakes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/casts.json" afterPath="$PROJECT_DIR$/Data_json/casts.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieDataCuration.py" afterPath="$PROJECT_DIR$/MovieDataCuration.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,37 +14,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511938403314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
-    <select />
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="people.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/people.json">
+      <file leaf-file-name="actors.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/actors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278037">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="342">
+              <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movies.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+      <file leaf-file-name="people.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/people.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="311510" column="24" lean-forward="false" selection-start-line="311510" selection-start-column="19" selection-end-line="311510" selection-end-column="24" />
+            <state relative-caret-position="342">
+              <caret line="254" column="262" lean-forward="true" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
               <folding />
             </state>
           </provider>
@@ -53,7 +43,7 @@
       <file leaf-file-name="MovieDataCuration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
+            <state relative-caret-position="620">
               <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="63" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -63,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actors.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="actors.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-702637">
+            <state relative-caret-position="353">
               <caret line="14622" column="18" lean-forward="false" selection-start-line="14622" selection-start-column="2" selection-end-line="14622" selection-end-column="18" />
               <folding />
             </state>
@@ -76,7 +66,7 @@
       <file leaf-file-name="casts.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4620074">
+            <state relative-caret-position="339">
               <caret line="308124" column="20" lean-forward="false" selection-start-line="308124" selection-start-column="3" selection-end-line="308124" selection-end-column="20" />
               <folding />
             </state>
@@ -95,42 +85,13 @@
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remakes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9842">
-              <caret line="11219" column="25" lean-forward="false" selection-start-line="11219" selection-start-column="25" selection-end-line="11219" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <element signature="e#18#33#0" expanded="true" />
-                <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-                <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-                <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-                <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-                <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-                <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-                <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-                <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-                <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
-              </folding>
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="640">
+                <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -146,6 +107,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>AAd10</find>
       <find>AAn14</find>
       <find>&quot;not in moviejson&quot;</find>
       <find>acf10</find>
@@ -175,7 +137,6 @@
       <find>Null</find>
       <find>+</find>
       <find>&quot;gender&quot;: &quot;Null&quot;</find>
-      <find>write</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,12 +156,10 @@
         <option value="$PROJECT_DIR$/cast_film_ids_not_in_movie_json" />
         <option value="$PROJECT_DIR$/not_in_movie" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Data_json/remakes.json" />
         <option value="$PROJECT_DIR$/Data/remakes.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/MovieDataCuration.py" />
-        <option value="$PROJECT_DIR$/postgresMoviesDirectorsWriters.py" />
-        <option value="$PROJECT_DIR$/Data_json/remakes.json" />
-        <option value="$PROJECT_DIR$/postgresLoadDB.py" />
       </list>
     </option>
   </component>
@@ -210,11 +169,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="22" />
-    <option name="width" value="1537" />
-    <option name="height" value="878" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-16" />
+    <option name="y" value="-16" />
+    <option name="width" value="3872" />
+    <option name="height" value="2092" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -232,28 +191,63 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="moviedatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="moviedatabase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="moviedatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="moviedatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="moviedatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="moviedatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="Data_json" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Misc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data_json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovieDataBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,7 +275,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.MovieDataCuration">
-    <configuration name="MovieDataCuration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="MovieDataCuration" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -298,14 +292,26 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
+    <configuration default="false" name="postgresConnection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MovieDataBase" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/postgresConnection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -403,6 +409,15 @@
       <module name="MovieDataBase" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -463,24 +478,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="postgresConnection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MovieDataBase" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/postgresLoadDB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.MovieDataCuration" />
       <item index="1" class="java.lang.String" itemvalue="Python.postgresConnection" />
@@ -517,16 +514,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13805436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19759358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.042203147" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31034482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -563,7 +559,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -586,6 +582,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#33#0" expanded="true" />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data/movies.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -613,22 +620,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
         </state>
       </provider>
@@ -660,22 +658,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
         </state>
       </provider>
@@ -707,22 +696,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
         </state>
       </provider>
@@ -754,22 +734,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
         </state>
       </provider>
@@ -801,22 +772,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
         </state>
       </provider>
@@ -848,22 +810,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
         </state>
       </provider>
@@ -922,19 +875,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movieData.json" />
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="e#18#33#0" expanded="true" />
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movieData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Misc/duplicate_movie_ids">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cast_film_ids_not_in_movie_json" />
+    <entry file="file://$PROJECT_DIR$/cast_film_ids_not_in_movie_json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="339377" column="21" lean-forward="false" selection-start-line="339377" selection-start-column="21" selection-end-line="339377" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Misc/Notes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1600">
           <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -942,6 +930,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -949,6 +938,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -968,6 +958,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/people.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="1409" column="14" lean-forward="false" selection-start-line="1409" selection-start-column="11" selection-end-line="1409" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data/remakes.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -976,41 +974,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
+    <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
+        <state relative-caret-position="283">
+          <caret line="11794" column="23" lean-forward="false" selection-start-line="11794" selection-start-column="17" selection-end-line="11794" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/casts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="596" column="7" lean-forward="true" selection-start-line="596" selection-start-column="7" selection-end-line="596" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="640">
+            <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="308124" column="20" lean-forward="false" selection-start-line="308124" selection-start-column="3" selection-end-line="308124" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/people.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="254" column="262" lean-forward="false" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
+        <state relative-caret-position="342">
+          <caret line="254" column="262" lean-forward="true" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonMod.py">
+    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="311510" column="24" lean-forward="false" selection-start-line="311510" selection-start-column="19" selection-end-line="311510" selection-end-column="24" />
+        <state relative-caret-position="342">
+          <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
+        <state relative-caret-position="620">
           <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="63" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -1019,71 +1036,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/people.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278037">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/casts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="596" column="7" lean-forward="false" selection-start-line="596" selection-start-column="7" selection-end-line="596" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9842">
-          <caret line="11219" column="25" lean-forward="false" selection-start-line="11219" selection-start-column="25" selection-end-line="11219" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4620074">
-          <caret line="308124" column="20" lean-forward="false" selection-start-line="308124" selection-start-column="3" selection-end-line="308124" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702637">
+        <state relative-caret-position="353">
           <caret line="14622" column="18" lean-forward="false" selection-start-line="14622" selection-start-column="2" selection-end-line="14622" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511987335183" expanded="true" signature="1222:1292" ph="INSERT into participant... " />
-            <marker date="1511987335183" expanded="true" signature="2596:2801" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511987335183" expanded="true" signature="2959:3057" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3212:3310" ph="INSERT into directs... " />
-            <marker date="1511987335183" expanded="true" signature="3808:3981" ph="INSERT into is_remake_of... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4378" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4395" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4456" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4472" ph="INSERT INTO acts_in... " />
-            <marker date="1511987335183" expanded="true" signature="4307:4495" ph="INSERT INTO acts_in... " />
-          </folding>
         </state>
       </provider>
     </entry>
