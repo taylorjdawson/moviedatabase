@@ -12,7 +12,7 @@ def connect():
             host='dhansen.cs.georgefox.edu',
             database ='themoviedatabase',
             user = 'tdawson16',
-            password ='banker85=government=Maybe',
+            password ='banker85=government=Maybe=',
         )
 
         # connect to the PostgreSQL server
