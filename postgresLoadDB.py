@@ -48,8 +48,8 @@ def connect():
                 participants.append(person['stage_name'].lower())
 
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
-                            " VALUES (" + str(participant_id) + "," + person['date_of_birth'] + "," + person['date_of_death']
-                            + "," + person['gender'] + "," + person['stage_name'] + "," + person['family_name'] + "," + person['first_name'] + ")")
+                            " VALUES ( " + str(participant_id) + " , " + person['date_of_birth'] + " , " + person['date_of_death']
+                            + " , " + person['gender'] + " , " + person['stage_name'] + " , " + person['family_name'] + " , " + person['first_name'] + " );")
                 participant_id += 1
 
         print('Loading Participants...')
@@ -60,8 +60,8 @@ def connect():
             for person in participantJSON.values():
                 participants.append(person['name'].lower())
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, familyname, firstname)"
-                            " VALUES (" + participant_id + "," + person['date_of_birth'] + "," + person['date_of_death']
-                            + ", null ," + person['name'] + "," + person['family_name'] + "," + person['given_name'] + ")")
+                            " VALUES ( " + participant_id + " , " + person['date_of_birth'] + " , " + person['date_of_death']
+                            + " , null , " + person['name'] + " , " + person['family_name'] + " , " + person['given_name'] + " );")
                 participant_id += 1
 
         # Ingest Films
@@ -74,13 +74,13 @@ def connect():
             for film in moviesJSON.values():
                 movieList.append(film['film_id'])
                 cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year, genre) VALUES " +
-                            "(" + film_id + ", " + film['title'] + ", " + film['year'] + "," + film['genres']['genre'] + ")")
+                            " ( " + film_id + " , " + film['title'] + " , " + film['year'] + " , " + film['genres']['genre'] + " );")
                 # loads the director table
                 direct_participant = participants.index(film['directors']['name'])
-                cur.execute("INSERT into directs (film_id , participant_id ) VALUES (" + film_id +"," + direct_participant + ")")
+                cur.execute("INSERT into directs_movie (film_id , participant_id ) VALUES ( " + film_id +" , " + direct_participant + " );")
                 # loads the writer table
-                write_participant = participants.index(film['directors']['name'])
-                cur.execute("INSERT into directs (film_id , participant_id ) VALUES (" + film_id + "," + write_participant + ")")
+                #write_participant = participants.index(film['writers']['name'])
+                #cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( " + film_id + " , " + write_participant + " );")
                 film_id+=1
 
         # Ingest Remakes
@@ -95,7 +95,7 @@ def connect():
                 old_Original_ID = film['original_id']
                 new_Original_ID = movieList.index(old_Original_ID)
                 cur.execute("INSERT into is_remake_of (remake_film_id, original_film_id, fraction)" +
-                            "VALUES (" + new_Remake_ID + "," + new_Original_ID + "," + fraction + ")" )
+                            " VALUES ( " + new_Remake_ID + " , " + new_Original_ID + " , " + fraction + " );" )
 
         # Ingest Cast Lists
         print('Loading Acts_in table')
@@ -105,8 +105,8 @@ def connect():
             for person in actsinJSON.values():
                 actor_id = participants.index(person['actor_name'])
                 film_id = movieList.index(person['film_id']['id'])
-                cur.execute("INSERT INTO acts_in (participant_id, role, film_id, role_type) VALUES (" + actor_id + ","
-                            + person['character_name'] + "," + film_id + "," + person['role'] + ")" )
+                cur.execute("INSERT INTO acts_in (participant_id, role, film_id, role_type) VALUES ( " + actor_id + " , "
+                            + person['character_name'] + " , " + film_id + " , " + person['role'] + " );" )
 
 
         # display the PostgreSQL database server version
