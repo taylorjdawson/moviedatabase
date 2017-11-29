@@ -1,81 +1,150 @@
-1) select movies.title, movies.year 
+1) What movies (list title and year) have "george" (in any form) at the end of their titles. Order by the title.
+select movies.title, movies.year 
 from movies
 where lower(right(title, 6)) = 'george'
+order by title
 
 2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
+select actors.stage_name, movie.title, movie.year, movie.role, remake.title, remake.year, remake.role
+from movies, actors, acts_in, remakes
+where movie_id = acts_in.film_id and remake_id = acts_in.film_id 
+order by stage_name, movies.year, movies.title
 
-3) Which movie immediate remake is most simmilar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
 
-4) select movies.title
+3) Which movie immediate remake is most similar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
+select remakes.fraction, movies.title, movies.year, movies.director, remakes.title, remakes.year, remakes.director
 from movies, remakes
-where movies.title = remakes.original_title
-order by count (# of remakes) // put actual code here
+where movie_id = remakes.original_id and fraction = max(fraction)
+
+
+
+4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?select movies.title as been_remade
+from movies, remakes
+where movies.movie_id = remakes.original_id 
+order by count(been_remade)
 LIMIT 1
 
-5) select movies.title
+
+5) Which movies are neither a remake nor have ever been remade? Order by title.
+select movies.title
 from movies, remakes
 where not exists (select movies.title 
                   from movies, remakes 
-                  where movies.title = remakes.original_title)
-order by title
+                  where movies.movie_id = remakes.remake_id or movies.movie_id = remakes.original_id)
+order by movies.title
 
-6) select actors.stage_name, role, movies.title, year 
+
+6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
+select actors.stage_name, actors.role, movies.title, movies.year 
 from actors, movies, acts_in
 where movie_id = acts_in.film_id and award_type = 'Academy Award'
 order by year
 
-7) select movies.title 
+7) Which movies, by name, won Academy Awards in 1970?
+select movies.title 
 from movies
 where award_type = 'Academy Award' and year = '1970'
 order by title
 
-8)Has any original movie and an immediate remake both won won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
+This is what the query will look like when we execute. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed. (or tested, unfortunately)
 
-9) select movies.title, year
+8) Has any original movie and an immediate remake both won won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
+select movies.title, movies.year, remakes.title, remakes.year
+from movies, remakes
+where movie_id = remakes.original_id and movies.award_type = 'Academy Award' and remakes.award_type = 'Academy Award'
+order by movies.title, remakes.title
+
+Like the above query, this query can't be executed yet since we don't have info on awards in our database yet.
+
+9) Find the name and year of the movie that has the shortest title.
+select movies.title, movies.year
 from movies
 order by length(title) ASC
 LIMIT 1
 
-10) select movies.title 
+10) What movies did "George Fox" write?
+select movies.title 
 from movies, writers, participant
 where movie_id = writer and participant_id = 'George Fox'
 
 11) Are there any actors that have played more than one role in the same movie? If so, list the movie title, the actor's name and the roles they played. Order by movie title, actor's name, and role.
+select movies.title, actors.stage_name, actors.role
+from actors, acts_in, movies, participants
+where movie_id = acts_in.film_id 
 
 12) Are there any pairs of actors that appeared together in two different movies released in the same year? If so, list the movie titles, the years, the actor's names and the roles they played. Order by movie title, year, actor's names, and roles.
+select movies.title, year, actors.stage_name, role
+from actors, acts_in, movies
+where movie_id = acts_in.film_id and 
+order by title, year, stage_name, role
 
-13) select movies.title, year, acts_in.role 
+13) List the title, year, and role of movies that "Tom Cruise" appeared in ordered by the year.
+select movies.title, year, acts_in.role 
 from movies, acts_in, participant
 where movie_id = acts_in.film_id and participant_id = 'Tom Cruise'
 order by year
 
 14) Is there an actor that has been a co-star with "Val Kilmer" and "Clint Eastwood" (not necessarily in the same movie)?!
+select actors.stage_name
+from actors, acts_in, movies
+where movie_id = acts_in.film_id and exists (select actors.stage_name
+                                             from actors, acts_in, movies, participants
+                                             where movie_id = acts_in.film_id and actors.stage_name = 'Val Kilmer')
+and exists (select actors.stage_name
+            from actors, acts_in, movies, participants
+            where movie_id = acts_in.film_id and actors.stage_name = 'Clint Eastwood')
 
 15) Give me the names of all actors within "six degrees" of "Kevin Bacon". Specifically, Bacon's co-stars (1st degree), the co-star's co-stars (2nd degree), etc. out to "six degrees". List the actors ordered by stagename.
 
-16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeard in his movies ordered by the count (descending) and their name (ascending).
+order by stage_name
 
-17) select DISTINCT movies.genre 
+16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeared in his movies ordered by the count (descending) and their name (ascending).
+select actors.stage_name, count(movies) 
+from actors, acts_in, movies
+where movie_id = acts_in.film_id and movie.director = 'Clint Eastwood' 
+order by count(movies), stage_name ASC
+
+17) What are the categories (i.e., genre) of movies that "Ronald Reagan" has appeared in as an actor? 
+select DISTINCT movies.genre 
 from movies, acts_in, participant
 where movie_id = acts_in.film_id and acts_in.participant_id = 'Ronald Reagan'
 
-18) select movies.studio, count(movies)
+18) Which studio has made the most movies and how many have they made?
+select movies.studio, count(movies)
 from movies
 order by studio
 LIMIT 1
 
-19) select movies.genre
+Like with the awards, we haven't added studios to the database yet, so we can't execute this query.
+
+19) "Paramount" is a famous studio. What category (i.e., genre) of movie was most commonly made by "Paramount"?
+select movies.genre
 from movies
 where movies.studio = 'Paramount'
-order by count(movies.genre)
+order by count(genre)
 LIMIT 1
 
+Once again, no studio info yet, so we can't do this query.
+
 20) Has any person directed and produced a movie they've also acted in? If so, give their stagename, the title of the movie they directed and produced, and the role they played.
+select actors.stage_name, movies.title, actors.role
+from actors, acts_in, movies, participants
+where movie_id = acts_in.fim_id and and producer = participant_id and director = participant_id
 
 21) For all of the generic roletypes for actors, list the name of the roletype and a count of how many actors are classified by that type in descending order of the counts.
+select actors.role_type, count(actors)
+from actors
+order by role_type 
 
 22) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
+select movies.genre, count(movies)
+from movies
+order by genre
 
-23) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
+23) Who was the oldest actor to appear in a movie? I.e., has the largest difference between their date of birth and the release of a movie they appeared in. Give their name, rough age at the time, title of the movie, and the role they played; in the case of a tie, display them all.
+select actors.stage_name, max(date_of_death - date_of_birth) as max_Age, movies.title, movies.role
+from actors, acts_in, movies
+where movie_id = acts_in.film_id and date_of_birth != NULL and date_of_death != NULL and date_of_death - date_of_birth = max_Age
+
 
 
