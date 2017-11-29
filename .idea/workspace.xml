@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/actors.xml" afterPath="$PROJECT_DIR$/Data/actors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/people.xml" afterPath="$PROJECT_DIR$/Data/people.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieDataCuration.py" afterPath="$PROJECT_DIR$/MovieDataCuration.py" />
-    </list>
+    <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,18 +69,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgresConnection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/postgresConnection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding>
-                <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="duplicate_actor_stagenames" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Misc/duplicate_actor_stagenames">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,7 +104,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="920">
-                <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+                <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -957,9 +940,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +948,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="920">
-            <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
