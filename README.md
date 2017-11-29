@@ -9,9 +9,11 @@ they have duplicate ids
 **Important**: When loading cast members first check that the field `in_movie` is `true`. 
 - 13 null values in [remakes.json](Data_json/remakes.json) but only with in the year fields. All `remake_id` and 
 `original_id` reference film_ids located in [movies.json](Data_json/movies.json) file
+
 ## Todos
 - [ ] Add stage name in the acts_in table
-- [ ] Add first and last name in participant table
+- [x] Add first and last name in participant table
 - [ ] Need to review the duplicate movie ids
 - [ ] Review .json files for erroneous data
-- [ ] Create directs table, writes table
+- [x] Create directs table, writes table
+- [ ]
