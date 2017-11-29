@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/movieData.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Notes" afterPath="$PROJECT_DIR$/Misc/Notes" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Queries.txt" afterPath="$PROJECT_DIR$/Misc/Queries.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/casts.json" afterPath="$PROJECT_DIR$/Data_json/casts.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/duplicate_movie_ids" afterPath="$PROJECT_DIR$/Misc/duplicate_movie_ids" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/movies.json" afterPath="$PROJECT_DIR$/Data_json/movies.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/not_in_movie" afterPath="$PROJECT_DIR$/Misc/not_in_movie" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/people.json" afterPath="$PROJECT_DIR$/Data_json/people.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/remakes.xml" afterPath="$PROJECT_DIR$/Data/remakes.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/casts.json" afterPath="$PROJECT_DIR$/Data_json/casts.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieDataCuration.py" afterPath="$PROJECT_DIR$/MovieDataCuration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,37 +14,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511934920538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511938403314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="movies.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/movies.xml">
+      <file leaf-file-name="actors.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/actors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="1667" column="20" lean-forward="false" selection-start-line="1667" selection-start-column="20" selection-end-line="1667" selection-end-column="20" />
+            <state relative-caret-position="342">
+              <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remakes.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/remakes.xml">
+      <file leaf-file-name="people.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/people.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="1287" column="72" lean-forward="false" selection-start-line="1287" selection-start-column="72" selection-end-line="1287" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="not_in_movie" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Misc/not_in_movie">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="342">
+              <caret line="254" column="262" lean-forward="true" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
               <folding />
             </state>
           </provider>
@@ -63,8 +43,8 @@
       <file leaf-file-name="MovieDataCuration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="203" column="67" lean-forward="false" selection-start-line="203" selection-start-column="67" selection-end-line="203" selection-end-column="67" />
+            <state relative-caret-position="620">
+              <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="63" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#670#1930#0" expanded="false" />
@@ -73,31 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remakes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
+      <file leaf-file-name="actors.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="11794" column="23" lean-forward="false" selection-start-line="11794" selection-start-column="17" selection-end-line="11794" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="casts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/casts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="596" column="7" lean-forward="true" selection-start-line="596" selection-start-column="7" selection-end-line="596" selection-end-column="7" />
+            <state relative-caret-position="353">
+              <caret line="14622" column="18" lean-forward="false" selection-start-line="14622" selection-start-column="2" selection-end-line="14622" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -113,22 +73,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Queries.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Misc/Queries.txt">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="280">
-                <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+              <first_editor relative-caret-position="640">
+                <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -147,12 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>porn</find>
-      <find>BsK4</find>
-      <find>AmH13</find>
-      <find>not in moviejson</find>
-      <find>AAd</find>
-      <find>shrek</find>
       <find>AAd10</find>
       <find>AAn14</find>
       <find>&quot;not in moviejson&quot;</find>
@@ -177,6 +131,12 @@
       <find>&quot;Null&quot;</find>
       <find>acu27</find>
       <find>&quot;in_movie&quot;: false</find>
+      <find>Penny Singleton</find>
+      <find>Cybill Shepherd</find>
+      <find>@</find>
+      <find>Null</find>
+      <find>+</find>
+      <find>&quot;gender&quot;: &quot;Null&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,10 +156,10 @@
         <option value="$PROJECT_DIR$/cast_film_ids_not_in_movie_json" />
         <option value="$PROJECT_DIR$/not_in_movie" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/MovieDataCuration.py" />
         <option value="$PROJECT_DIR$/Data_json/remakes.json" />
         <option value="$PROJECT_DIR$/Data/remakes.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/MovieDataCuration.py" />
       </list>
     </option>
   </component>
@@ -555,15 +515,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19652407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19759358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3115942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,14 +582,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data/casts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
@@ -924,14 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="75" column="216" lean-forward="false" selection-start-line="75" selection-start-column="216" selection-end-line="75" selection-end-column="216" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postgresConnection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -940,14 +883,6 @@
             <element signature="e#18#33#0" expanded="true" />
             <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/people.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="233" column="229" lean-forward="false" selection-start-line="233" selection-start-column="225" selection-end-line="233" selection-end-column="229" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,17 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="203" column="67" lean-forward="false" selection-start-line="203" selection-start-column="67" selection-end-line="203" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#670#1930#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1066,6 +990,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="640">
+            <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1074,14 +1009,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="280">
-            <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Data/people.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="254" column="262" lean-forward="true" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#670#1930#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="14622" column="18" lean-forward="false" selection-start-line="14622" selection-start-column="2" selection-end-line="14622" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -175,7 +175,7 @@ def castToJSON():
     for cast in soup.find_all('m'):
         film_id        = ({'id': cast.f.text.lower().strip(), 'in_movie': cast.f.text.lower().strip() in film_ids}) if cast.f else 'Null'
         film_title     = cast.t.text if cast.t else 'Null'
-        actor_name     = cast.a.text if cast.a else 'Null'
+        actor_name     = cast.a.text.lower().strip() if cast.a else 'Null'
         character_name = cast.n.text if cast.n else 'Null'
         role           = cast.r.text if cast.r else 'Null'
         cast_data[str(i)] = dict(film_id=film_id, film_title=film_title, actor_name=actor_name, character_name=character_name, role=role)
@@ -211,6 +211,27 @@ def remakesToJSON():
     with open('remakes.json', 'w') as f:
         json.dump(remake_data, f, indent=True)
 
+def actorsToJSON():
+
+    soup = BeautifulSoup(open('Data/actors.xml').read(), 'xml')
+    actor_data = {}
+    i = 0
+
+    for actor in soup.find_all('actor'):
+        stage_name    = actor.stagename.text if actor.stagename else 'Null'
+        date_of_birth = (actor.dob.text.replace('+','') if isValidYear(actor.dob.text.replace('+','')) else 'Null') if actor.dob else 'Null'
+        date_of_death = (actor.dod.text.replace('+','') if isValidYear(actor.dod.text.replace('+','')) else 'Null') if actor.dod else 'Null'
+        role_type     = actor.roletype.text if actor.roletype else 'Null'
+        gender        = actor.gender.text if actor.gender else 'Null'
+        family_name   = actor.familyname.text if actor.familyname else 'Null'
+        first_name    = actor.firstname.text if actor.firstname else 'Null'
+        actor_data[str(i)] = dict(stage_name=stage_name,date_of_birth=date_of_birth, date_of_death=date_of_death,
+                                  role_type=role_type, gender=gender, family_name=family_name, first_name=first_name)
+        i += 1
+
+
+    with open('actors.json', 'w') as f:
+        json.dump(actor_data, f, indent=True)
 
 def isValidYear(year):
     return bool(re.match('^\d{4}$', year))
@@ -226,7 +247,7 @@ def createFilmIdList():
 # moviesxmlToJSON()
 # peopleToJSON()
 # castToJSON()
-remakesToJSON()
-
+# remakesToJSON()
+actorsToJSON()
 
 
