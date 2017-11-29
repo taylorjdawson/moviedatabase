@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Misc/duplicate_actor_stagenames" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/casts.json" afterPath="$PROJECT_DIR$/Data_json/casts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieDataCuration.py" afterPath="$PROJECT_DIR$/MovieDataCuration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511938403314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511977697632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -23,18 +23,8 @@
       <file leaf-file-name="actors.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/actors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="people.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/people.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="254" column="262" lean-forward="true" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
+            <state relative-caret-position="40">
+              <caret line="4003" column="479" lean-forward="false" selection-start-line="4003" selection-start-column="473" selection-end-line="4003" selection-end-column="479" />
               <folding />
             </state>
           </provider>
@@ -43,8 +33,8 @@
       <file leaf-file-name="MovieDataCuration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="63" />
+            <state relative-caret-position="760">
+              <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="190" selection-end-column="44" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#670#1930#0" expanded="false" />
@@ -53,42 +43,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actors.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="people.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_json/people.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="6428" column="14" lean-forward="false" selection-start-line="6428" selection-start-column="2" selection-end-line="6428" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movies.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/movies.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11253" column="19" lean-forward="false" selection-start-line="11253" selection-start-column="14" selection-end-line="11253" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actors.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="14622" column="18" lean-forward="false" selection-start-line="14622" selection-start-column="2" selection-end-line="14622" selection-end-column="18" />
+            <state relative-caret-position="351">
+              <caret line="6993" column="32" lean-forward="false" selection-start-line="6993" selection-start-column="17" selection-end-line="6993" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="casts.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
+      <file leaf-file-name="postgresConnection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/postgresConnection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="308124" column="20" lean-forward="false" selection-start-line="308124" selection-start-column="3" selection-end-line="308124" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="560">
+              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="duplicate_actor_stagenames" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Misc/duplicate_actor_stagenames">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="people.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/people.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="841" column="74" lean-forward="false" selection-start-line="841" selection-start-column="71" selection-end-line="841" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movies.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-732">
+              <caret line="265307" column="14" lean-forward="false" selection-start-line="265307" selection-start-column="13" selection-end-line="265307" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="640">
-                <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <first_editor relative-caret-position="160">
+                <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -107,19 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AAd10</find>
-      <find>AAn14</find>
-      <find>&quot;not in moviejson&quot;</find>
-      <find>acf10</find>
-      <find>bay</find>
-      <find>adx1</find>
-      <find>false</find>
-      <find>true</find>
-      <find>clc22</find>
-      <find>swi6</find>
-      <find>RhS15</find>
-      <find>ws40</find>
-      <find>ws4</find>
       <find>ws35</find>
       <find>aad10</find>
       <find>Die Dreigroschenoper</find>
@@ -130,13 +149,26 @@
       <find>GP13</find>
       <find>&quot;Null&quot;</find>
       <find>acu27</find>
-      <find>&quot;in_movie&quot;: false</find>
       <find>Penny Singleton</find>
       <find>Cybill Shepherd</find>
       <find>@</find>
       <find>Null</find>
       <find>+</find>
       <find>&quot;gender&quot;: &quot;Null&quot;</find>
+      <find>&quot;in_movie&quot;: false</find>
+      <find>aw</find>
+      <find>award</find>
+      <find>awards</find>
+      <find>/awards</find>
+      <find>awyear</find>
+      <find>&lt;awtype&gt;AA&lt;/awtype&gt;</find>
+      <find>B.Edwards</find>
+      <find>ghosts</find>
+      <find>Disney</find>
+      <find>&lt;awf&gt;Snow White and the Seven Dwarfs&lt;/awf&gt;</find>
+      <find>KeD</find>
+      <find>Harvey Stephens</find>
+      <find>Kenneth Branagh</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,8 +190,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Data_json/remakes.json" />
         <option value="$PROJECT_DIR$/Data/remakes.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/MovieDataCuration.py" />
+        <option value="$PROJECT_DIR$/Misc/duplicate_actor_stagenames" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -515,18 +548,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19759358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2026738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31382385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -582,17 +616,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/movies.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -624,10 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,10 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,10 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,10 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,10 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -814,10 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,54 +874,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movieData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/movieData.json" />
     <entry file="file://$PROJECT_DIR$/Misc/duplicate_movie_ids">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cast_film_ids_not_in_movie_json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="339377" column="21" lean-forward="false" selection-start-line="339377" selection-start-column="21" selection-end-line="339377" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cast_film_ids_not_in_movie_json" />
     <entry file="file://$PROJECT_DIR$/Misc/Notes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1600">
           <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,15 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/movies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="1667" column="20" lean-forward="false" selection-start-line="1667" selection-start-column="20" selection-end-line="1667" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,14 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/people.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="1409" column="14" lean-forward="false" selection-start-line="1409" selection-start-column="11" selection-end-line="1409" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -978,57 +924,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="11794" column="23" lean-forward="false" selection-start-line="11794" selection-start-column="17" selection-end-line="11794" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12325200">
+          <caret line="308130" column="3" lean-forward="false" selection-start-line="308130" selection-start-column="3" selection-end-line="308130" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/casts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="596" column="7" lean-forward="true" selection-start-line="596" selection-start-column="7" selection-end-line="596" selection-end-column="7" />
+        <state relative-caret-position="1353160">
+          <caret line="33829" column="210" lean-forward="false" selection-start-line="33829" selection-start-column="208" selection-end-line="33829" selection-end-column="210" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="640">
-            <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
+    <entry file="file://$PROJECT_DIR$/Data/movies.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="308124" column="20" lean-forward="false" selection-start-line="308124" selection-start-column="3" selection-end-line="308124" selection-end-column="20" />
+        <state relative-caret-position="308">
+          <caret line="11253" column="19" lean-forward="false" selection-start-line="11253" selection-start-column="14" selection-end-line="11253" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/people.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="254" column="262" lean-forward="true" selection-start-line="254" selection-start-column="262" selection-end-line="254" selection-end-column="262" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="2248" column="199" lean-forward="false" selection-start-line="2248" selection-start-column="198" selection-end-line="2248" selection-end-column="199" />
+        <state relative-caret-position="240">
+          <caret line="841" column="74" lean-forward="false" selection-start-line="841" selection-start-column="71" selection-end-line="841" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="63" />
+        <state relative-caret-position="760">
+          <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="190" selection-end-column="44" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#670#1930#0" expanded="false" />
@@ -1036,11 +970,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4003" column="479" lean-forward="false" selection-start-line="4003" selection-start-column="473" selection-end-line="4003" selection-end-column="479" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="265307" column="14" lean-forward="false" selection-start-line="265307" selection-start-column="13" selection-end-line="265307" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgresConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1511897981548" expanded="true" signature="820:953" ph="INSERT into themoviedatabase.public.movies... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/people.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="6428" column="14" lean-forward="false" selection-start-line="6428" selection-start-column="2" selection-end-line="6428" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Misc/duplicate_actor_stagenames">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="14622" column="18" lean-forward="false" selection-start-line="14622" selection-start-column="2" selection-end-line="14622" selection-end-column="18" />
+        <state relative-caret-position="351">
+          <caret line="6993" column="32" lean-forward="false" selection-start-line="6993" selection-start-column="17" selection-end-line="6993" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="160">
+            <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
