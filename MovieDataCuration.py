@@ -186,8 +186,30 @@ def castToJSON():
 
 def remakesToJSON():
     # TODO: Check Ref integrity between film_id remake_id and movies.json
-    return
 
+    # Get the list of film_ids that appear in movies.json
+    with open('film_ids', 'rb') as f:
+        film_ids = pickle.load(f)
+
+
+    remake_xml_data = open('Data/remakes.xml').read()
+    soup = BeautifulSoup(remake_xml_data, 'xml')
+    remake_data = {}
+    i = 0
+
+    for remake in soup.find_all('remake'):
+        remake_id       = (remake.rid.text.lower().strip() if remake.rid.text.lower().strip() in film_ids else 'not in fids' ) if remake.rid else 'Null'
+        remake_title    = remake.rtitle.text if remake.rtitle else 'Null'
+        remake_year     = (remake.ry.text if isValidYear(remake.ry.text) else 'Null') if remake.ry else 'Null'
+        remake_fraction = (remake.frac.text.strip().replace(' ','') if bool(re.match('0*\.[0-9]+', remake.frac.text.strip().replace(' ',''))) else 'Null') if remake.frac else 'Null'
+        original_id     = (remake.sid.text.lower().strip() if remake.sid.text.lower().strip() in film_ids else 'not in fids') if remake.sid else 'Null'
+        original_title  = remake.stitle.text if remake.stitle else 'Null'
+        original_year   = (remake.sy.text if isValidYear(remake.sy.text) else 'Null') if remake.sy else 'Null'
+        remake_data[str(i)] = dict(remake_id=remake_id, remake_title=remake_title, remake_year=remake_year, remake_fraction=remake_fraction,
+                                   original_id=original_id, original_title=original_title, original_year=original_year)
+        i += 1
+    with open('remakes.json', 'w') as f:
+        json.dump(remake_data, f, indent=True)
 
 
 def isValidYear(year):
@@ -203,8 +225,8 @@ def createFilmIdList():
 # createFilmIdList()
 # moviesxmlToJSON()
 # peopleToJSON()
-castToJSON()
-
+# castToJSON()
+remakesToJSON()
 
 
 

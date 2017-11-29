@@ -291,7 +291,7 @@
 <remake><rid>ECn29</rid><rtitle>Training for Husbands</rtitle><ry>1921</ry><frac>0.99</frac> <sid>ECn26</sid><stitle>Training for Husbands</stitle><sy>1918</sy></remake>
 <remake><rid>ECn156</rid><rtitle>When a Man's a Man</rtitle><ry>1935</ry><frac>0.95 </frac> <sid>ECn105</sid><stitle>When a Man is a Man</stitle><sy>1924</sy></remake> 
 <remake><rid>EDm20</rid><rtitle>Captive Wild Woman</rtitle><ry>1943</ry><frac>0.3</frac> <sid>KuN4</sid><stitle>The Big Cage</stitle><sy>1933</sy></remake>
-<remake><rid>EDm22</rid><rtitle>Murder, My Sweet</rtitle><ry>1944</ry><frac>0.7</frac> <sid>EuF57</sid><stitle>Time To Kill</stitle><sy>1940%</sy></remake>
+<remake><rid>EDm22</rid><rtitle>Murder, My Sweet</rtitle><ry>1944</ry><frac>0.7</frac> <sid>EuF57</sid><stitle>Time To Kill</stitle><sy>1940</sy></remake>
 <remake><rid>EDm25</rid><rtitle>Till the End of Time</rtitle><ry>1946</ry><frac>0.8</frac> <sid>WW63</sid><stitle>The Best Years of our Lives</stitle><sy>1946</sy></remake>
 <remake><rid>EDm35</rid><rtitle>Broken Lance</rtitle><ry>1954</ry><frac>0.7</frac> <sid>JLM8</sid><stitle>House of Strangers</stitle><sy>1949</sy></remake>
 <remake><rid>EDm40</rid><rtitle>Raintree County</rtitle><ry>1958</ry><frac>0.5</frac> <sid>VF44</sid><stitle>Gone with the Wind</stitle><sy>1939</sy></remake>
@@ -622,7 +622,7 @@
 <!-- Alpha: JJJJJ  :  filmid ;  title ;  year ;  fraction;  source film ;  source title ;  source year end -->
 <remake><rid>JnB70</rid><rtitle>La Poison</rtitle><ry>2000</ry><frac>0.9</frac> <sid>SG54</sid><stitle>La Poison</stitle><sy>1951</sy></remake>
 <remake><rid>JaH16</rid><rtitle>A Study in Terror</rtitle><ry>1965</ry><frac>0.7</frac> <sid>H9</sid><stitle>The Lodger: A Story of The London Fog</stitle><sy>1926</sy></remake>
-<remake><rid>JaH22</rid><rtitle>Captain Nemo and the Underwater City</rtitle><ry>1969æ</ry><frac>0.7</frac> <sid>LuH10</sid><stitle>Mysterious Island</stitle><sy>1929</sy></remake>
+<remake><rid>JaH22</rid><rtitle>Captain Nemo and the Underwater City</rtitle><ry>1969</ry><frac>0.7</frac> <sid>LuH10</sid><stitle>Mysterious Island</stitle><sy>1929</sy></remake>
 <remake><rid>JAl20</rid><rtitle>Fantasia 2000</rtitle><ry>1999</ry><frac>0.7</frac> <sid>WD103</sid><stitle>Fantasia</stitle><sy>1940</sy></remake>
 <remake><rid>JaS20</rid><rtitle>I'd Rather be Rich</rtitle><ry>1964</ry><frac>0.85</frac> <sid>HKo13</sid><stitle>It Started with Eve</stitle><sy>1941</sy></remake>
 <remake><rid>JaS44</rid><rtitle>Double Indemnity</rtitle><ry>1973</ry><frac>0.95</frac> <sid>BW4</sid><stitle>Double Indemnity</stitle><sy>1944</sy></remake>
@@ -1285,7 +1285,7 @@
 <remake><rid>WA9</rid><rtitle>Stardust Memories</rtitle><ry>1980</ry><frac>0.3</frac> <sid>MB4</sid><stitle>Young Frankenstein</stitle><sy>1974</sy></remake>
 <remake><rid>WA10</rid><rtitle>A Midsummernights Sex Comedy</rtitle><ry>1982</ry><frac>0.4</frac> <sid>InB16</sid><stitle>Smiles of a Summer Night</stitle><sy>1955</sy></remake>
 <remake><rid>WA16</rid><rtitle>Another Woman</rtitle><ry>1988</ry><frac>0. 6</frac> <sid>InB18</sid><stitle>Wild Strawberries</stitle><sy>1957</sy></remake>
-<remake><rid>WA21</rid><rtitle>Manhattan Murder Mystery</rtitle><ry>1993p</ry><frac>0.7</frac> <sid>H51</sid><stitle>Rear Window</stitle><sy>1954</sy></remake>
+<remake><rid>WA21</rid><rtitle>Manhattan Murder Mystery</rtitle><ry>1993</ry><frac>0.7</frac> <sid>H51</sid><stitle>Rear Window</stitle><sy>1954</sy></remake>
 <remake><rid>WA25</rid><rtitle>Everyone Says I Love You</rtitle><ry>1997</ry><frac>0.2</frac> <sid>VM10</sid><stitle>An American in Paris</stitle><sy>1951</sy></remake>
 <remake><rid>WaF40</rid><rtitle>The Ghost Train</rtitle><ry>1941</ry><frac>0.8</frac> <sid>WaF10</sid><stitle>The Ghost Train</stitle><sy>1931</sy></remake>
 <remake><rid>WaB10</rid><rtitle>Little Miss Marker</rtitle><ry>1980</ry><frac>0.8</frac> <sid>ALH8</sid><stitle>Little Miss Marker</stitle><sy>1934</sy></remake>
