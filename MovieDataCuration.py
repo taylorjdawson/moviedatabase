@@ -115,17 +115,18 @@ def moviesxmlToJSON():
 
                       )
     movies_xml_data = open('Data/movies.xml').read()
-    soup = BeautifulSoup(movies_xml_data, 'xml')
+    soup =  BeautifulSoup(movies_xml_data, 'xml')
     movie_data = {}
     i = 0
     for film in soup.movies.find_all('film'):
         if film.fid not in DUP_IDS:
             str()
             film_id   = film.fid.text.lower().strip() if film.fid else 'Null'
-            title     = film.t.text if film.t else 'Null'
+            title     = film.t.text.lower().replace("'", "''").strip() if film.t else 'Null'
             year      = (film.year.text if isValidYear(re.sub('@', '', film.year.text)) else 'Null') if film.year else 'Null'
-            directors = [{'key':d.dirk.text if d.dirk else 'Null', 'name': d.dirn.text if d.dirn else 'Null'} for d in film.find_all('dir')]
-            producers = [{'name': p.pname.text if p.pname else 'Null', 'key': p.prodk.text if p.prodk else 'Null'} for p in film.find_all('prod')]
+            directors = [{'key':d.dirk.text if d.dirk else 'Null', 'name': d.dirn.text.lower().replace("'", "''").strip() if d.dirn else 'Null'} for d in film.find_all('dir')]
+            producers = [{'name': p.pname.text.lower().replace("'", "''").strip() if p.pname else 'Null', 'key': p.prodk.text if p.prodk else 'Null'} for p in film.find_all('prod')]
+            writers   = ( [{'name': writer.text if writer else 'Null' for writer in film.writers.find_all('name')}] ) if film.writers else [{'name': 'Null'}]
             studios   = [{'studio': s.studio.text if s.studio else 'Indie'} for s in film.find_all('studios')]
             genres    = [{'genre': ( CATEGORIES[cat.text.lower().strip()] if cat.text.lower().strip() in CATEGORIES else 'data_error ' + cat.text) if cat else 'Null'} for cat in film.find_all('cat')]
             awards    = [{  'award_type': a.awtype.text if a.awtype else 'Null',
@@ -136,6 +137,7 @@ def moviesxmlToJSON():
                                       year=year,
                                       directors=directors,
                                       producers=producers,
+                                      writers=writers,
                                       studios=studios,
                                       genres=genres,
                                       awards=awards)
@@ -150,9 +152,9 @@ def peopleToJSON():
     people_data = {}
     i = 0
     for person in soup.people.find_all('person'):
-        name = person.pname.text if person.pname else 'Null'
-        family_name   = person.familynm.text if person.familynm else 'Null'
-        given_name    = person.givennm.text if person.givennm else 'Null'
+        name = person.pname.text.replace("'", "''") if person.pname else 'Null'
+        family_name   = person.familynm.text.replace("'", "''") if person.familynm else 'Null'
+        given_name    = person.givennm.text.replace("'", "''") if person.givennm else 'Null'
         date_of_birth = (person.dob.text if isValidYear(person.dob.text) else 'Null') if person.dob else 'Null'
         date_of_death = (person.dod.text if isValidYear(person.dod.text) else 'Null') if person.dod else 'Null'
         awards        = [{  'award_type': a.awtype.text if a.awtype else 'Null',
@@ -195,10 +197,10 @@ def castToJSON():
 
     for cast in soup.find_all('m'):
         film_id        = ({'id': cast.f.text.lower().strip(), 'in_movie': cast.f.text.lower().strip() in film_ids}) if cast.f else 'Null'
-        film_title     = cast.t.text if cast.t else 'Null'
-        actor_name     = cast.a.text.lower().strip() if cast.a else 'Null'
-        character_name = cast.n.text if cast.n else 'Null'
-        role           = cast.r.text if cast.r else 'Null'
+        film_title     = cast.t.text.lower().replace("'", "''").strip() if cast.t else 'Null'
+        actor_name     = cast.a.text.lower().replace("'", "''").strip() if cast.a else 'Null'
+        character_name = cast.n.text.lower().replace("'", "''").strip() if cast.n else 'Null'
+        role           = cast.r.text.lower().replace("'", "''").strip() if cast.r else 'Null'
         cast_data[str(i)] = dict(film_id=film_id, film_title=film_title, actor_name=actor_name, character_name=character_name, role=role)
         i += 1
 
@@ -222,7 +224,7 @@ def remakesToJSON():
         remake_id       = (remake.rid.text.lower().strip() if remake.rid.text.lower().strip() in film_ids else 'not in fids' ) if remake.rid else 'Null'
         remake_title    = remake.rtitle.text if remake.rtitle else 'Null'
         remake_year     = (remake.ry.text if isValidYear(remake.ry.text) else 'Null') if remake.ry else 'Null'
-        remake_fraction = (remake.frac.text.strip().replace(' ','') if bool(re.match('0*\.[0-9]+', remake.frac.text.strip().replace(' ',''))) else 'Null') if remake.frac else 'Null'
+        remake_fraction = (remake.frac.text.strip().replace(' ','').replace('>','') if bool(re.match('0*\.[0-9]+', remake.frac.text.strip().replace(' ',''))) else 'Null') if remake.frac else 'Null'
         original_id     = (remake.sid.text.lower().strip() if remake.sid.text.lower().strip() in film_ids else 'not in fids') if remake.sid else 'Null'
         original_title  = remake.stitle.text if remake.stitle else 'Null'
         original_year   = (remake.sy.text if isValidYear(remake.sy.text) else 'Null') if remake.sy else 'Null'
@@ -239,13 +241,13 @@ def actorsToJSON():
     i = 0
 
     for actor in soup.find_all('actor'):
-        stage_name    = actor.stagename.text if actor.stagename else 'Null'
+        stage_name    = actor.stagename.text.replace("'", "''").strip() if actor.stagename else 'Null'
         date_of_birth = (actor.dob.text.replace('+','') if isValidYear(actor.dob.text.replace('+','')) else 'Null') if actor.dob else 'Null'
         date_of_death = (actor.dod.text.replace('+','') if isValidYear(actor.dod.text.replace('+','')) else 'Null') if actor.dod else 'Null'
-        role_type     = actor.roletype.text if actor.roletype else 'Null'
-        gender        = actor.gender.text if actor.gender else 'Null'
-        family_name   = actor.familyname.text if actor.familyname else 'Null'
-        first_name    = actor.firstname.text if actor.firstname else 'Null'
+        role_type     = actor.roletype.text.replace("'", "''") if actor.roletype else 'Null'
+        gender        = actor.gender.text.strip().replace('>', '') if actor.gender else ''
+        family_name   = actor.familyname.text.replace("'", "''").strip() if actor.familyname else 'Null'
+        first_name    = actor.firstname.text.replace("'", "''").strip() if actor.firstname else 'Null'
         awards        = [{  'award_type': a.awtype.text if a.awtype else 'Null',
                             'award_attribute': a.awattr.text if a.awattr else 'Null',
                             'award_reference': a.awf.text if a.awf else 'Null',
@@ -287,6 +289,6 @@ def createFilmIdList():
 # peopleToJSON()
 # castToJSON()
 # remakesToJSON()
-actorsToJSON()
+# actorsToJSON()
 
 

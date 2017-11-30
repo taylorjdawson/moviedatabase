@@ -98,7 +98,7 @@
  "12": {
   "name": "Acub",
   "family_name": "Acub",
-  "given_name": "Nya' Abbas",
+  "given_name": "Nya'' Abbas",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -305,7 +305,7 @@
  },
  "38": {
   "name": "M.Allegret",
-  "family_name": "All\\'egret",
+  "family_name": "All\\''egret",
   "given_name": "Marc",
   "date_of_birth": "1900",
   "date_of_death": "1973",
@@ -313,7 +313,7 @@
  },
  "39": {
   "name": "Y.Allegret",
-  "family_name": "All\\'egret",
+  "family_name": "All\\''egret",
   "given_name": "Yves",
   "date_of_birth": "1907",
   "date_of_death": "Null",
@@ -393,7 +393,7 @@
  },
  "49": {
   "name": "Almodovar",
-  "family_name": "Almod\\'ovar",
+  "family_name": "Almod\\''ovar",
   "given_name": "Pedro",
   "date_of_birth": "1951",
   "date_of_death": "Null",
@@ -433,7 +433,7 @@
  },
  "54": {
   "name": "Amenabar",
-  "family_name": "Amen\\'abar",
+  "family_name": "Amen\\''abar",
   "given_name": "Alejandro",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -545,7 +545,7 @@
  },
  "68": {
   "name": "G.Andre",
-  "family_name": "Andr\\'e",
+  "family_name": "Andr\\''e",
   "given_name": "Henri",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -553,7 +553,7 @@
  },
  "69": {
   "name": "Andre",
-  "family_name": "Andr\\'e",
+  "family_name": "Andr\\''e",
   "given_name": "Raoul",
   "date_of_birth": "1916",
   "date_of_death": "1992",
@@ -922,7 +922,7 @@
  "115": {
   "name": "Asquith",
   "family_name": "Asquith",
-  "given_name": "Anthony `Puffin'",
+  "given_name": "Anthony `Puffin''",
   "date_of_birth": "1902",
   "date_of_death": "1968",
   "awards": []
@@ -1106,7 +1106,7 @@
  "138": {
   "name": "Axelman",
   "family_name": "Axelman",
-  "given_name": "\\Un",
+  "given_name": "",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -1162,7 +1162,7 @@
  "145": {
   "name": "Back",
   "family_name": "Back",
-  "given_name": "Fr\\'ed\\'erick",
+  "given_name": "Fr\\''ed\\''erick",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -1762,7 +1762,7 @@
  "220": {
   "name": "Belmont",
   "family_name": "Belmont",
-  "given_name": "Ver\\'a",
+  "given_name": "Ver\\''a",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -1905,7 +1905,7 @@
  },
  "238": {
   "name": "BenoitLevy",
-  "family_name": "Benoit-L\\'evy",
+  "family_name": "Benoit-L\\''evy",
   "given_name": "Jean",
   "date_of_birth": "1883",
   "date_of_death": "1959",
@@ -1994,7 +1994,7 @@
  "249": {
   "name": "Berkeley",
   "family_name": "Enos",
-  "given_name": "William `Busby'",
+  "given_name": "William `Busby''",
   "date_of_birth": "1895",
   "date_of_death": "1976",
   "awards": []
@@ -3674,7 +3674,7 @@
  "459": {
   "name": "Carax",
   "family_name": "Carax",
-  "given_name": "L\\'eos",
+  "given_name": "L\\''eos",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -3698,7 +3698,7 @@
  "462": {
   "name": "Cardona",
   "family_name": "Cardona",
-  "given_name": "Ren\\'e jr.",
+  "given_name": "Ren\\''e jr.",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -3745,7 +3745,7 @@
  },
  "468": {
   "name": "Carne",
-  "family_name": "Carn\\'e",
+  "family_name": "Carn\\''e",
   "given_name": "Marcel",
   "date_of_birth": "1903",
   "date_of_death": "Null",
@@ -3762,7 +3762,7 @@
  "470": {
   "name": "Caros",
   "family_name": "Caros",
-  "given_name": "John `Bud'",
+  "given_name": "John `Bud''",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -4209,7 +4209,7 @@
  },
  "526": {
   "name": "Chereau",
-  "family_name": "Ch\\'ereau",
+  "family_name": "Ch\\''ereau",
   "given_name": "Patrice",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -4306,7 +4306,7 @@
  "538": {
   "name": "Clair",
   "family_name": "Chomette",
-  "given_name": "Ren\\'e",
+  "given_name": "Ren\\''e",
   "date_of_birth": "1898",
   "date_of_death": "1981",
   "awards": []
@@ -4417,8 +4417,8 @@
  },
  "552": {
   "name": "Clement",
-  "family_name": "Cl\\'ement",
-  "given_name": "Ren\\'e",
+  "family_name": "Cl\\''ement",
+  "given_name": "Ren\\''e",
   "date_of_birth": "1913",
   "date_of_death": "1996",
   "awards": []
@@ -5209,7 +5209,7 @@
  },
  "651": {
   "name": "Cuaron",
-  "family_name": "Cuar\\'on",
+  "family_name": "Cuar\\''on",
   "given_name": "Alfonso",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -5345,7 +5345,7 @@
  },
  "668": {
   "name": "dAbbabie",
-  "family_name": "d'Abbadie d'Arrast",
+  "family_name": "d''Abbadie d''Arrast",
   "given_name": "Harry",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -5401,7 +5401,7 @@
  },
  "675": {
   "name": "dAmato",
-  "family_name": "D'Amato",
+  "family_name": "D''Amato",
   "given_name": "Joe",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -5521,8 +5521,8 @@
  },
  "690": {
   "name": "DArrast",
-  "family_name": "D'Arrast",
-  "given_name": "Harry D'Abadie",
+  "family_name": "D''Arrast",
+  "given_name": "Harry D''Abadie",
   "date_of_birth": "1893",
   "date_of_death": "1968",
   "awards": []
@@ -5754,7 +5754,7 @@
  "719": {
   "name": "deBosio",
   "family_name": "De Bosio",
-  "given_name": "\\Un",
+  "given_name": "",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -6010,7 +6010,7 @@
  "751": {
   "name": "Delvaux",
   "family_name": "Delvaux",
-  "given_name": "Andr\\'e",
+  "given_name": "Andr\\''e",
   "date_of_birth": "1926",
   "date_of_death": "Null",
   "awards": []
@@ -6186,7 +6186,7 @@
  "773": {
   "name": "deToth",
   "family_name": "de Toth",
-  "given_name": "Andr\\'e",
+  "given_name": "Andr\\''e",
   "date_of_birth": "1912",
   "date_of_death": "Null",
   "awards": []
@@ -6249,7 +6249,7 @@
  },
  "781": {
   "name": "Dhery",
-  "family_name": "Dh\\'ery",
+  "family_name": "Dh\\''ery",
   "given_name": "Robert",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -6431,7 +6431,7 @@
  "802": {
   "name": "DiVolito",
   "family_name": "DiVolito",
-  "given_name": "\\Un",
+  "given_name": "",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -6733,7 +6733,7 @@
  },
  "839": {
   "name": "Dreville",
-  "family_name": "Dr\\'eville",
+  "family_name": "Dr\\''eville",
   "given_name": "gn",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -8019,7 +8019,7 @@
  },
  "998": {
   "name": "J.Ford",
-  "family_name": "O'Fearna",
+  "family_name": "O''Fearna",
   "given_name": "Sean",
   "date_of_birth": "1895",
   "date_of_death": "1973",
@@ -9672,7 +9672,7 @@
  "1201": {
   "name": "W.Greene",
   "family_name": "Greene",
-  "given_name": "\\Un",
+  "given_name": "",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -9727,7 +9727,7 @@
  },
  "1208": {
   "name": "Gremillon",
-  "family_name": "Gr\\'emillon",
+  "family_name": "Gr\\''emillon",
   "given_name": "Jean",
   "date_of_birth": "1901",
   "date_of_death": "1958",
@@ -9735,7 +9735,7 @@
  },
  "1209": {
   "name": "Greville",
-  "family_name": "Gr\\'eville",
+  "family_name": "Gr\\''eville",
   "given_name": "Edmond T.",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -10891,7 +10891,7 @@
  "1350": {
   "name": "Herk",
   "family_name": "Harvey",
-  "given_name": "Harold `Herk'",
+  "given_name": "Harold `Herk''",
   "date_of_birth": "1924",
   "date_of_death": "Null",
   "awards": []
@@ -11731,7 +11731,7 @@
  "1455": {
   "name": "Hunebelle",
   "family_name": "Hunebelle",
-  "given_name": "Andr\\'e",
+  "given_name": "Andr\\''e",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -12266,7 +12266,7 @@
  },
  "1522": {
   "name": "A.Joffe",
-  "family_name": "Joff\\'e",
+  "family_name": "Joff\\''e",
   "given_name": "Alexandre",
   "date_of_birth": "1918",
   "date_of_death": "Null",
@@ -13161,7 +13161,7 @@
  },
  "1633": {
   "name": "Kieslovski",
-  "family_name": "Kie\\'slovski",
+  "family_name": "Kie\\''slovski",
   "given_name": "Krzysztof",
   "date_of_birth": "1941",
   "date_of_death": "1996",
@@ -13919,7 +13919,7 @@
  "1725": {
   "name": "Laloux",
   "family_name": "Laloux",
-  "given_name": "Ren\\'e",
+  "given_name": "Ren\\''e",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -14438,7 +14438,7 @@
  },
  "1790": {
   "name": "F.Leger",
-  "family_name": "L\\'eger",
+  "family_name": "L\\''eger",
   "given_name": "Fernand",
   "date_of_birth": "1891",
   "date_of_death": "1955",
@@ -14679,7 +14679,7 @@
  "1820": {
   "name": "R.Lester",
   "family_name": "Lester",
-  "given_name": "Richard `Dick'",
+  "given_name": "Richard `Dick''",
   "date_of_birth": "1932",
   "date_of_death": "Null",
   "awards": []
@@ -14870,7 +14870,7 @@
  },
  "1844": {
   "name": "LHerbier",
-  "family_name": "L'Herbier",
+  "family_name": "L''Herbier",
   "given_name": "Marcel",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -15692,7 +15692,7 @@
  },
  "1945": {
   "name": "Malle",
-  "family_name": "Mall\\'e",
+  "family_name": "Mall\\''e",
   "given_name": "Louis",
   "date_of_birth": "1932",
   "date_of_death": "Null",
@@ -15724,7 +15724,7 @@
  "1948": {
   "name": "A.Malraux",
   "family_name": "Malraux",
-  "given_name": "Andr\\'e",
+  "given_name": "Andr\\''e",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -16027,7 +16027,7 @@
  },
  "1986": {
   "name": "Markovic",
-  "family_name": "Markovi\\'c",
+  "family_name": "Markovi\\''c",
   "given_name": "Goran",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -16259,7 +16259,7 @@
  },
  "2015": {
   "name": "Mate",
-  "family_name": "Mat\\'e",
+  "family_name": "Mat\\''e",
   "given_name": "Rudolf",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -16691,7 +16691,7 @@
  },
  "2069": {
   "name": "Melies",
-  "family_name": "M\\'eli\\`es",
+  "family_name": "M\\''eli\\`es",
   "given_name": "Georges",
   "date_of_birth": "1861",
   "date_of_death": "1938",
@@ -17996,7 +17996,7 @@
  "2232": {
   "name": "Ngabo",
   "family_name": "Ngabo",
-  "given_name": "L\\'eonce",
+  "given_name": "L\\''eonce",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -18339,7 +18339,7 @@
  },
  "2275": {
   "name": "Willis~OBrien",
-  "family_name": "O'Brien",
+  "family_name": "O''Brien",
   "given_name": "Willis",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -18347,7 +18347,7 @@
  },
  "2276": {
   "name": "OBrien",
-  "family_name": "O'Brien",
+  "family_name": "O''Brien",
   "given_name": "E",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -18363,7 +18363,7 @@
  },
  "2278": {
   "name": "OConnelly",
-  "family_name": "O'OConnelly",
+  "family_name": "O''OConnelly",
   "given_name": "James",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -18371,7 +18371,7 @@
  },
  "2279": {
   "name": "OConnor",
-  "family_name": "O'Connor",
+  "family_name": "O''Connor",
   "given_name": "Pat",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -18459,7 +18459,7 @@
  },
  "2290": {
   "name": "ONeil",
-  "family_name": "O'Neil",
+  "family_name": "O''Neil",
   "given_name": "Robert Vincent",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -18499,7 +18499,7 @@
  },
  "2295": {
   "name": "ORourke",
-  "family_name": "O'Rourke",
+  "family_name": "O''Rourke",
   "given_name": "Dennis",
   "date_of_birth": "1948",
   "date_of_death": "Null",
@@ -18555,7 +18555,7 @@
  },
  "2302": {
   "name": "OSteen",
-  "family_name": "O'Steen",
+  "family_name": "O''Steen",
   "given_name": "Sam",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -18588,7 +18588,7 @@
  "2306": {
   "name": "Oury",
   "family_name": "Tannenbaum",
-  "given_name": "Max G\\'erard",
+  "given_name": "Max G\\''erard",
   "date_of_birth": "1919",
   "date_of_death": "Null",
   "awards": []
@@ -18947,7 +18947,7 @@
  },
  "2351": {
   "name": "Pathe",
-  "family_name": "Path\\'e",
+  "family_name": "Path\\''e",
   "given_name": "Charles",
   "date_of_birth": "1863",
   "date_of_death": "1978",
@@ -19139,7 +19139,7 @@
  },
  "2375": {
   "name": "Perier",
-  "family_name": "P\\'erier",
+  "family_name": "P\\''erier",
   "given_name": "Etienne",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -19147,7 +19147,7 @@
  },
  "2376": {
   "name": "Perinal",
-  "family_name": "P\\'erinal",
+  "family_name": "P\\''erinal",
   "given_name": "Georges",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -19172,7 +19172,7 @@
  "2379": {
   "name": "Perret",
   "family_name": "Perret",
-  "given_name": "L\\'eonce",
+  "given_name": "L\\''eonce",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -19388,7 +19388,7 @@
  "2406": {
   "name": "Pires",
   "family_name": "Pir\\`es",
-  "given_name": "G\\'erard",
+  "given_name": "G\\''erard",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -19404,7 +19404,7 @@
  "2408": {
   "name": "L.Poirier",
   "family_name": "Poirier",
-  "given_name": "L\\'eon",
+  "given_name": "L\\''eon",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -19667,7 +19667,7 @@
  },
  "2441": {
   "name": "Jaques~Prevert",
-  "family_name": "Pr\\'evert",
+  "family_name": "Pr\\''evert",
   "given_name": "Jaques",
   "date_of_birth": "1906",
   "date_of_death": "1977",
@@ -19675,7 +19675,7 @@
  },
  "2442": {
   "name": "Prevert",
-  "family_name": "Pr\\'evert",
+  "family_name": "Pr\\''evert",
   "given_name": "Pierre",
   "date_of_birth": "1906",
   "date_of_death": "Null",
@@ -19876,7 +19876,7 @@
  "2467": {
   "name": "Quintero",
   "family_name": "Quintero",
-  "given_name": "Jos\\'e",
+  "given_name": "Jos\\''e",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -20359,7 +20359,7 @@
  },
  "2525": {
   "name": "Rene",
-  "family_name": "Ren\\'e",
+  "family_name": "Ren\\''e",
   "given_name": "Norman",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -21023,7 +21023,7 @@
  "2607": {
   "name": "Roosevelt",
   "family_name": "Roosevelt",
-  "given_name": "Andr\\'e",
+  "given_name": "Andr\\''e",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -21190,8 +21190,8 @@
  },
  "2628": {
   "name": "Rosza",
-  "family_name": "R\\'ozsa",
-  "given_name": "Mikl\\'os",
+  "family_name": "R\\''ozsa",
+  "given_name": "Mikl\\''os",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -21286,8 +21286,8 @@
  },
  "2640": {
   "name": "Rozsa",
-  "family_name": "R\\'ozsa",
-  "given_name": "Mikl\\'os",
+  "family_name": "R\\''ozsa",
+  "given_name": "Mikl\\''os",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -24176,8 +24176,8 @@
  },
  "2997": {
   "name": "Szabo",
-  "family_name": "Szab\\'o",
-  "given_name": "Istv\\'an",
+  "family_name": "Szab\\''o",
+  "given_name": "Istv\\''an",
   "date_of_birth": "Null",
   "date_of_death": "Null",
   "awards": []
@@ -24432,8 +24432,8 @@
  },
  "3029": {
   "name": "Techine",
-  "family_name": "T\\'echin\\'e",
-  "given_name": "Andr\\'e",
+  "family_name": "T\\''echin\\''e",
+  "given_name": "Andr\\''e",
   "date_of_birth": "1943",
   "date_of_death": "Null",
   "awards": []
@@ -24632,7 +24632,7 @@
  },
  "3054": {
   "name": "Timars",
-  "family_name": "Tim\\'ars",
+  "family_name": "Tim\\''ars",
   "given_name": "Peter",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -24760,7 +24760,7 @@
  },
  "3070": {
   "name": "Toure",
-  "family_name": "Tour\\'e",
+  "family_name": "Tour\\''e",
   "given_name": "Moussa",
   "date_of_birth": "Null",
   "date_of_death": "Null",
@@ -26372,7 +26372,7 @@
  "3267": {
   "name": "Wargnier",
   "family_name": "Wargnier",
-  "given_name": "R\\'egis",
+  "given_name": "R\\''egis",
   "date_of_birth": "1948",
   "date_of_death": "Null",
   "awards": []

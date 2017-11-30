@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/actors.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/actors.json" afterPath="$PROJECT_DIR$/Data_json/actors.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/casts.json" afterPath="$PROJECT_DIR$/Data_json/casts.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/movies.json" afterPath="$PROJECT_DIR$/Data_json/movies.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/people.json" afterPath="$PROJECT_DIR$/Data_json/people.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/remakes.json" afterPath="$PROJECT_DIR$/Data_json/remakes.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieDataCuration.py" afterPath="$PROJECT_DIR$/MovieDataCuration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postgresLoadDB.py" afterPath="$PROJECT_DIR$/postgresLoadDB.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,8 +21,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1511989919868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1511991607632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1512064876490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1512068419734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -22,7 +31,7 @@
       <file leaf-file-name="actors.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/actors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160120">
+            <state relative-caret-position="-30">
               <caret line="4003" column="319" lean-forward="false" selection-start-line="4003" selection-start-column="319" selection-end-line="4003" selection-end-column="319" />
               <folding />
             </state>
@@ -32,19 +41,13 @@
       <file leaf-file-name="MovieDataCuration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2620">
-              <caret line="191" column="33" lean-forward="true" selection-start-line="191" selection-start-column="33" selection-end-line="191" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="people.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/people.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257120">
-              <caret line="6428" column="14" lean-forward="false" selection-start-line="6428" selection-start-column="2" selection-end-line="6428" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="668">
+              <caret line="290" column="6" lean-forward="true" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#707#1967#0" expanded="false" />
+                <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,39 +55,39 @@
       <file leaf-file-name="movies.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/movies.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450120">
-              <caret line="11253" column="19" lean-forward="false" selection-start-line="11253" selection-start-column="14" selection-end-line="11253" selection-end-column="19" />
+            <state relative-caret-position="418">
+              <caret line="11261" column="280" lean-forward="false" selection-start-line="11261" selection-start-column="0" selection-end-line="11262" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actors.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
+      <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="duplicate_actor_stagenames" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Misc/duplicate_actor_stagenames">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="people.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/people.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33640">
-              <caret line="841" column="74" lean-forward="false" selection-start-line="841" selection-start-column="71" selection-end-line="841" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="1100">
+              <caret line="134" column="21" lean-forward="true" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+              <folding>
+                <element signature="e#18#33#0" expanded="true" />
+                <marker date="1512068373571" expanded="true" signature="1406:1514" ph="INSERT into participant... " />
+                <marker date="1512068373571" expanded="true" signature="2192:2300" ph="INSERT into participant... " />
+                <marker date="1512068373571" expanded="true" signature="2192:2341" ph="INSERT into participant... " />
+                <marker date="1512068373571" expanded="true" signature="2925:3003" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1512068373571" expanded="true" signature="2925:3075" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1512068373571" expanded="true" signature="2925:3146" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1512068373571" expanded="true" signature="2925:3217" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1512068373571" expanded="true" signature="3507:3570" ph="INSERT into directs_movie... " />
+                <marker date="1512068373571" expanded="true" signature="3507:3592" ph="INSERT into directs_movie... " />
+                <marker date="1512068373571" expanded="true" signature="3507:3625" ph="INSERT into directs_movie... " />
+                <marker date="1512068373571" expanded="true" signature="4566:4635" ph="INSERT into is_remake_of... " />
+                <marker date="1512068373571" expanded="true" signature="4566:4682" ph="INSERT into is_remake_of... " />
+                <marker date="1512068373571" expanded="true" signature="4566:4711" ph="INSERT into is_remake_of... " />
+                <marker date="1512068373571" expanded="true" signature="4566:4760" ph="INSERT into is_remake_of... " />
+                <marker date="1512068373571" expanded="true" signature="5246:5318" ph="INSERT INTO acts_in... " />
+                <marker date="1512068373571" expanded="true" signature="5246:5341" ph="INSERT INTO acts_in... " />
+                <marker date="1512068373571" expanded="true" signature="5246:5411" ph="INSERT INTO acts_in... " />
+                <marker date="1512068373571" expanded="true" signature="5246:5460" ph="INSERT INTO acts_in... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +95,18 @@
       <file leaf-file-name="movies.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10612280">
-              <caret line="265307" column="14" lean-forward="false" selection-start-line="265307" selection-start-column="13" selection-end-line="265307" selection-end-column="14" />
+            <state relative-caret-position="308">
+              <caret line="165817" column="14" lean-forward="true" selection-start-line="165817" selection-start-column="14" selection-end-line="165817" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remakes.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="1742" column="25" lean-forward="false" selection-start-line="1742" selection-start-column="23" selection-end-line="1742" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -103,28 +116,11 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="920">
-                <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <first_editor relative-caret-position="960">
+                <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <marker date="1511991607607" expanded="true" signature="1285:1431" ph="INSERT into participant... " />
-                <marker date="1511991607607" expanded="true" signature="2759:2964" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1511991607607" expanded="true" signature="3122:3220" ph="INSERT into directs... " />
-                <marker date="1511991607607" expanded="true" signature="3375:3473" ph="INSERT into directs... " />
-                <marker date="1511991607607" expanded="true" signature="4020:4193" ph="INSERT into is_remake_of... " />
-                <marker date="1511991607607" expanded="true" signature="4568:4756" ph="INSERT INTO acts_in... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,25 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ws35</find>
-      <find>aad10</find>
-      <find>Die Dreigroschenoper</find>
-      <find>&quot;remake_fraction&quot;: &quot;Null&quot;</find>
-      <find>edm22</find>
-      <find>jah22</find>
-      <find>wa21</find>
-      <find>GP13</find>
-      <find>&quot;Null&quot;</find>
-      <find>acu27</find>
-      <find>Penny Singleton</find>
-      <find>Cybill Shepherd</find>
-      <find>@</find>
-      <find>Null</find>
-      <find>+</find>
-      <find>&quot;gender&quot;: &quot;Null&quot;</find>
-      <find>&quot;in_movie&quot;: false</find>
-      <find>aw</find>
-      <find>award</find>
       <find>awards</find>
       <find>/awards</find>
       <find>awyear</find>
@@ -170,6 +147,25 @@
       <find>KeD</find>
       <find>Harvey Stephens</find>
       <find>Kenneth Branagh</find>
+      <find>`</find>
+      <find>&quot;</find>
+      <find>''</find>
+      <find>Pal</find>
+      <find>Eddie Furlong</find>
+      <find>Michael Crichton</find>
+      <find>A</find>
+      <find>se.hicks</find>
+      <find>&quot;genres&quot;: []</find>
+      <find>'</find>
+      <find>writer</find>
+      <find>fox</find>
+      <find>&quot;writers&quot;:</find>
+      <find>infancia, vocazione e prime esperienze do giacomo casanova veneziano</find>
+      <find>&quot;not in fids&quot;</find>
+      <find>&gt;</find>
+      <find>thomas bentley</find>
+      <find>\.\d\.</find>
+      <find>\.\d</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,13 +185,13 @@
         <option value="$PROJECT_DIR$/cast_film_ids_not_in_movie_json" />
         <option value="$PROJECT_DIR$/not_in_movie" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Data_json/remakes.json" />
         <option value="$PROJECT_DIR$/Data/remakes.xml" />
-        <option value="$PROJECT_DIR$/MovieDataCuration.py" />
         <option value="$PROJECT_DIR$/Misc/duplicate_actor_stagenames" />
+        <option value="$PROJECT_DIR$/Data_json/actors.json" />
+        <option value="$PROJECT_DIR$/Data_json/remakes.json" />
+        <option value="$PROJECT_DIR$/MovieDataCuration.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/postgresLoadDB.py" />
-        <option value="$PROJECT_DIR$/Data_json/actors.json" />
       </list>
     </option>
   </component>
@@ -572,19 +568,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2053476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.50106955" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.49893048" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39966556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -640,14 +635,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data/casts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postgresConnection.py" />
     <entry file="file://$PROJECT_DIR$/Data/movies.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -660,7 +647,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,6 +659,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +676,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,6 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +705,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -716,6 +717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +734,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -740,6 +746,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +763,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,6 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -780,7 +792,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -788,6 +804,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +820,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,6 +832,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,40 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="11794" column="23" lean-forward="false" selection-start-line="11794" selection-start-column="17" selection-end-line="11794" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/casts.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12325200">
           <caret line="308130" column="3" lean-forward="false" selection-start-line="308130" selection-start-column="3" selection-end-line="308130" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/casts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1353160">
-          <caret line="33829" column="210" lean-forward="false" selection-start-line="33829" selection-start-column="208" selection-end-line="33829" selection-end-column="210" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/movies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450120">
-          <caret line="11253" column="19" lean-forward="false" selection-start-line="11253" selection-start-column="14" selection-end-line="11253" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/people.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33640">
-          <caret line="841" column="74" lean-forward="false" selection-start-line="841" selection-start-column="71" selection-end-line="841" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,31 +900,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160120">
-          <caret line="4003" column="319" lean-forward="false" selection-start-line="4003" selection-start-column="319" selection-end-line="4003" selection-end-column="319" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10612280">
-          <caret line="265307" column="14" lean-forward="false" selection-start-line="265307" selection-start-column="13" selection-end-line="265307" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postgresConnection.py" />
-    <entry file="file://$PROJECT_DIR$/Data_json/people.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257120">
-          <caret line="6428" column="14" lean-forward="false" selection-start-line="6428" selection-start-column="2" selection-end-line="6428" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Misc/duplicate_actor_stagenames">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -941,44 +909,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="920">
-            <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Data_json/people.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="11035" column="19" lean-forward="false" selection-start-line="11035" selection-start-column="11" selection-end-line="11035" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
+    <entry file="file://$PROJECT_DIR$/Data/people.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2620">
-          <caret line="191" column="33" lean-forward="true" selection-start-line="191" selection-start-column="33" selection-end-line="191" selection-end-column="34" />
+        <state relative-caret-position="342">
+          <caret line="1412" column="25" lean-forward="false" selection-start-line="1412" selection-start-column="17" selection-end-line="1412" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="4003" column="319" lean-forward="false" selection-start-line="4003" selection-start-column="319" selection-end-line="4003" selection-end-column="319" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/casts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="33829" column="210" lean-forward="false" selection-start-line="33829" selection-start-column="208" selection-end-line="33829" selection-end-column="210" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/movies.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11261" column="280" lean-forward="false" selection-start-line="11261" selection-start-column="0" selection-end-line="11262" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="260522" column="13" lean-forward="false" selection-start-line="260522" selection-start-column="2" selection-end-line="260522" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="462">
+          <caret line="13638" column="30" lean-forward="false" selection-start-line="13638" selection-start-column="30" selection-end-line="13638" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="290" column="6" lean-forward="true" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#707#1967#0" expanded="false" />
+            <marker date="1512064876453" expanded="false" signature="1990:3242" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="165817" column="14" lean-forward="true" selection-start-line="165817" selection-start-column="14" selection-end-line="165817" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/remakes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="1742" column="25" lean-forward="false" selection-start-line="1742" selection-start-column="23" selection-end-line="1742" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="960">
+            <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="1100">
+          <caret line="134" column="21" lean-forward="true" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
           <folding>
-            <marker date="1511991607607" expanded="true" signature="1285:1431" ph="INSERT into participant... " />
-            <marker date="1511991607607" expanded="true" signature="2759:2964" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1511991607607" expanded="true" signature="3122:3220" ph="INSERT into directs... " />
-            <marker date="1511991607607" expanded="true" signature="3375:3473" ph="INSERT into directs... " />
-            <marker date="1511991607607" expanded="true" signature="4020:4193" ph="INSERT into is_remake_of... " />
-            <marker date="1511991607607" expanded="true" signature="4568:4756" ph="INSERT INTO acts_in... " />
+            <element signature="e#18#33#0" expanded="true" />
+            <marker date="1512068373571" expanded="true" signature="1406:1514" ph="INSERT into participant... " />
+            <marker date="1512068373571" expanded="true" signature="2192:2300" ph="INSERT into participant... " />
+            <marker date="1512068373571" expanded="true" signature="2192:2341" ph="INSERT into participant... " />
+            <marker date="1512068373571" expanded="true" signature="2925:3003" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1512068373571" expanded="true" signature="2925:3075" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1512068373571" expanded="true" signature="2925:3146" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1512068373571" expanded="true" signature="2925:3217" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1512068373571" expanded="true" signature="3507:3570" ph="INSERT into directs_movie... " />
+            <marker date="1512068373571" expanded="true" signature="3507:3592" ph="INSERT into directs_movie... " />
+            <marker date="1512068373571" expanded="true" signature="3507:3625" ph="INSERT into directs_movie... " />
+            <marker date="1512068373571" expanded="true" signature="4566:4635" ph="INSERT into is_remake_of... " />
+            <marker date="1512068373571" expanded="true" signature="4566:4682" ph="INSERT into is_remake_of... " />
+            <marker date="1512068373571" expanded="true" signature="4566:4711" ph="INSERT into is_remake_of... " />
+            <marker date="1512068373571" expanded="true" signature="4566:4760" ph="INSERT into is_remake_of... " />
+            <marker date="1512068373571" expanded="true" signature="5246:5318" ph="INSERT INTO acts_in... " />
+            <marker date="1512068373571" expanded="true" signature="5246:5341" ph="INSERT INTO acts_in... " />
+            <marker date="1512068373571" expanded="true" signature="5246:5411" ph="INSERT INTO acts_in... " />
+            <marker date="1512068373571" expanded="true" signature="5246:5460" ph="INSERT INTO acts_in... " />
           </folding>
         </state>
       </provider>

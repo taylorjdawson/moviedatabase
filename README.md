@@ -21,3 +21,4 @@ they have duplicate ids
 - [ ] Need to review the duplicate movie ids
 - [ ] Review .json files for erroneous data
 - [x] Create directs table, writes table
+- [ ] Create a genre table
