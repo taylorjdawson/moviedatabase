@@ -1,4 +1,6 @@
-Check to make sure the attributes used (i.e. producers, directors, etc.) are all correct. Also, proofread queries, as some of them might have long result times due to errors one person made that others might notice.
+Check to make sure the attributes used (i.e. ids, producers, directors, etc.) are all correct. Also, proofread queries, as some of them might have long result times due to errors one person made that others might notice.
+Queries marked as incomplete are ones I couldn't figure out; if one of you guys wants to take a stab at them, go ahead.
+–Aaron
 
 1) What movies (list title and year) have "george" (in any form) at the end of their titles. Order by the title.
 select movies.title, movies.year 
