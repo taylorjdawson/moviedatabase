@@ -9,33 +9,33 @@ where lower(right(title, 6)) = 'george'
 order by title
 
 2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
-select actors.stage_name, movie.title, movie.year, movie.role, remake.title, remake.year, remake.role
-from movies, actors, acts_in, remakes
-where movie_id = acts_in.film_id and remake_id = acts_in.film_id and movie_id = remakes.original_id and remakes.remake_id = remakes.original_id
-order by stage_name, movies.year, movies.title
+select participant.name, movies.title, movies.year, acts_in.role
+from movies, participant, acts_in, is_remake_of
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and is_remake_of.remake_film_id = acts_in.film_id and movies.film_id = is_remake_of.original_film_id and is_remake_of.remake_film_id = is_remake_of.original_film_id
+order by participant.name, movies.year, movies.title
 
 3) Which movie immediate remake is most similar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
-select remakes.fraction, movies.title, movies.year, movies.director, remakes.title, remakes.year, remakes.director
-from movies, remakes
-where movie_id = remakes.original_id and fraction = max(fraction)
+select is_remake_of.fraction, movies.title, movies.year, participant.name
+from movies, is_remake_of, participant, directs_movie
+where movies.film_id = is_remake_of.original_film_id and directs_movie.film_id = movies.film_id and directs_movie.participant_id = participant.participant_id and is_remake_of.fraction = max(is_remake_of.fraction)
 
 4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?select movies.title as been_remade
-from movies, remakes
-where movies.movie_id = remakes.original_id
+from movies, is_remake_of
+where movies.film_id = is_remake_of.original_film_id
 order by count(been_remade)
 LIMIT 1
 
 5) Which movies are neither a remake nor have ever been remade? Order by title.
 select movies.title
-from movies, remakes
-where not exists (select movies.title 
-                  from movies, remakes 
-                  where movies.movie_id = remakes.remake_id or movies.movie_id = remakes.original_id)
+from movies, is_remake_of
+where not exists (select movies.film_id
+                  from movies, is_remake_of 
+                  where movies.film_id = is_remake_of.remake_film_id or movies.film_id = is_remake_of.original_film_id)
 order by movies.title
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
-select actors.stage_name, actors.role, movies.title, movies.year 
-from actors, movies, acts_in
+select participant.name, acts_in.role, movies.title, movies.year 
+from participant, movies, acts_in
 where movie_id = acts_in.film_id and award_type = 'Academy Award'
 order by year
 
@@ -63,14 +63,14 @@ LIMIT 1
 
 10) What movies did "George Fox" write?
 select movies.title 
-from movies, writers, participant
-where movie_id = writer and participant_id = 'George Fox'
+from movies, writes_movie, participant
+where movies.film_id = writes_movie.film_id and writes_movie.participant_id = participant.participant_id and participant.name = 'George Fox'
 
 11) Are there any actors that have played more than one role in the same movie? If so, list the movie title, the actor's name and the roles they played. Order by movie title, actor's name, and role.
-select movies.title, actors.stage_name, actors.role
-from actors, acts_in, movies, participants
-where movie_id = acts_in.film_id 
-order by movies.title, actors.stage_name, actors.role
+select movies.title, participant.name, acts_in.role
+from movies, participant, acts_in
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id
+order by movies.title, participant.name, acts_in.role
 INCOMPLETE QUERY
 
 12) Are there any pairs of actors that appeared together in two different movies released in the same year? If so, list the movie titles, the years, the actor's names and the roles they played. Order by movie title, year, actor's names, and roles.
@@ -81,20 +81,21 @@ order by title, year, stage_name, role
 INCOMPLETE QUERY
 
 13) List the title, year, and role of movies that "Tom Cruise" appeared in ordered by the year.
-select movies.title, year, acts_in.role 
+select DISTINCT movies.title, movies.year, acts_in.role 
 from movies, acts_in, participant
-where movie_id = acts_in.film_id and participant_id = 'Tom Cruise'
-order by year
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Tom Cruise'
+order by movies.year
 
 14) Is there an actor that has been a co-star with "Val Kilmer" and "Clint Eastwood" (not necessarily in the same movie)?!
-select actors.stage_name
-from actors, acts_in, movies
-where movie_id = acts_in.film_id and exists (select stage_name
-                                             from actors, acts_in, movies
-                                             where movie_id = acts_in.film_id and stage_name = 'Val Kilmer')
-and exists (select stage_name
-            from actors, acts_in, movies 
-            where movie_id = acts_in.film_id and stage_name = 'Clint Eastwood')
+select participant.name
+from participant, acts_in, movies
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and exists 
+                                             (select participant.name
+                                             from participant, acts_in, movies
+                                             where movie_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Val Kilmer')
+and exists (select participant.name
+            from participant, acts_in, movies 
+            where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Clint Eastwood')
 
 15) Give me the names of all actors within "six degrees" of "Kevin Bacon". Specifically, Bacon's co-stars (1st degree), the co-star's co-stars (2nd degree), etc. out to "six degrees". List the actors ordered by stagename.
 select actors.stage_name
@@ -104,15 +105,15 @@ order by stage_name
 INCOMPLETE QUERY
 
 16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeared in his movies ordered by the count (descending) and their name (ascending).
-select actors.stage_name, count(movies) 
-from actors, acts_in, movies
-where movie_id = acts_in.film_id and movie.director = 'Clint Eastwood' 
+select participant.name, count(movies) 
+from participant, acts_in, movies
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and movie.director = 'Clint Eastwood' 
 order by count(movies), stage_name ASC
 
 17) What are the categories (i.e., genre) of movies that "Ronald Reagan" has appeared in as an actor? 
 select DISTINCT movies.genre 
 from movies, acts_in, participant
-where movie_id = acts_in.film_id and acts_in.participant_id = 'Ronald Reagan'
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Ronald Reagan' and movies.genre != 'Null'
 
 18) Which studio has made the most movies and how many have they made?
 select movies.studio, count(movies)
@@ -132,24 +133,26 @@ LIMIT 1
 Once again, no studio info yet, so we can't do this query.
 
 20) Has any person directed and produced a movie they've also acted in? If so, give their stagename, the title of the movie they directed and produced, and the role they played.
-select actors.stage_name, movies.title, actors.role
-from actors, acts_in, movies, participants
-where movie_id = acts_in.fim_id and and producer = participant_id and director = participant_id
+select participant.name, movies.title, acts_in.role
+from directs_movie, acts_in, movies, participant
+where movies.film_id = acts_in.film_id and directs_movie.film_id = movies.film_id and directs_movie.film_id = acts_in.film_id and directs_movie.participant_id = participant.participant_id
 
 21) For all of the generic roletypes for actors, list the name of the roletype and a count of how many actors are classified by that type in descending order of the counts.
-select actors.role_type, count(actors)
-from actors
-order by role_type 
+select acts_in.role_type, count(acts_in.participant_id) as role_type_count
+from acts_in
+group by acts_in.role_type 
+order by  role_type_count DESC
 
 22) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
-select movies.genre, count(movies)
+select movies.genre, count(movies) as movie_count
 from movies
-order by genre
+group by movies.genre
+order by movie_count DESC
 
 23) Who was the oldest actor to appear in a movie? I.e., has the largest difference between their date of birth and the release of a movie they appeared in. Give their name, rough age at the time, title of the movie, and the role they played; in the case of a tie, display them all.
-select actors.stage_name, max(date_of_death - date_of_birth) as max_Age, movies.title, movies.role
-from actors, acts_in, movies
-where movie_id = acts_in.film_id and date_of_birth != NULL and date_of_death != NULL and date_of_death - date_of_birth = max_Age
+select participant.stage_name, max(participant.date_of_death - participant.date_of_birth) as max_Age, movies.title, acts_in.role
+from participant, acts_in, movies
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.date_of_birth != NULL and participant.date_of_death != NULL and participant.date_of_death - participant.date_of_birth = max_Age
 
 
 
