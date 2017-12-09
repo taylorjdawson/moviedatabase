@@ -126,7 +126,7 @@ Like with the awards, we haven't added studios to the database yet, so we can't 
 19) "Paramount" is a famous studio. What category (i.e., genre) of movie was most commonly made by "Paramount"?
 select movies.genre
 from movies
-where movies.studio = 'Paramount'
+where movies.studio = 'paramount'
 order by count(genre)
 LIMIT 1
 
