@@ -37,17 +37,26 @@ def connect():
 
         print('Loading List of Awards ...')
         # Ingest Award Ref Table
-        # TODO ADD Award Ref Table
+        award_id = 0
+        with open('Data_json/awards.json', 'r') as f:
+            awards = json.load(f)
+            for award in awards.values():
+                cur.execute("Insert into awards(award_id, award_name) VALUES ( " + str(award_id) + " , '" + awards['award_name'] + "' );")
+                award_id += 1
 
 
         print('Loading List of Studios ...')
         # Ingest studio Ref Table
-        # TODO ADD Studio Ref TABLE
+        studio_id = 0
+        studio_list = []
+        with open('Data_json/studios.json','r') as f:
+            studios = json.load(f)
+            for studio in studios.values():
+                studio_list.append(studios['studio_name'].lower())
+                cur.execute("Insert into studios(studio_id, studio_name) VALUES (" + str(studio_id) + " , '" + studios['studio_name'] + "' );")
 
 
         print('Loading Actors...')
-
-
         # Ingest participants
         #TODO Add duplicate entry protection
         participant_id = 0
@@ -76,6 +85,8 @@ def connect():
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, family_name, first_name)"
                             " VALUES ( " + str(participant_id) + " , " + person['date_of_birth'] + " , " + person['date_of_death']
                             + " , null , '" + person['name'] + "' , '" + person['family_name'] + "' , '" + person['given_name'] + "' );")
+
+                #TODO participant awards film loading
                 participant_id += 1
 
         # Ingest Films
@@ -89,14 +100,22 @@ def connect():
                 movieList.append(film['film_id'])
                 cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year, genre) VALUES " + # TODO: Include more than one genre
                             " ( " + str(film_id) + " , '" + film['title'] + "' , " + film['year'] + " , '" + (film['genres'][0]['genre'] if film['genres'] else 'Null') + "' );")
+
                 # loads the director table
                 for director in film['directors']:
                     if director['name'].lower() in participants:
                         direct_participant = participants.index(director['name'].lower())
                         cur.execute("INSERT into directs_movie (film_id , participant_id ) VALUES ( " + str(film_id) +" , " + str(direct_participant) + " );")
+
                 # loads the writer table
-                #write_participant = participants.index(film['writers']['name'])
-                #cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( " + film_id + " , " + write_participant + " );")
+                write_participant = participants.index(film['writers']['name'])
+                cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( '" + film_id + "' , '" + write_participant + "' );")
+
+                # loads the has_studio table
+                this_studio = studio_list.index(film['studios']['studio'])
+                cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( " + film_id + "' , '" + this_studio + "' );")
+
+                #TODO film awards table loading
                 film_id += 1
 
         # Ingest Remakes
