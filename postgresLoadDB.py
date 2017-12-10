@@ -69,10 +69,12 @@ def connect():
 
                 participants.append(person['stage_name'].lower())
 
-
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, family_name, first_name)"
                             " VALUES ( " + str(participant_id) + " , " + person['date_of_birth'] + " , " + person['date_of_death']
                             + " , '" + person['gender'] + "' , '" + person['stage_name'] + "' , '" + person['family_name'] + "' , '" + person['first_name'] + "' );")
+                participant_id += 1
+
+                # TODO participant awards film loading
                 participant_id += 1
 
         print('Loading Participants...')
@@ -85,9 +87,6 @@ def connect():
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, family_name, first_name)"
                             " VALUES ( " + str(participant_id) + " , " + person['date_of_birth'] + " , " + person['date_of_death']
                             + " , null , '" + person['name'] + "' , '" + person['family_name'] + "' , '" + person['given_name'] + "' );")
-
-                #TODO participant awards film loading
-                participant_id += 1
 
         # Ingest Films
         print('Loading Films...')

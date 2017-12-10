@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct">
+    <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MovieDataBase.iml" afterPath="$PROJECT_DIR$/.idea/MovieDataBase.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -17,6 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1512064876490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moviedatabase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1512876389663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1512068419734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -24,7 +25,7 @@
       <file leaf-file-name="actors.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data/actors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60045">
+            <state relative-caret-position="15">
               <caret line="4003" column="319" lean-forward="false" selection-start-line="4003" selection-start-column="319" selection-end-line="4003" selection-end-column="319" />
               <folding />
             </state>
@@ -57,30 +58,39 @@
       <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="88" column="53" lean-forward="false" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
+            <state relative-caret-position="-357">
+              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
               <folding>
-                <element signature="e#18#33#0" expanded="true" />
-                <marker date="1512849510007" expanded="true" signature="1034:1083" ph="Insert into awards... " />
-                <marker date="1512849510007" expanded="true" signature="1034:1084" ph="Insert into awards... " />
-                <marker date="1512849510007" expanded="true" signature="1034:1136" ph="Insert into awards... " />
-                <marker date="1512849510007" expanded="true" signature="1034:1140" ph="Insert into awards... " />
-                <marker date="1512849510007" expanded="true" signature="1034:1143" ph="Insert into awards... " />
-                <marker date="1512849510007" expanded="true" signature="1531:1583" ph="Insert into studios... " />
-                <marker date="1512849510007" expanded="true" signature="1531:1609" ph="Insert into studios... " />
-                <marker date="1512849510007" expanded="true" signature="1531:1642" ph="Insert into studios... " />
-                <marker date="1512849510007" expanded="true" signature="3618:3910" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1512849510007" expanded="true" signature="4201:4319" ph="INSERT into directs_movie... " />
-                <marker date="1512849510007" expanded="true" signature="4474:4585" ph="INSERT into writes_movie... " />
-                <marker date="1512849510007" expanded="true" signature="4739:4751" ph="INSERT into filmed_in... " />
-                <marker date="1512849510007" expanded="true" signature="4739:4791" ph="INSERT into has_studio... " />
-                <marker date="1512849510007" expanded="true" signature="4739:4792" ph="INSERT into has_studio... " />
-                <marker date="1512849510007" expanded="true" signature="4739:4810" ph="INSERT into has_studio... " />
-                <marker date="1512849510007" expanded="true" signature="4739:4812" ph="INSERT into has_studio... " />
-                <marker date="1512849510007" expanded="true" signature="4739:4835" ph="INSERT into has_studio... " />
-                <marker date="1512849510007" expanded="true" signature="5561:5755" ph="INSERT into is_remake_of... " />
-                <marker date="1512849510007" expanded="true" signature="6241:6455" ph="INSERT INTO acts_in... " />
+                <marker date="1512875973147" expanded="true" signature="1034:1083" ph="Insert into awards... " />
+                <marker date="1512875973147" expanded="true" signature="1034:1084" ph="Insert into awards... " />
+                <marker date="1512875973147" expanded="true" signature="1034:1136" ph="Insert into awards... " />
+                <marker date="1512875973147" expanded="true" signature="1034:1140" ph="Insert into awards... " />
+                <marker date="1512875973147" expanded="true" signature="1034:1143" ph="Insert into awards... " />
+                <marker date="1512875973147" expanded="true" signature="1531:1583" ph="Insert into studios... " />
+                <marker date="1512875973147" expanded="true" signature="1531:1609" ph="Insert into studios... " />
+                <marker date="1512875973147" expanded="true" signature="1531:1642" ph="Insert into studios... " />
+                <marker date="1512875973147" expanded="true" signature="3618:3910" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1512875973147" expanded="true" signature="4201:4319" ph="INSERT into directs_movie... " />
+                <marker date="1512875973147" expanded="true" signature="4474:4585" ph="INSERT into writes_movie... " />
+                <marker date="1512875973147" expanded="true" signature="4739:4751" ph="INSERT into filmed_in... " />
+                <marker date="1512875973147" expanded="true" signature="4739:4791" ph="INSERT into has_studio... " />
+                <marker date="1512875973147" expanded="true" signature="4739:4792" ph="INSERT into has_studio... " />
+                <marker date="1512875973147" expanded="true" signature="4739:4810" ph="INSERT into has_studio... " />
+                <marker date="1512875973147" expanded="true" signature="4739:4812" ph="INSERT into has_studio... " />
+                <marker date="1512875973147" expanded="true" signature="4739:4835" ph="INSERT into has_studio... " />
+                <marker date="1512875973147" expanded="true" signature="5561:5755" ph="INSERT into is_remake_of... " />
+                <marker date="1512875973147" expanded="true" signature="6241:6455" ph="INSERT INTO acts_in... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queries.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Misc/Queries.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1728">
+              <caret line="130" column="24" lean-forward="false" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +98,7 @@
       <file leaf-file-name="actors.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="204570">
               <caret line="13638" column="30" lean-forward="false" selection-start-line="13638" selection-start-column="30" selection-end-line="13638" selection-end-column="30" />
               <folding />
             </state>
@@ -182,6 +192,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ben Griner &lt;bgriner10@georgefox.edu&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -204,6 +219,7 @@
         <option value="$PROJECT_DIR$/Data_json/remakes.json" />
         <option value="$PROJECT_DIR$/MovieDataCuration.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Misc/Queries.txt" />
         <option value="$PROJECT_DIR$/postgresLoadDB.py" />
       </list>
     </option>
@@ -270,6 +286,116 @@
       <recent name="C:\Users\Levi\PycharmProjects\MovieDataBase\Misc" />
       <recent name="C:\Users\Levi\PycharmProjects\MovieDataBase\Data" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Misc/Queries.txt</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -536,7 +662,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511834643953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added hypothetical award and studio loading and added todos for actor_awards and movie_awards loading">
+      <created>1512849620231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512849620232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated a query. BG">
+      <created>1512849861162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512849861162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -547,8 +687,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.50106955" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.49893048" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -593,7 +733,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="Postgres connection modified to hypothetically insert data into the movie database if the json source is correct" />
+    <MESSAGE value="Added hypothetical award and studio loading and added todos for actor_awards and movie_awards loading" />
+    <MESSAGE value="Updated a query. BG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated a query. BG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,13 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Misc/Queries.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Misc/not_in_movie">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -873,14 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60045">
-          <caret line="4003" column="319" lean-forward="false" selection-start-line="4003" selection-start-column="319" selection-end-line="4003" selection-end-column="319" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/casts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
@@ -913,14 +1040,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="13638" column="30" lean-forward="false" selection-start-line="13638" selection-start-column="30" selection-end-line="13638" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,31 +1078,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Misc/Queries.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="130" column="24" lean-forward="false" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/actors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4003" column="319" lean-forward="false" selection-start-line="4003" selection-start-column="319" selection-end-line="4003" selection-end-column="319" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204570">
+          <caret line="13638" column="30" lean-forward="false" selection-start-line="13638" selection-start-column="30" selection-end-line="13638" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="88" column="53" lean-forward="false" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
+        <state relative-caret-position="-357">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding>
-            <element signature="e#18#33#0" expanded="true" />
-            <marker date="1512849510007" expanded="true" signature="1034:1083" ph="Insert into awards... " />
-            <marker date="1512849510007" expanded="true" signature="1034:1084" ph="Insert into awards... " />
-            <marker date="1512849510007" expanded="true" signature="1034:1136" ph="Insert into awards... " />
-            <marker date="1512849510007" expanded="true" signature="1034:1140" ph="Insert into awards... " />
-            <marker date="1512849510007" expanded="true" signature="1034:1143" ph="Insert into awards... " />
-            <marker date="1512849510007" expanded="true" signature="1531:1583" ph="Insert into studios... " />
-            <marker date="1512849510007" expanded="true" signature="1531:1609" ph="Insert into studios... " />
-            <marker date="1512849510007" expanded="true" signature="1531:1642" ph="Insert into studios... " />
-            <marker date="1512849510007" expanded="true" signature="3618:3910" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1512849510007" expanded="true" signature="4201:4319" ph="INSERT into directs_movie... " />
-            <marker date="1512849510007" expanded="true" signature="4474:4585" ph="INSERT into writes_movie... " />
-            <marker date="1512849510007" expanded="true" signature="4739:4751" ph="INSERT into filmed_in... " />
-            <marker date="1512849510007" expanded="true" signature="4739:4791" ph="INSERT into has_studio... " />
-            <marker date="1512849510007" expanded="true" signature="4739:4792" ph="INSERT into has_studio... " />
-            <marker date="1512849510007" expanded="true" signature="4739:4810" ph="INSERT into has_studio... " />
-            <marker date="1512849510007" expanded="true" signature="4739:4812" ph="INSERT into has_studio... " />
-            <marker date="1512849510007" expanded="true" signature="4739:4835" ph="INSERT into has_studio... " />
-            <marker date="1512849510007" expanded="true" signature="5561:5755" ph="INSERT into is_remake_of... " />
-            <marker date="1512849510007" expanded="true" signature="6241:6455" ph="INSERT INTO acts_in... " />
+            <marker date="1512875973147" expanded="true" signature="1034:1083" ph="Insert into awards... " />
+            <marker date="1512875973147" expanded="true" signature="1034:1084" ph="Insert into awards... " />
+            <marker date="1512875973147" expanded="true" signature="1034:1136" ph="Insert into awards... " />
+            <marker date="1512875973147" expanded="true" signature="1034:1140" ph="Insert into awards... " />
+            <marker date="1512875973147" expanded="true" signature="1034:1143" ph="Insert into awards... " />
+            <marker date="1512875973147" expanded="true" signature="1531:1583" ph="Insert into studios... " />
+            <marker date="1512875973147" expanded="true" signature="1531:1609" ph="Insert into studios... " />
+            <marker date="1512875973147" expanded="true" signature="1531:1642" ph="Insert into studios... " />
+            <marker date="1512875973147" expanded="true" signature="3618:3910" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1512875973147" expanded="true" signature="4201:4319" ph="INSERT into directs_movie... " />
+            <marker date="1512875973147" expanded="true" signature="4474:4585" ph="INSERT into writes_movie... " />
+            <marker date="1512875973147" expanded="true" signature="4739:4751" ph="INSERT into filmed_in... " />
+            <marker date="1512875973147" expanded="true" signature="4739:4791" ph="INSERT into has_studio... " />
+            <marker date="1512875973147" expanded="true" signature="4739:4792" ph="INSERT into has_studio... " />
+            <marker date="1512875973147" expanded="true" signature="4739:4810" ph="INSERT into has_studio... " />
+            <marker date="1512875973147" expanded="true" signature="4739:4812" ph="INSERT into has_studio... " />
+            <marker date="1512875973147" expanded="true" signature="4739:4835" ph="INSERT into has_studio... " />
+            <marker date="1512875973147" expanded="true" signature="5561:5755" ph="INSERT into is_remake_of... " />
+            <marker date="1512875973147" expanded="true" signature="6241:6455" ph="INSERT INTO acts_in... " />
           </folding>
         </state>
       </provider>
