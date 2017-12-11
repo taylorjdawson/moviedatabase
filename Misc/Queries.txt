@@ -152,9 +152,11 @@ group by movies.genre
 order by movie_count DESC
 
 23) Who was the oldest actor to appear in a movie? I.e., has the largest difference between their date of birth and the release of a movie they appeared in. Give their name, rough age at the time, title of the movie, and the role they played; in the case of a tie, display them all.
-select participant.name, max(participant.date_of_death - participant.date_of_birth) as max_Age, movies.title, acts_in.role
+select participant.name, max(participant.date_of_death - participant.date_of_birth) as age, movies.title, acts_in.role
 from participant, acts_in, movies
-where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.date_of_birth != NULL and participant.date_of_death != NULL and participant.date_of_death - participant.date_of_birth = max_Age
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.date_of_birth != NULL and participant.date_of_death != NULL and participant.date_of_death - participant.date_of_birth = age 
+group by participant.name, movies.title, acts_in.role
+
 
 
 
