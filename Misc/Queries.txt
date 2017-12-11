@@ -91,7 +91,7 @@ from participant, acts_in, movies
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and exists 
                                              (select participant.name
                                              from participant, acts_in, movies
-                                             where movie_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Val Kilmer')
+                                             where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Val Kilmer')
 and exists (select participant.name
             from participant, acts_in, movies 
             where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Clint Eastwood') and participant.name != 'Val Kilmer' and participant.name != 'Clint Eastwood'
@@ -135,7 +135,7 @@ Once again, no studio info yet, so we can't do this query.
 
 20) Has any person directed and produced a movie they've also acted in? If so, give their stagename, the title of the movie they directed and produced, and the role they played.
 select participant.name, movies.title, acts_in.role
-from directs_movie, acts_in, movies, participant
+from movies, participant, directs_movie, acts_in 
 where movies.film_id = acts_in.film_id and directs_movie.film_id = movies.film_id and directs_movie.film_id = acts_in.film_id and directs_movie.participant_id = participant.participant_id
 
 21) For all of the generic roletypes for actors, list the name of the roletype and a count of how many actors are classified by that type in descending order of the counts.
@@ -151,7 +151,7 @@ group by movies.genre
 order by movie_count DESC
 
 23) Who was the oldest actor to appear in a movie? I.e., has the largest difference between their date of birth and the release of a movie they appeared in. Give their name, rough age at the time, title of the movie, and the role they played; in the case of a tie, display them all.
-select participant.stage_name, max(participant.date_of_death - participant.date_of_birth) as max_Age, movies.title, acts_in.role
+select participant.name, max(participant.date_of_death - participant.date_of_birth) as max_Age, movies.title, acts_in.role
 from participant, acts_in, movies
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.date_of_birth != NULL and participant.date_of_death != NULL and participant.date_of_death - participant.date_of_birth = max_Age
 
