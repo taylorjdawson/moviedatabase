@@ -33,7 +33,7 @@ where movies.film_id != is_remake_of.remake_film_id and movies.film_id != is_rem
 order by movies.title
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
-select participant.name, acts_in.role, movies.title, is_awarded.year 
+select participant.name, acts_in.role, movies.title, movies.year 
 from participant, movies, acts_in, award, is_awarded
 where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and participant.participant_id = is_awarded.participant_id and award.award_id = is_awarded.award_id and award.award_name = 'Academy Award'
 order by movies.year
@@ -41,7 +41,7 @@ order by movies.year
 7) Which movies, by name, won Academy Awards in 1970?
 select movies.title 
 from movies, award, is_awarded
-where award.award_id = is_awarded.award_id and award.award_name = 'Academy Award' and is_awarded.year = '1970'
+where award.award_id = is_awarded.award_id and award.award_name = 'Academy Award' and movies.year = '1970'
 order by movies.title
 
 This is what the query will look like when we execute it. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed.
