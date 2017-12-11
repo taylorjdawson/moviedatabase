@@ -11,7 +11,7 @@ order by title
 2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
 select participant.name, movies.title, movies.year, acts_in.role
 from movies, participant, acts_in, is_remake_of
-where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and is_remake_of.remake_film_id = acts_in.film_id and movies.film_id = is_remake_of.original_film_id and is_remake_of.remake_film_id = is_remake_of.original_film_id
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and is_remake_of.remake_film_id = acts_in.film_id and is_remake_of.original_film_id = acts_in.film_id and movies.film_id = is_remake_of.original_film_id and is_remake_of.remake_film_id = movies.film_id is_remake_of.original_film_id
 order by participant.name, movies.year, movies.title
 
 3) Which movie immediate remake is most similar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
@@ -19,10 +19,11 @@ select movies.title, movies.year, participant.name, max(is_remake_of.fraction) a
 from movies, is_remake_of, participant, directs_movie
 where movies.film_id = is_remake_of.original_film_id and directs_movie.film_id = movies.film_id and directs_movie.participant_id = participant.participant_id and is_remake_of.fraction = most_similar
 
-4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?select movies.title as been_remade
+4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?select movies.title
 from movies, is_remake_of
 where movies.film_id = is_remake_of.original_film_id
-order by count(been_remade)
+group by movies.title
+order by count(movies.title)
 LIMIT 1
 
 5) Which movies are neither a remake nor have ever been remade? Order by title.
@@ -32,23 +33,23 @@ where movies.film_id != is_remake_of.remake_film_id and movies.film_id != is_rem
 order by movies.title
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
-select participant.name, acts_in.role, movies.title, movies.year 
-from participant, movies, acts_in
-where movie_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and movies.award_type = 'Academy Award'
-order by year
+select participant.name, acts_in.role, movies.title, is_awarded.year 
+from participant, movies, acts_in, award, is_awarded
+where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and participant.participant_id = is_awarded.participant_id and award.award_id = is_awarded.award_id and award.award_name = 'Academy Award'
+order by movies.year
 
 7) Which movies, by name, won Academy Awards in 1970?
 select movies.title 
-from movies
-where award_type = 'Academy Award' and movies.year = '1970'
+from movies, award, is_awarded
+where award.award_id = is_awarded.award_id and award.award_name = 'Academy Award' and is_awarded.year = '1970'
 order by movies.title
 
 This is what the query will look like when we execute it. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed.
 
 8) Has any original movie and an immediate remake both won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
-select movies.title, movies.year, remakes.title, remakes.year
-from movies, remakes
-where movie_id = remakes.original_id and movies.award_type = 'Academy Award' and remakes.award_type = 'Academy Award'
+select movies.title, movies.year
+from movies, is_remake_of, award, is_awarded
+where movies.film_id = is_remake_of.original_film_id and award.award_name = 'Academy Award'
 order by movies.title, remakes.title
 
 Like the above query, this query can't be executed yet since we don't have info on awards in our database yet.
@@ -73,9 +74,9 @@ INCOMPLETE QUERY
 
 12) Are there any pairs of actors that appeared together in two different movies released in the same year? If so, list the movie titles, the years, the actor's names and the roles they played. Order by movie title, year, actor's names, and roles.
 select movies.title, movies.year, actors.stage_name, actors.role
-from actors, acts_in, movies
-where movie_id = acts_in.film_id 
-order by title, year, stage_name, role
+from  movies, acts_in, participant
+where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id
+order by movies.title, movies.year, stage_name, acts_in.role
 INCOMPLETE QUERY
 
 13) List the title, year, and role of movies that "Tom Cruise" appeared in ordered by the year.
@@ -93,7 +94,7 @@ where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.
                                              where movie_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Val Kilmer')
 and exists (select participant.name
             from participant, acts_in, movies 
-            where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Clint Eastwood')
+            where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Clint Eastwood') and participant.name != 'Val Kilmer' and participant.name != 'Clint Eastwood'
 
 15) Give me the names of all actors within "six degrees" of "Kevin Bacon". Specifically, Bacon's co-stars (1st degree), the co-star's co-stars (2nd degree), etc. out to "six degrees". List the actors ordered by stagename.
 select actors.stage_name
@@ -105,7 +106,7 @@ INCOMPLETE QUERY
 16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeared in his movies ordered by the count (descending) and their name (ascending).
 select participant.name, count(movies) as movie_count
 from participant, acts_in, movies, directs_movie
-where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and movie.director = 'Clint Eastwood'
+where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and movie.film_id = directs_movie.film_id and participant.participant_id = directs_movie.film_id and participant.name = 'Clint Eastwood'
 order by movie_count DESC, participant.name ASC
 
 17) What are the categories (i.e., genre) of movies that "Ronald Reagan" has appeared in as an actor? 
