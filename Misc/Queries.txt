@@ -28,9 +28,7 @@ LIMIT 1
 5) Which movies are neither a remake nor have ever been remade? Order by title.
 select movies.title
 from movies, is_remake_of
-where not exists (select movies.film_id
-                  from movies, is_remake_of 
-                  where movies.film_id != is_remake_of.remake_film_id and movies.film_id != is_remake_of.original_film_id)                 
+where movies.film_id != is_remake_of.remake_film_id and movies.film_id != is_remake_of.original_film_id                
 order by movies.title
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
