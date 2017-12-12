@@ -122,13 +122,15 @@ def connect():
 
                 # loads the movie awards
                 for award in film['awards']:
-                    if award['award_type'].lower() in participants:
-                        film_award = participants.index(award['award_type'].lower())
+                    if award['award_type'].lower() in award_array:
+                        film_award = award_array.index(award['award_type'].lower())
                         cur.execute("INSERT into movie_is_awarded(award_id, participant_id) VALUES ( '" + award_index + "' , '" + str(film_award) + "');")
 
                 # loads the has_studio table
-                this_studio = studio_list.index(film['studios']['studio'])
-                cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( " + film_id + "' , '" + this_studio + "' );")
+                for studio in film['studios']:
+                    if studio['studio'].lower() in studio_list:
+                        this_studio = studio_list.index(studio['studio'])
+                        cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( " + film_id + "' , '" + this_studio + "' );")
 
                 #TODO film awards table loading
                 film_id += 1
