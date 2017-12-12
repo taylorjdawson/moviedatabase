@@ -129,7 +129,7 @@ def connect():
                 # loads the has_studio table
                 for studio in film['studios']:
                     if studio['studio'].lower() in studio_list:
-                        this_studio = studio_list.index(studio['studio'])
+                        this_studio = studio_list.index(studio['studio'].lower())
                         cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( " + film_id + "' , '" + this_studio + "' );")
 
                 #TODO film awards table loading
