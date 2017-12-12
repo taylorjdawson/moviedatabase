@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import psycopg2
 import json
+import sys
 
 
 def loadActors():
@@ -38,10 +39,12 @@ def connect():
         print('Loading List of Awards ...')
         # Ingest Award Ref Table
         award_id = 0
+        award_array = []
         with open('Data_json/awards.json', 'r') as f:
             awards = json.load(f)
             for award in awards.values():
-                cur.execute("Insert into awards(award_id, award_name) VALUES ( " + str(award_id) + " , '" + awards['award_name'] + "' );")
+                award_array.append(award)
+                cur.execute("Insert into awards(award_id, award_name) VALUES ( " + str(award_id) + " , '" + award['awarding organization'] + "' );")
                 award_id += 1
 
 
@@ -52,8 +55,9 @@ def connect():
         with open('Data_json/studios.json','r') as f:
             studios = json.load(f)
             for studio in studios.values():
-                studio_list.append(studios['studio_name'].lower())
-                cur.execute("Insert into studios(studio_id, studio_name) VALUES (" + str(studio_id) + " , '" + studios['studio_name'] + "' );")
+                studio_list.append(studio['studio_name'].lower())
+                cur.execute("Insert into studios(studio_id, studio_name) VALUES (" + str(studio_id) + " , '" + studio['studio_name'] + "' );")
+                studio_id += 1
 
 
         print('Loading Actors...')
@@ -75,7 +79,10 @@ def connect():
                 participant_id += 1
 
                 # TODO participant awards film loading
-                participant_id += 1
+                for award in person['awards']:
+                    if award['award_type'].lower() in award_array:
+                        award_index = award_array.index(award['award_type'].lower())
+                        cur.execute("INSERT into participant_is_awarded(award_id, participant_id) VALUES ( '" + award_index + "' , '" + str(participant_id) + "');")
 
         print('Loading Participants...')
         # Ingest other participants like directors, producers
@@ -87,6 +94,7 @@ def connect():
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, family_name, first_name)"
                             " VALUES ( " + str(participant_id) + " , " + person['date_of_birth'] + " , " + person['date_of_death']
                             + " , null , '" + person['name'] + "' , '" + person['family_name'] + "' , '" + person['given_name'] + "' );")
+                participant_id += 1
 
         # Ingest Films
         print('Loading Films...')

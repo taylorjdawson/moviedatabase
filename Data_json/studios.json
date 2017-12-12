@@ -27,7 +27,7 @@
   "founder": ":charles chevalier"
  },
  "3": {
-  "studio_name": "l'anorthoscope",
+  "studio_name": "lanorthoscope",
   "company_name": "Null",
   "city": "paris",
   "country": "france",
@@ -87,7 +87,7 @@
   "country": "germany",
   "first_year": "1887",
   "last_year": "Null",
-  "founder": ":o.ansch\\\"utz"
+  "founder": ":o.anschutz"
  },
  "10": {
   "studio_name": "praxinoscope",
@@ -144,7 +144,7 @@
   "founder": ":louis lumiere, august lumiere"
  },
  "16": {
-  "studio_name": "vitascope? projectors",
+  "studio_name": "vitascope\\? projectors",
   "company_name": "vitascope",
   "city": "new york",
   "country": "usa",
@@ -200,7 +200,7 @@
  "22": {
   "studio_name": "lumiere",
   "company_name": "lumiere fr.",
-  "city": "grand caf\\'e paris",
+  "city": "grand cafe paris",
   "country": "france",
   "first_year": "Null",
   "last_year": "Null",
@@ -226,7 +226,7 @@
  },
  "25": {
   "studio_name": "pathe",
-  "company_name": "path\\'e cinema sa",
+  "company_name": "pathe cinema sa",
   "city": "paris",
   "country": "france",
   "first_year": "1902",
@@ -658,7 +658,7 @@
  },
  "73": {
   "studio_name": "merabpomfilm",
-  "company_name": "me\\v rabpomfil'm",
+  "company_name": "mev rabpomfilm",
   "city": "moscow",
   "country": "ussr",
   "first_year": "1924",
@@ -1153,7 +1153,7 @@
  },
  "128": {
   "studio_name": "prc",
-  "company_name": "path\\'e",
+  "company_name": "pathe",
   "city": "Null",
   "country": "usa",
   "first_year": "1940",
@@ -1171,7 +1171,7 @@
  },
  "130": {
   "studio_name": "pathe 2",
-  "company_name": "path\\'e communications",
+  "company_name": "pathe communications",
   "city": "Null",
   "country": "italy",
   "first_year": "1946",
@@ -1288,7 +1288,7 @@
  },
  "143": {
   "studio_name": "lapleiade",
-  "company_name": "films de la pl\\'eiade",
+  "company_name": "films de la pleiade",
   "city": "Null",
   "country": "france",
   "first_year": "1960",
