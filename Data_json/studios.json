@@ -1,0 +1,1748 @@
+{
+ "0": {
+  "studio_name": "ph\\`enakistiscope",
+  "company_name": "Null",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1832",
+  "last_year": "Null",
+  "founder": ":plateau"
+ },
+ "1": {
+  "studio_name": "zootrope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "uk?",
+  "first_year": "1834",
+  "last_year": "Null",
+  "founder": ":w.g.horne"
+ },
+ "2": {
+  "studio_name": "phenakistiscope",
+  "company_name": "Null",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1835",
+  "last_year": "Null",
+  "founder": ":charles chevalier"
+ },
+ "3": {
+  "studio_name": "l'anorthoscope",
+  "company_name": "Null",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1836",
+  "last_year": "Null",
+  "founder": ":plateau"
+ },
+ "4": {
+  "studio_name": "photobioscope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": ":bonnelliot, henry cook"
+ },
+ "5": {
+  "studio_name": "pocket kinematograph",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "1868",
+  "last_year": "Null",
+  "founder": ":j.b.linnett"
+ },
+ "6": {
+  "studio_name": "zootrope",
+  "company_name": "Null",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1876",
+  "last_year": "Null",
+  "founder": ":emile reynaud"
+ },
+ "7": {
+  "studio_name": "thaumatrope",
+  "company_name": "Null",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1877",
+  "last_year": "Null",
+  "founder": ":docteur pan"
+ },
+ "8": {
+  "studio_name": "life projection wheel?",
+  "company_name": "Null",
+  "city": "stanford ca",
+  "country": "usa",
+  "first_year": "1880",
+  "last_year": "Null",
+  "founder": ":e.muybridge"
+ },
+ "9": {
+  "studio_name": "schnellseher",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "germany",
+  "first_year": "1887",
+  "last_year": "Null",
+  "founder": ":o.ansch\\\"utz"
+ },
+ "10": {
+  "studio_name": "praxinoscope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1876",
+  "last_year": "Null",
+  "founder": ":emile reynaud"
+ },
+ "11": {
+  "studio_name": "projection-praxinoscope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1881",
+  "last_year": "1882",
+  "founder": ":ch-e.reynaud"
+ },
+ "12": {
+  "studio_name": "film camera",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "germany",
+  "first_year": "1889",
+  "last_year": "Null",
+  "founder": ":w.friese-greene"
+ },
+ "13": {
+  "studio_name": "35mm film camera",
+  "company_name": "edison",
+  "city": "new jersey",
+  "country": "usa",
+  "first_year": "1893",
+  "last_year": "Null",
+  "founder": ":t.a.edison"
+ },
+ "14": {
+  "studio_name": "kinetoscope",
+  "company_name": "edison",
+  "city": "Null",
+  "country": "nj",
+  "first_year": "1894",
+  "last_year": "Null",
+  "founder": "t.a.edison"
+ },
+ "15": {
+  "studio_name": "practical projectors",
+  "company_name": "lumiere fr.",
+  "city": "lyon",
+  "country": "france",
+  "first_year": "1895",
+  "last_year": "Null",
+  "founder": ":louis lumiere, august lumiere"
+ },
+ "16": {
+  "studio_name": "vitascope? projectors",
+  "company_name": "vitascope",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1895",
+  "last_year": "Null",
+  "founder": ":w.latham"
+ },
+ "17": {
+  "studio_name": "practical projectors",
+  "company_name": "m.skladanowsky",
+  "city": "berlin",
+  "country": "germany",
+  "first_year": "1895",
+  "last_year": "Null",
+  "founder": ":o.meester"
+ },
+ "18": {
+  "studio_name": "phakinescope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "1896",
+  "last_year": "Null",
+  "founder": ":abadie dutemps"
+ },
+ "19": {
+  "studio_name": "selig polyscope",
+  "company_name": "selig",
+  "city": "chicago",
+  "country": "usa",
+  "first_year": "1896",
+  "last_year": "Null",
+  "founder": ":william n.selig"
+ },
+ "20": {
+  "studio_name": "stereo-praxinoscope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1902",
+  "last_year": "Null",
+  "founder": ":emile reynaud"
+ },
+ "21": {
+  "studio_name": "skladanowsky",
+  "company_name": "m. and e. skladanowsky",
+  "city": "wintergarten berlin",
+  "country": "germany",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "m. and e. skladanowsky"
+ },
+ "22": {
+  "studio_name": "lumiere",
+  "company_name": "lumiere fr.",
+  "city": "grand caf\\'e paris",
+  "country": "france",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "23": {
+  "studio_name": "",
+  "company_name": "latham",
+  "city": "o.g.,w.latham",
+  "country": "new york",
+  "first_year": "Null",
+  "last_year": "1895",
+  "founder": "Null"
+ },
+ "24": {
+  "studio_name": "dickson",
+  "company_name": "w.dickson",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1895",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "25": {
+  "studio_name": "pathe",
+  "company_name": "path\\'e cinema sa",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1902",
+  "last_year": "1946",
+  "founder": "Null"
+ },
+ "26": {
+  "studio_name": "cines",
+  "company_name": "Null",
+  "city": "rome",
+  "country": "italy",
+  "first_year": "1906",
+  "last_year": "1921",
+  "founder": "Null"
+ },
+ "27": {
+  "studio_name": "vitascope",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1908",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "28": {
+  "studio_name": "edison",
+  "company_name": "edison company",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1904",
+  "last_year": "Null",
+  "founder": "thomas edison"
+ },
+ "29": {
+  "studio_name": "essanay",
+  "company_name": "george k.spoor",
+  "city": "chicago",
+  "country": "usa",
+  "first_year": "1907",
+  "last_year": "Null",
+  "founder": "g.m.anderson actor"
+ },
+ "30": {
+  "studio_name": "mpp",
+  "company_name": "motion picture patents co.",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1909",
+  "last_year": "1915",
+  "founder": "edison, biograph, vitagraph, lubin, selig, kalem, kleine"
+ },
+ "31": {
+  "studio_name": "imp",
+  "company_name": "independent motion picture co.",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1909",
+  "last_year": "1912",
+  "founder": "carl laemmle"
+ },
+ "32": {
+  "studio_name": "imp 2",
+  "company_name": "independent motion picture co.",
+  "city": "Null",
+  "country": "cuba",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "33": {
+  "studio_name": "afm",
+  "company_name": "american film manufacturing",
+  "city": "Null",
+  "country": "ca",
+  "first_year": "1910",
+  "last_year": "Null",
+  "founder": "alan dwan"
+ },
+ "34": {
+  "studio_name": "ebony",
+  "company_name": "ebony motion picture co.",
+  "city": "chicago",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "35": {
+  "studio_name": "general film",
+  "company_name": "mpp",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "1910",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "36": {
+  "studio_name": "great northern",
+  "company_name": "nordisk films company",
+  "city": "Null",
+  "country": "denmark",
+  "first_year": "1911",
+  "last_year": "1915",
+  "founder": "Null"
+ },
+ "37": {
+  "studio_name": "chrystal",
+  "company_name": "Null",
+  "city": "bronx",
+  "country": "ny",
+  "first_year": "1912",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "38": {
+  "studio_name": "ambrosio",
+  "company_name": "societa anonima ambrosio",
+  "city": "turin",
+  "country": "italy",
+  "first_year": "1912",
+  "last_year": "1917",
+  "founder": "arturo ambrosio"
+ },
+ "39": {
+  "studio_name": "eclair",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1912",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "40": {
+  "studio_name": "eclair 2",
+  "company_name": "eclair",
+  "city": "ft.lee nj",
+  "country": "usa",
+  "first_year": "1912",
+  "last_year": "Null",
+  "founder": "eclair"
+ },
+ "41": {
+  "studio_name": "mpsa",
+  "company_name": "motion pictures sales agency ltd",
+  "city": "london",
+  "country": "england",
+  "first_year": "1913",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "42": {
+  "studio_name": "artistica gloria",
+  "company_name": "Null",
+  "city": "turin",
+  "country": "italy",
+  "first_year": "1913",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "43": {
+  "studio_name": "famous",
+  "company_name": "famous players",
+  "city": "new york?",
+  "country": "usa",
+  "first_year": "1913",
+  "last_year": "1918",
+  "founder": "adolph zukor"
+ },
+ "44": {
+  "studio_name": "new york",
+  "company_name": "new york motion pictures company",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1914",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "45": {
+  "studio_name": "union",
+  "company_name": "union film produktion",
+  "city": "berlin",
+  "country": "germany",
+  "first_year": "1914",
+  "last_year": "1917",
+  "founder": "Null"
+ },
+ "46": {
+  "studio_name": "world",
+  "company_name": "world film corp.",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1915",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "47": {
+  "studio_name": "triangle",
+  "company_name": "triangle",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1915",
+  "last_year": "1917",
+  "founder": "harry aitkins, griffith, ince, mark sennett"
+ },
+ "48": {
+  "studio_name": "feature play",
+  "company_name": "jesse l.~lasky feature play company",
+  "city": "new york",
+  "country": "usa",
+  "first_year": "1913",
+  "last_year": "1916",
+  "founder": "lasky, demille, goldwyn"
+ },
+ "49": {
+  "studio_name": "paramount",
+  "company_name": "paramount corp.",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1916",
+  "last_year": "1993",
+  "founder": "william wadworth hodkinson"
+ },
+ "50": {
+  "studio_name": "pickford",
+  "company_name": "pickford film corp.",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1917",
+  "last_year": "1920",
+  "founder": "mary pickford"
+ },
+ "51": {
+  "studio_name": "first national",
+  "company_name": "first national",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1917",
+  "last_year": "1920",
+  "founder": "j.d.\\ williams"
+ },
+ "52": {
+  "studio_name": "chaplin",
+  "company_name": "chaplin studios",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1918",
+  "last_year": "1919",
+  "founder": "chaplin"
+ },
+ "53": {
+  "studio_name": "standard",
+  "company_name": "standard film corp",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1919",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "54": {
+  "studio_name": "fpl",
+  "company_name": "famous players lasky",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1918",
+  "last_year": "1920",
+  "founder": "Null"
+ },
+ "55": {
+  "studio_name": "pfl",
+  "company_name": "paramount famous lasky",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1928",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "56": {
+  "studio_name": "ufa",
+  "company_name": "universum film ag",
+  "city": "neubabelsberg",
+  "country": "germany",
+  "first_year": "1917",
+  "last_year": "1933",
+  "founder": "Null"
+ },
+ "57": {
+  "studio_name": "u.a.",
+  "company_name": "united artists",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1919",
+  "last_year": "1983",
+  "founder": "chaplin, pickford, fairbanks, griffith"
+ },
+ "58": {
+  "studio_name": "cineromans",
+  "company_name": "cineromans",
+  "city": "nice",
+  "country": "france",
+  "first_year": "1919",
+  "last_year": "1922",
+  "founder": "gaston leroux, rene navarre"
+ },
+ "59": {
+  "studio_name": "goldwyn",
+  "company_name": "goldwyn pictures",
+  "city": "west hollywood",
+  "country": "usa",
+  "first_year": "1922",
+  "last_year": "1934",
+  "founder": "sam goldwyn"
+ },
+ "60": {
+  "studio_name": "biograph",
+  "company_name": "w.d.griffith",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1903",
+  "last_year": "1910",
+  "founder": "Null"
+ },
+ "61": {
+  "studio_name": "griffith",
+  "company_name": "w.d.griffith",
+  "city": "mamaroneck ny",
+  "country": "usa",
+  "first_year": "1920",
+  "last_year": "1935",
+  "founder": "Null"
+ },
+ "62": {
+  "studio_name": "mgm",
+  "company_name": "metro-goldwyn-mayer",
+  "city": "culver city",
+  "country": "usa",
+  "first_year": "1920",
+  "last_year": "1935",
+  "founder": ", bought loews"
+ },
+ "63": {
+  "studio_name": "victory",
+  "company_name": "victory films",
+  "city": "birmingham",
+  "country": "england",
+  "first_year": "1920",
+  "last_year": "1922",
+  "founder": "balcon, saville"
+ },
+ "64": {
+  "studio_name": "famous",
+  "company_name": "famous players",
+  "city": "islington",
+  "country": "england",
+  "first_year": "1921",
+  "last_year": "1922",
+  "founder": "Null"
+ },
+ "65": {
+  "studio_name": "seven arts",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "Null",
+  "last_year": "1961",
+  "founder": "Null"
+ },
+ "66": {
+  "studio_name": "universal",
+  "company_name": "universal studios",
+  "city": "north hollywood",
+  "country": "usa",
+  "first_year": "1921",
+  "last_year": "1962",
+  "founder": "carl laemmle"
+ },
+ "67": {
+  "studio_name": "lubitsch",
+  "company_name": "lubitsch film produktion",
+  "city": "berlin",
+  "country": "germany",
+  "first_year": "1922",
+  "last_year": "Null",
+  "founder": "ernst lubitsch"
+ },
+ "68": {
+  "studio_name": "wardour",
+  "company_name": "wardour \\f.",
+  "city": "islington",
+  "country": "england",
+  "first_year": "1922",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "69": {
+  "studio_name": "b-s-f",
+  "company_name": "balcon-saville-freedman",
+  "city": "islington",
+  "country": "england",
+  "first_year": "1922",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "70": {
+  "studio_name": "warners",
+  "company_name": "warner bros.",
+  "city": "burbank",
+  "country": "usa",
+  "first_year": "1923",
+  "last_year": "1990",
+  "founder": "Null"
+ },
+ "71": {
+  "studio_name": "columbia",
+  "company_name": "columbia pictures",
+  "city": "burbank",
+  "country": "usa",
+  "first_year": "1924",
+  "last_year": "1990",
+  "founder": "Null"
+ },
+ "72": {
+  "studio_name": "gainsborough",
+  "company_name": "gainsborough",
+  "city": "Null",
+  "country": "england",
+  "first_year": "1924",
+  "last_year": "Null",
+  "founder": "balcon, saville"
+ },
+ "73": {
+  "studio_name": "merabpomfilm",
+  "company_name": "me\\v rabpomfil'm",
+  "city": "moscow",
+  "country": "ussr",
+  "first_year": "1924",
+  "last_year": "1931",
+  "founder": "goverment"
+ },
+ "74": {
+  "studio_name": "prometheus",
+  "company_name": "int.arbeiterhilfe",
+  "city": "Null",
+  "country": "germany",
+  "first_year": "1926",
+  "last_year": "1929",
+  "founder": "Null"
+ },
+ "75": {
+  "studio_name": "lion",
+  "company_name": "british lion",
+  "city": "london",
+  "country": "uk",
+  "first_year": "1925",
+  "last_year": "1976",
+  "founder": "Null"
+ },
+ "76": {
+  "studio_name": "emelka",
+  "company_name": "Null",
+  "city": "munich",
+  "country": "germany",
+  "first_year": "1925",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "77": {
+  "studio_name": "vitaphone",
+  "company_name": "warners and western electric",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1926",
+  "last_year": "1931",
+  "founder": "Null"
+ },
+ "78": {
+  "studio_name": "cines(2)",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "italy",
+  "first_year": "1926",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "79": {
+  "studio_name": "prc (1)",
+  "company_name": "producers releasing corporation",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "1930",
+  "last_year": "1947",
+  "founder": "Null"
+ },
+ "80": {
+  "studio_name": "elstree",
+  "company_name": "british international pictures",
+  "city": "elstree",
+  "country": "england",
+  "first_year": "1927",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "81": {
+  "studio_name": "rko",
+  "company_name": "rko radio",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1929",
+  "last_year": "1955",
+  "founder": "Null"
+ },
+ "82": {
+  "studio_name": "allied",
+  "company_name": "allied artists",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1930",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "83": {
+  "studio_name": "nero",
+  "company_name": "nero film a.g.",
+  "city": "berlin",
+  "country": "germany",
+  "first_year": "1928",
+  "last_year": "1940",
+  "founder": "paramount"
+ },
+ "84": {
+  "studio_name": "paris",
+  "company_name": "Null",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1932",
+  "last_year": "1948",
+  "founder": "Null"
+ },
+ "85": {
+  "studio_name": "goldwyn",
+  "company_name": "sam goldwyn productions",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1932",
+  "last_year": "1947",
+  "founder": "sam goldwyn"
+ },
+ "86": {
+  "studio_name": "atp",
+  "company_name": "associated talking pictures",
+  "city": "Null",
+  "country": "england",
+  "first_year": "1932",
+  "last_year": "Null",
+  "founder": "basil dean"
+ },
+ "87": {
+  "studio_name": "lime grove",
+  "company_name": "gaumont british",
+  "city": "Null",
+  "country": "england",
+  "first_year": "1933",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "88": {
+  "studio_name": "20th cent.",
+  "company_name": "twentieth century",
+  "city": "hollywood",
+  "country": "ca",
+  "first_year": "1933",
+  "last_year": "Null",
+  "founder": "darryl f.\\ zanuck?"
+ },
+ "89": {
+  "studio_name": "london",
+  "company_name": "london films - korda",
+  "city": "london",
+  "country": "england",
+  "first_year": "1933",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "90": {
+  "studio_name": "ufa",
+  "company_name": "ufi",
+  "city": "neubabelsberg",
+  "country": "germany",
+  "first_year": "1933",
+  "last_year": "1962",
+  "founder": "Null"
+ },
+ "91": {
+  "studio_name": "20th cent.",
+  "company_name": "20th century productions",
+  "city": "century city?",
+  "country": "usa",
+  "first_year": "1933",
+  "last_year": "1935",
+  "founder": "zanuck"
+ },
+ "92": {
+  "studio_name": "reliance",
+  "company_name": "Null",
+  "city": "la",
+  "country": "usa",
+  "first_year": "1934",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "93": {
+  "studio_name": "gfd",
+  "company_name": "gaumont british",
+  "city": "Null",
+  "country": "england",
+  "first_year": "1934",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "94": {
+  "studio_name": "monogram",
+  "company_name": "allied artists",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1934",
+  "last_year": "1953",
+  "founder": "Null"
+ },
+ "95": {
+  "studio_name": "republic",
+  "company_name": "republic film corporation",
+  "city": "san fernando, hollywood",
+  "country": "usa",
+  "first_year": "1935",
+  "last_year": "1959",
+  "founder": "herbert j.\\ yates, max zinner studios"
+ },
+ "96": {
+  "studio_name": "fox",
+  "company_name": "20th cent.fox",
+  "city": "century city",
+  "country": "usa",
+  "first_year": "1935",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "97": {
+  "studio_name": "mgm",
+  "company_name": "metro-goldwyn-mayer",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1935",
+  "last_year": "1983",
+  "founder": "Null"
+ },
+ "98": {
+  "studio_name": "ufi",
+  "company_name": "nazi government",
+  "city": "Null",
+  "country": "germany",
+  "first_year": "1936",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "99": {
+  "studio_name": "korda",
+  "company_name": "korda",
+  "city": "denham",
+  "country": "england",
+  "first_year": "1936",
+  "last_year": "Null",
+  "founder": "korda"
+ },
+ "100": {
+  "studio_name": "selznick",
+  "company_name": "Null",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1936",
+  "last_year": "1944",
+  "founder": "Null"
+ },
+ "101": {
+  "studio_name": "pinewood",
+  "company_name": "gainsborough",
+  "city": "Null",
+  "country": "england",
+  "first_year": "1937",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "102": {
+  "studio_name": "cinetone",
+  "company_name": "nv filmex",
+  "city": "amsterdam",
+  "country": "holland",
+  "first_year": "1937",
+  "last_year": "1940",
+  "founder": "rudolf meyer"
+ },
+ "103": {
+  "studio_name": "first national",
+  "company_name": "warner brothers",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1939",
+  "last_year": "Null",
+  "founder": "warners"
+ },
+ "104": {
+  "studio_name": "teddington",
+  "company_name": "warner brothers, first national",
+  "city": "london",
+  "country": "england",
+  "first_year": "1931",
+  "last_year": "1952",
+  "founder": "warners"
+ },
+ "105": {
+  "studio_name": "nef",
+  "company_name": "novelles editions francaises",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1939",
+  "last_year": "Null",
+  "founder": "j.renoir, andre zwobada, camille froancois, olivier billiou, c.renoir "
+ },
+ "106": {
+  "studio_name": "ensa",
+  "company_name": "entertainment national service association",
+  "city": "Null",
+  "country": "england",
+  "first_year": "1940",
+  "last_year": "1945",
+  "founder": "basil dean"
+ },
+ "107": {
+  "studio_name": "roach",
+  "company_name": "roach studios",
+  "city": "hollywwood",
+  "country": "ca,usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "hal roach"
+ },
+ "108": {
+  "studio_name": "defa",
+  "company_name": "d.r.germany",
+  "city": "berlin",
+  "country": "d.r.germany",
+  "first_year": "1946",
+  "last_year": "1994",
+  "founder": "split from ufa"
+ },
+ "109": {
+  "studio_name": "eagle lion",
+  "company_name": "eagle lion",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "1947",
+  "last_year": "1951",
+  "founder": "from prc1"
+ },
+ "110": {
+  "studio_name": "new world",
+  "company_name": "Null",
+  "city": "rome",
+  "country": "italy",
+  "first_year": "1947",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "111": {
+  "studio_name": "transatlantic",
+  "company_name": "transatlantic",
+  "city": "london",
+  "country": "england",
+  "first_year": "1948",
+  "last_year": "1949",
+  "founder": "bernstein,hitchcock"
+ },
+ "112": {
+  "studio_name": "arc",
+  "company_name": "american releasing corporation",
+  "city": "palo alto",
+  "country": "usa",
+  "first_year": "1954",
+  "last_year": "1956",
+  "founder": "samuel z.\\ arkoff. james nicholson"
+ },
+ "113": {
+  "studio_name": "aip",
+  "company_name": "american international pictures",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1956",
+  "last_year": "1980",
+  "founder": "from arc"
+ },
+ "114": {
+  "studio_name": "filmgroup",
+  "company_name": "american international pictures",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1956",
+  "last_year": "1980",
+  "founder": "sub aip"
+ },
+ "115": {
+  "studio_name": "trans-american",
+  "company_name": "american international pictures",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1956",
+  "last_year": "1980",
+  "founder": "sub aip"
+ },
+ "116": {
+  "studio_name": "hallmark",
+  "company_name": "american international pictures",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1956",
+  "last_year": "1980",
+  "founder": "sub aip"
+ },
+ "117": {
+  "studio_name": "ufa 2",
+  "company_name": "ufa, f.r.germany",
+  "city": "babelsberg",
+  "country": "f.r.germany",
+  "first_year": "Null",
+  "last_year": "1971",
+  "founder": "Null"
+ },
+ "118": {
+  "studio_name": "revue",
+  "company_name": "mca",
+  "city": "universal city",
+  "country": "usa",
+  "first_year": "1959",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "119": {
+  "studio_name": "malpaso",
+  "company_name": "malpaso productions",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1968",
+  "last_year": "Null",
+  "founder": "clint eastwood"
+ },
+ "120": {
+  "studio_name": "nfdc",
+  "company_name": "national film development corp.",
+  "city": "new delhi",
+  "country": "india",
+  "first_year": "1970",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "121": {
+  "studio_name": "zoetrope",
+  "company_name": "warners",
+  "city": "san francisco",
+  "country": "usa",
+  "first_year": "1970",
+  "last_year": "Null",
+  "founder": "francis ford coppola, george lucas"
+ },
+ "122": {
+  "studio_name": "ufa",
+  "company_name": "bertelsmann",
+  "city": "babelsberg",
+  "country": "f.r.germany",
+  "first_year": "1971",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "123": {
+  "studio_name": "box office",
+  "company_name": "box office international",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1972",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "124": {
+  "studio_name": "paramount",
+  "company_name": "gulf+western corp",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "125": {
+  "studio_name": "golden harvest",
+  "company_name": "golden harvest studio",
+  "city": "hongkong",
+  "country": "china",
+  "first_year": "1972",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "126": {
+  "studio_name": "cathay",
+  "company_name": "cathay film company",
+  "city": "hongkong",
+  "country": "china",
+  "first_year": "1972",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "127": {
+  "studio_name": "producers distr.corp",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "1940",
+  "founder": "Null"
+ },
+ "128": {
+  "studio_name": "prc",
+  "company_name": "path\\'e",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1940",
+  "last_year": "1949",
+  "founder": "Null"
+ },
+ "129": {
+  "studio_name": "london films",
+  "company_name": "Null",
+  "city": "london",
+  "country": "england",
+  "first_year": "1945",
+  "last_year": "1994",
+  "founder": "alex~korda"
+ },
+ "130": {
+  "studio_name": "pathe 2",
+  "company_name": "path\\'e communications",
+  "city": "Null",
+  "country": "italy",
+  "first_year": "1946",
+  "last_year": "1994",
+  "founder": "pathe"
+ },
+ "131": {
+  "studio_name": "eagle lion",
+  "company_name": "rank",
+  "city": "Null",
+  "country": "Null",
+  "first_year": "1949",
+  "last_year": "1950",
+  "founder": "Null"
+ },
+ "132": {
+  "studio_name": "cines(3)",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "italy",
+  "first_year": "1949",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "133": {
+  "studio_name": "biograph",
+  "company_name": "Null",
+  "city": "the bronx",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "134": {
+  "studio_name": "filmmakers",
+  "company_name": "film makers",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1950",
+  "last_year": "1956",
+  "founder": "ida lupino, collier young"
+ },
+ "135": {
+  "studio_name": "woodfall",
+  "company_name": "woodfall productions",
+  "city": "Null",
+  "country": "g.b.",
+  "first_year": "1956",
+  "last_year": "1960",
+  "founder": "saltzman, tony richardson, john osborne"
+ },
+ "136": {
+  "studio_name": "mgm british",
+  "company_name": "metro-goldwyn-mayer",
+  "city": "elstree",
+  "country": "england",
+  "first_year": "1949",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "137": {
+  "studio_name": "astor",
+  "company_name": "indep",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "138": {
+  "studio_name": "howco",
+  "company_name": "indep",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "139": {
+  "studio_name": "lippert",
+  "company_name": "indep",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "140": {
+  "studio_name": "realart",
+  "company_name": "indep",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": " james nicholson"
+ },
+ "141": {
+  "studio_name": "ugc",
+  "company_name": "union generale cinamatographique",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1950",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "142": {
+  "studio_name": "condor",
+  "company_name": "deutsche condor film gmbh",
+  "city": "munchen",
+  "country": "f.r.germany",
+  "first_year": "1956",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "143": {
+  "studio_name": "lapleiade",
+  "company_name": "films de la pl\\'eiade",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1960",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "144": {
+  "studio_name": "mca",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "1990",
+  "founder": "universal"
+ },
+ "145": {
+  "studio_name": "filmservice",
+  "company_name": "?",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1960",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "146": {
+  "studio_name": "shamley",
+  "company_name": "paramount?",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1960",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "147": {
+  "studio_name": "film house",
+  "company_name": "the film house",
+  "city": "melbourne",
+  "country": "australia",
+  "first_year": "1965",
+  "last_year": "1994",
+  "founder": "schepisi"
+ },
+ "148": {
+  "studio_name": "carosse",
+  "company_name": "films du carosse",
+  "city": "paris",
+  "country": "france",
+  "first_year": "1961",
+  "last_year": "1984",
+  "founder": "truffaut?"
+ },
+ "149": {
+  "studio_name": "essexe",
+  "company_name": "essex productions",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1965",
+  "last_year": "Null",
+  "founder": "frank sinatra"
+ },
+ "150": {
+  "studio_name": "bavaria",
+  "company_name": "bavaria atelier",
+  "city": "munchen",
+  "country": "f.r.germany",
+  "first_year": "1968",
+  "last_year": "1972",
+  "founder": "Null"
+ },
+ "151": {
+  "studio_name": "nwp",
+  "company_name": "new world pictures",
+  "city": "hollywood",
+  "country": "u.s.a.",
+  "first_year": "1970",
+  "last_year": "1994",
+  "founder": "corman"
+ },
+ "152": {
+  "studio_name": "fantasy",
+  "company_name": "Null",
+  "city": "berkely ca",
+  "country": "u.s.a.",
+  "first_year": "1970",
+  "last_year": "1994",
+  "founder": "saul saentz"
+ },
+ "153": {
+  "studio_name": "todrest",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1981",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "154": {
+  "studio_name": "xian film studios",
+  "company_name": "p.r.china",
+  "city": "xian shaanxi",
+  "country": "p.r.china",
+  "first_year": "1983",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "155": {
+  "studio_name": "mgm-u.a",
+  "company_name": "mgm-u.a. communications co.",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1983",
+  "last_year": "1990",
+  "founder": "kirk kerkorian bought pathe"
+ },
+ "156": {
+  "studio_name": "paulist",
+  "company_name": "paulist pictures",
+  "city": "malibu ca",
+  "country": "usa",
+  "first_year": "1988",
+  "last_year": "Null",
+  "founder": "ellwood bud kieser"
+ },
+ "157": {
+  "studio_name": "granada",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "england",
+  "first_year": "Null",
+  "last_year": "1994",
+  "founder": "sid~bernstein"
+ },
+ "158": {
+  "studio_name": "carolco",
+  "company_name": "Null",
+  "city": "north-carolina",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "1994",
+  "founder": " pgolden harvest"
+ },
+ "159": {
+  "studio_name": "thames",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "england",
+  "first_year": "Null",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "160": {
+  "studio_name": "double",
+  "company_name": "double head",
+  "city": "Null",
+  "country": "australia",
+  "first_year": "1975",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "161": {
+  "studio_name": "orion",
+  "company_name": "orion",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "1997",
+  "founder": "fromfilmways"
+ },
+ "162": {
+  "studio_name": "filmways",
+  "company_name": "filmways",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1980",
+  "last_year": "1981",
+  "founder": "from aip"
+ },
+ "163": {
+  "studio_name": "miramax",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1980",
+  "last_year": "Null",
+  "founder": "weinstein, weinstein"
+ },
+ "164": {
+  "studio_name": "cobra",
+  "company_name": "cobra filmproduktion",
+  "city": "Null",
+  "country": "\\ge",
+  "first_year": "Null",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "165": {
+  "studio_name": "lorimar",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1980",
+  "last_year": "1994",
+  "founder": "lee rich, "
+ },
+ "166": {
+  "studio_name": "buena vista",
+  "company_name": "disney",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1980",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "167": {
+  "studio_name": "galaxie",
+  "company_name": "les films galaxie",
+  "city": "Null",
+  "country": "france",
+  "first_year": "1981",
+  "last_year": "Null",
+  "founder": "Null"
+ },
+ "168": {
+  "studio_name": "lee rich",
+  "company_name": "lee rich productions, warners",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1983",
+  "last_year": "1994",
+  "founder": "lee rich"
+ },
+ "169": {
+  "studio_name": "tristar",
+  "company_name": "tri-star pictures inc.",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1985",
+  "last_year": "1990",
+  "founder": "columbia"
+ },
+ "170": {
+  "studio_name": "newline",
+  "company_name": "new line cinema",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1989",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "171": {
+  "studio_name": "gracie",
+  "company_name": "Null",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1989",
+  "last_year": "1994",
+  "founder": "j.l.brooks"
+ },
+ "172": {
+  "studio_name": "castlerock",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1989",
+  "last_year": "1994",
+  "founder": "rob reiner"
+ },
+ "173": {
+  "studio_name": "caravan",
+  "company_name": "Null",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "Null",
+  "last_year": "1990",
+  "founder": "1994+"
+ },
+ "174": {
+  "studio_name": "mca",
+  "company_name": "matsushita",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "175": {
+  "studio_name": "warners",
+  "company_name": "time-warner",
+  "city": "burbank",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1994",
+  "founder": "warner bros"
+ },
+ "176": {
+  "studio_name": "universal",
+  "company_name": "mca, matsushita",
+  "city": "osaka",
+  "country": "japan",
+  "first_year": "1992",
+  "last_year": "1994",
+  "founder": "from mca"
+ },
+ "177": {
+  "studio_name": "taksen",
+  "company_name": "Null",
+  "city": "joinville",
+  "country": "france",
+  "first_year": "Null",
+  "last_year": "1994",
+  "founder": "Null"
+ },
+ "178": {
+  "studio_name": "columbia",
+  "company_name": "sony software corp",
+  "city": "burbank",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1994",
+  "founder": "columbia"
+ },
+ "179": {
+  "studio_name": "tristar",
+  "company_name": "sony software corp",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1994",
+  "founder": "tristar-columbia"
+ },
+ "180": {
+  "studio_name": "vivid",
+  "company_name": "vivid video",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1998",
+  "founder": "steven hirsch"
+ },
+ "181": {
+  "studio_name": "wicked",
+  "company_name": "Null",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1998",
+  "founder": "Null"
+ },
+ "182": {
+  "studio_name": "vca",
+  "company_name": "Null",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1998",
+  "founder": "Null"
+ },
+ "183": {
+  "studio_name": "metro",
+  "company_name": "Null",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1990",
+  "last_year": "1998",
+  "founder": "Null"
+ },
+ "184": {
+  "studio_name": "regency",
+  "company_name": "regency enterprises",
+  "city": "Null",
+  "country": "holland",
+  "first_year": "1991",
+  "last_year": "1998",
+  "founder": "arnon milchan"
+ },
+ "185": {
+  "studio_name": "paramount",
+  "company_name": "viacom corp.",
+  "city": "los angeles",
+  "country": "usa",
+  "first_year": "1993",
+  "last_year": "1994",
+  "founder": "viacom"
+ },
+ "186": {
+  "studio_name": "turner",
+  "company_name": "turner broadcasting",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1993",
+  "last_year": "1994",
+  "founder": "ted turner"
+ },
+ "187": {
+  "studio_name": "graniet",
+  "company_name": "graniet film",
+  "city": "Null",
+  "country": "the netherlands",
+  "first_year": "1993",
+  "last_year": "1998",
+  "founder": "van warmerdam"
+ },
+ "188": {
+  "studio_name": "pixar",
+  "company_name": "pixar animation studios",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1995",
+  "last_year": "Null",
+  "founder": "steve jobs"
+ },
+ "189": {
+  "studio_name": "miramax",
+  "company_name": "miramx",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1996",
+  "last_year": "Null",
+  "founder": "disney"
+ },
+ "190": {
+  "studio_name": "dimension",
+  "company_name": "dimension",
+  "city": "hollywood",
+  "country": "usa",
+  "first_year": "1996",
+  "last_year": "Null",
+  "founder": "disney"
+ },
+ "191": {
+  "studio_name": "gregory",
+  "company_name": "gregory productions",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1996",
+  "last_year": "Null",
+  "founder": ":ian courts catholic church"
+ },
+ "192": {
+  "studio_name": "jagged",
+  "company_name": "jagged films",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1998",
+  "last_year": "Null",
+  "founder": ":mick jagger"
+ },
+ "193": {
+  "studio_name": "lionsgate",
+  "company_name": "lions gate releasiung",
+  "city": "Null",
+  "country": "usa",
+  "first_year": "1998",
+  "last_year": "Null",
+  "founder": ":mark urman"
+ }
+}
