@@ -62,7 +62,6 @@ def connect():
 
         print('Loading Actors...')
         # Ingest participants
-        #TODO Add duplicate entry protection
         participant_id = 0
         participants = []
 
@@ -78,7 +77,6 @@ def connect():
                             + " , '" + person['gender'] + "' , '" + person['stage_name'] + "' , '" + person['family_name'] + "' , '" + person['first_name'] + "' );")
                 participant_id += 1
 
-                # TODO participant awards film loading
                 for award in person['awards']:
                     if award['award_type'].lower() in award_array:
                         award_index = award_array.index(award['award_type'].lower())
@@ -118,7 +116,7 @@ def connect():
                 for writer in film['writers']:
                     if writer['name'].lower() in participants:
                         write_participant = participants.index(writer['name'].lower())
-                        cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( '" + str(film_id) + "' , '" + write_participant + "' );")
+                        cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( '" + str(film_id) + "' , '" + str(write_participant) + "' );")
 
                 # loads the movie awards
                 for award in film['awards']:
@@ -130,9 +128,8 @@ def connect():
                 for studio in film['studios']:
                     if studio['studio'].lower() in studio_list:
                         this_studio = studio_list.index(studio['studio'].lower())
-                        cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( " + film_id + "' , '" + this_studio + "' );")
+                        cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( '" + film_id + "' , '" + str(this_studio) + "' );")
 
-                #TODO film awards table loading
                 film_id += 1
 
         # Ingest Remakes
