@@ -1,14 +1,17 @@
-Check to make sure the attributes used (i.e. ids, producers, directors, etc.) are all correct. Also, proofread queries, as some of them might have long result times due to errors one person made that others might notice.
-Queries marked as incomplete are ones I couldn't figure out; if one of you guys wants to take a stab at them, go ahead.
+PROOFREAD & TEST ALL QUERIES! Some of them might have long result times or flat out not work due to errors one person made that others might notice.
 –Aaron
 
+Queries that don't cause errors when run are marked with an X above the SQL. Queries that are confirmed to do what they're supposed to are marked with an O.
+
 1) What movies (list title and year) have "george" (in any form) at the end of their titles. Order by the title.
+O
 select movies.title, movies.year 
 from movies
 where lower(right(title, 6)) = 'george'
 order by title
 
 2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
+X
 select participant.name, movies.title, movies.year, acts_in.role
 from movies, participant, acts_in, is_remake_of
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and is_remake_of.remake_film_id = acts_in.film_id and is_remake_of.original_film_id = acts_in.film_id and movies.film_id = is_remake_of.remake_film_id and  movies.film_id = is_remake_of.original_film_id 
@@ -19,7 +22,9 @@ select movies.title, movies.year, participant.name, max(is_remake_of.fraction) a
 from movies, is_remake_of, participant, directs_movie
 where movies.film_id = is_remake_of.original_film_id and directs_movie.film_id = movies.film_id and movies.film_id = directs_movie.film_id and directs_movie.participant_id = participant.participant_id and is_remake_of.fraction = most_similar
 
-4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?select movies.title
+4) Which movie has been remade (directly or indirectly) the most times over all (i.e., is the ancestor of the most remakes)?
+X
+select movies.title
 from movies, is_remake_of
 where movies.film_id = is_remake_of.original_film_id
 group by movies.title
@@ -27,18 +32,21 @@ order by count(movies.title)
 LIMIT 1
 
 5) Which movies are neither a remake nor have ever been remade? Order by title.
+X
 select movies.title
 from movies, is_remake_of
 where movies.film_id != is_remake_of.remake_film_id and movies.film_id != is_remake_of.original_film_id                
 order by movies.title
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
+X
 select participant.name, acts_in.role, movies.title, movies.year 
 from participant, movies, acts_in, award, actors_awarded
 where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and participant.participant_id = actors_awarded.participant_id and award.award_id = actors_awarded.award_id and award.award_name = 'Academy Award'
 order by movies.year
 
 7) Which movies, by name, won Academy Awards in 1970?
+X
 select movies.title 
 from movies, award, films_awarded
 where award.award_id = films_awarded.award_id and award.award_name = 'Academy Award' and movies.year = '1970'
@@ -47,6 +55,7 @@ order by movies.title
 This is what the query will look like when we execute it. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed.
 
 8) Has any original movie and an immediate remake both won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
+X
 select movies.title, movies.year
 from movies, is_remake_of, award, films_awarded
 where movies.film_id = is_remake_of.original_film_id and movies.film_id = films_awarded.film_id and is_remake_of.remake_film_id = films_awarded.film_id and award.award_name = 'Academy Award'
@@ -55,12 +64,14 @@ order by movies.title
 Like the above query, this query can't be executed yet since we don't have info on awards in our database yet.
 
 9) Find the name and year of the movie that has the shortest title.
+O
 select movies.title, movies.year
 from movies
 order by length(movies.title) ASC
 LIMIT 1
 
 10) What movies did "George Fox" write?
+X
 select movies.title 
 from movies, writes_movie, participant
 where movies.film_id = writes_movie.film_id and writes_movie.participant_id = participant.participant_id and participant.name = 'George Fox'
@@ -80,12 +91,14 @@ order by movies.title, movies.year, stage_name, acts_in.role
 INCOMPLETE QUERY
 
 13) List the title, year, and role of movies that "Tom Cruise" appeared in ordered by the year.
+O
 select DISTINCT movies.title, movies.year, acts_in.role 
 from movies, acts_in, participant
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Tom Cruise'
 order by movies.year
 
 14) Is there an actor that has been a co-star with "Val Kilmer" and "Clint Eastwood" (not necessarily in the same movie)?!
+X
 select participant.name
 from participant, acts_in, movies
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and exists 
@@ -105,17 +118,20 @@ order by stage_name
 INCOMPLETE QUERY
 
 16) List the names of all actors that have ever appeared in a movie directed by "Clint Eastwood" along with a count of how frequently they've appeared in his movies ordered by the count (descending) and their name (ascending).
+X
 select participant.name, count(movies) as movie_count
 from participant, acts_in, movies, directs_movie
 where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and movie.film_id = directs_movie.film_id and participant.participant_id = directs_movie.film_id and participant.name = 'Clint Eastwood'
 order by movie_count DESC, participant.name ASC
 
 17) What are the categories (i.e., genre) of movies that "Ronald Reagan" has appeared in as an actor? 
+O
 select DISTINCT movies.genre 
 from movies, acts_in, participant
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Ronald Reagan' 
 
 18) Which studio has made the most movies and how many have they made?
+X
 select studios.studio_name, count(movies) as movie_count
 from movies, studios, has_studio
 where movies.film_id = has_studio.film_id and studios.studio_id = has_studio.studio_id
@@ -126,26 +142,31 @@ LIMIT 1
 Like with the awards, we haven't added studios to the database yet, so we can't execute this query.
 
 19) "Paramount" is a famous studio. What category (i.e., genre) of movie was most commonly made by "Paramount"?
+X
 select movies.genre
-from movies
-where movies.studio = 'paramount'
+from movies, studios, has_studio
+where studios.studio_id = has_studio.studio_id and movies.film_id = has_studio.film_id and studios.studio_name = 'Paramount'
+group by movies.genre
 order by count(genre)
 LIMIT 1
 
 Once again, no studio info yet, so we can't do this query.
 
 20) Has any person directed and produced a movie they've also acted in? If so, give their stagename, the title of the movie they directed and produced, and the role they played.
+X
 select participant.name, movies.title, acts_in.role
 from movies, participant, directs_movie, acts_in 
 where movies.film_id = acts_in.film_id and directs_movie.film_id = movies.film_id and directs_movie.film_id = acts_in.film_id and directs_movie.participant_id = participant.participant_id
 
 21) For all of the generic roletypes for actors, list the name of the roletype and a count of how many actors are classified by that type in descending order of the counts.
+O
 select acts_in.role_type, count(acts_in.participant_id) as role_type_count
 from acts_in
 group by acts_in.role_type 
 order by role_type_count DESC
 
 22) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
+O
 select movies.genre, count(movies) as movie_count
 from movies
 group by movies.genre
