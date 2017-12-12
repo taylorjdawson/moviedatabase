@@ -17,7 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1512064876490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/moviedatabase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1513112328198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moviedatabase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1513113685695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1512068419734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -38,37 +38,39 @@
       <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="83" column="83" lean-forward="false" selection-start-line="83" selection-start-column="83" selection-end-line="83" selection-end-column="83" />
+            <state relative-caret-position="298">
+              <caret line="126" column="144" lean-forward="false" selection-start-line="126" selection-start-column="144" selection-end-line="126" selection-end-column="144" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
-                <marker date="1513112325552" expanded="true" signature="1112:1161" ph="Insert into awards... " />
-                <marker date="1513112325552" expanded="true" signature="1112:1162" ph="Insert into awards... " />
-                <marker date="1513112325552" expanded="true" signature="1112:1224" ph="Insert into awards... " />
-                <marker date="1513112325552" expanded="true" signature="1112:1228" ph="Insert into awards... " />
-                <marker date="1513112325552" expanded="true" signature="1112:1231" ph="Insert into awards... " />
-                <marker date="1513112325552" expanded="true" signature="1618:1670" ph="Insert into studios... " />
-                <marker date="1513112325552" expanded="true" signature="1618:1696" ph="Insert into studios... " />
-                <marker date="1513112325552" expanded="true" signature="1618:1728" ph="Insert into studios... " />
-                <marker date="1513112325552" expanded="true" signature="2895:2918" ph="INSERT into participant... " />
-                <marker date="1513112325552" expanded="true" signature="2895:2955" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513112325552" expanded="true" signature="2895:2990" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513112325552" expanded="true" signature="2895:3019" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513112325552" expanded="true" signature="3366:3474" ph="INSERT into participant... " />
-                <marker date="1513112325552" expanded="true" signature="4099:4177" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1513112325552" expanded="true" signature="4099:4391" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1513112325552" expanded="true" signature="4682:4800" ph="INSERT into directs_movie... " />
-                <marker date="1513112325552" expanded="true" signature="4955:5066" ph="INSERT into writes_movie... " />
-                <marker date="1513112325552" expanded="true" signature="5220:5232" ph="INSERT into filmed_in... " />
-                <marker date="1513112325552" expanded="true" signature="5220:5272" ph="INSERT into has_studio... " />
-                <marker date="1513112325552" expanded="true" signature="5220:5273" ph="INSERT into has_studio... " />
-                <marker date="1513112325552" expanded="true" signature="5220:5291" ph="INSERT into has_studio... " />
-                <marker date="1513112325552" expanded="true" signature="5220:5293" ph="INSERT into has_studio... " />
-                <marker date="1513112325552" expanded="true" signature="5220:5316" ph="INSERT into has_studio... " />
-                <marker date="1513112325552" expanded="true" signature="6042:6111" ph="INSERT into is_remake_of... " />
-                <marker date="1513112325552" expanded="true" signature="6042:6236" ph="INSERT into is_remake_of... " />
-                <marker date="1513112325552" expanded="true" signature="6722:6819" ph="INSERT INTO acts_in... " />
-                <marker date="1513112325552" expanded="true" signature="6722:6936" ph="INSERT INTO acts_in... " />
+                <marker date="1513113681970" expanded="true" signature="1112:1161" ph="Insert into awards... " />
+                <marker date="1513113681970" expanded="true" signature="1112:1162" ph="Insert into awards... " />
+                <marker date="1513113681970" expanded="true" signature="1112:1224" ph="Insert into awards... " />
+                <marker date="1513113681970" expanded="true" signature="1112:1228" ph="Insert into awards... " />
+                <marker date="1513113681970" expanded="true" signature="1112:1231" ph="Insert into awards... " />
+                <marker date="1513113681970" expanded="true" signature="1618:1670" ph="Insert into studios... " />
+                <marker date="1513113681970" expanded="true" signature="1618:1696" ph="Insert into studios... " />
+                <marker date="1513113681970" expanded="true" signature="1618:1728" ph="Insert into studios... " />
+                <marker date="1513113681970" expanded="true" signature="2895:2918" ph="INSERT into participant... " />
+                <marker date="1513113681970" expanded="true" signature="2895:2955" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513113681970" expanded="true" signature="2895:2990" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513113681970" expanded="true" signature="2895:3019" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513113681970" expanded="true" signature="3366:3474" ph="INSERT into participant... " />
+                <marker date="1513113681970" expanded="true" signature="4099:4177" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1513113681970" expanded="true" signature="4099:4391" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1513113681970" expanded="true" signature="4682:4800" ph="INSERT into directs_movie... " />
+                <marker date="1513113681970" expanded="true" signature="5080:5143" ph="INSERT into writes_movie... " />
+                <marker date="1513113681970" expanded="true" signature="5080:5196" ph="INSERT into writes_movie... " />
+                <marker date="1513113681970" expanded="true" signature="5477:5591" ph="INSERT into movie_is_awarded... " />
+                <marker date="1513113681970" expanded="true" signature="5745:5757" ph="INSERT into filmed_in... " />
+                <marker date="1513113681970" expanded="true" signature="5745:5797" ph="INSERT into has_studio... " />
+                <marker date="1513113681970" expanded="true" signature="5745:5798" ph="INSERT into has_studio... " />
+                <marker date="1513113681970" expanded="true" signature="5745:5816" ph="INSERT into has_studio... " />
+                <marker date="1513113681970" expanded="true" signature="5745:5818" ph="INSERT into has_studio... " />
+                <marker date="1513113681970" expanded="true" signature="5745:5841" ph="INSERT into has_studio... " />
+                <marker date="1513113681970" expanded="true" signature="6567:6636" ph="INSERT into is_remake_of... " />
+                <marker date="1513113681970" expanded="true" signature="6567:6761" ph="INSERT into is_remake_of... " />
+                <marker date="1513113681970" expanded="true" signature="7247:7344" ph="INSERT INTO acts_in... " />
+                <marker date="1513113681970" expanded="true" signature="7247:7461" ph="INSERT INTO acts_in... " />
               </folding>
             </state>
           </provider>
@@ -77,8 +79,8 @@
       <file leaf-file-name="awards.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/awards.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="121" column="37" lean-forward="false" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+            <state relative-caret-position="999">
+              <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -127,8 +129,8 @@
       <file leaf-file-name="movies.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-524">
-              <caret line="403821" column="24" lean-forward="false" selection-start-line="403821" selection-start-column="4" selection-end-line="403821" selection-end-column="24" />
+            <state relative-caret-position="148">
+              <caret line="226580" column="23" lean-forward="false" selection-start-line="226580" selection-start-column="4" selection-end-line="226580" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -137,8 +139,8 @@
       <file leaf-file-name="people.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/people.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58467">
-              <caret line="22198" column="24" lean-forward="false" selection-start-line="22198" selection-start-column="17" selection-end-line="22198" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="8817" column="15" lean-forward="false" selection-start-line="8817" selection-start-column="11" selection-end-line="8817" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -155,10 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ghosts</find>
-      <find>Disney</find>
-      <find>&lt;awf&gt;Snow White and the Seven Dwarfs&lt;/awf&gt;</find>
-      <find>KeD</find>
       <find>Harvey Stephens</find>
       <find>Kenneth Branagh</find>
       <find>`</find>
@@ -185,6 +183,10 @@
       <find>'</find>
       <find>&quot;award_type&quot;: &quot;emmy&quot;</find>
       <find>george</find>
+      <find>genie</find>
+      <find>&quot;award_type&quot;: &quot;AA&quot;,</find>
+      <find>&quot;award_type&quot;: &quot;H&quot;,</find>
+      <find>&quot;award_type&quot;: &quot;&quot;,</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,9 +218,9 @@
         <option value="$PROJECT_DIR$/MovieDataCuration.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Misc/Queries.txt" />
-        <option value="$PROJECT_DIR$/Data_json/movies.json" />
         <option value="$PROJECT_DIR$/Data_json/awards.json" />
         <option value="$PROJECT_DIR$/Data_json/studios.json" />
+        <option value="$PROJECT_DIR$/Data_json/movies.json" />
         <option value="$PROJECT_DIR$/postgresLoadDB.py" />
       </list>
     </option>
@@ -693,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513107214881</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ingests awards and studios">
+      <created>1513112640172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513112640172</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -753,7 +762,8 @@
     <MESSAGE value="Added hypothetical award and studio loading and added todos for actor_awards and movie_awards loading" />
     <MESSAGE value="Updated a query. BG" />
     <MESSAGE value="Added reference json files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reference json files" />
+    <MESSAGE value="Ingests awards and studios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ingests awards and studios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1079,26 +1089,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+    <entry file="file://$PROJECT_DIR$/Data_json/studios.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="403821" column="24" lean-forward="false" selection-start-line="403821" selection-start-column="4" selection-end-line="403821" selection-end-column="24" />
+        <state relative-caret-position="18982">
+          <caret line="1290" column="39" lean-forward="false" selection-start-line="1290" selection-start-column="38" selection-end-line="1290" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/people.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58467">
-          <caret line="22198" column="24" lean-forward="false" selection-start-line="22198" selection-start-column="17" selection-end-line="22198" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/studios.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18982">
-          <caret line="1290" column="39" lean-forward="false" selection-start-line="1290" selection-start-column="38" selection-end-line="1290" selection-end-column="39" />
+        <state relative-caret-position="150">
+          <caret line="8817" column="15" lean-forward="false" selection-start-line="8817" selection-start-column="11" selection-end-line="8817" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1113,45 +1115,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/awards.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="121" column="37" lean-forward="false" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+        <state relative-caret-position="999">
+          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="226580" column="23" lean-forward="false" selection-start-line="226580" selection-start-column="4" selection-end-line="226580" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="83" column="83" lean-forward="false" selection-start-line="83" selection-start-column="83" selection-end-line="83" selection-end-column="83" />
+        <state relative-caret-position="298">
+          <caret line="126" column="144" lean-forward="false" selection-start-line="126" selection-start-column="144" selection-end-line="126" selection-end-column="144" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1513112325552" expanded="true" signature="1112:1161" ph="Insert into awards... " />
-            <marker date="1513112325552" expanded="true" signature="1112:1162" ph="Insert into awards... " />
-            <marker date="1513112325552" expanded="true" signature="1112:1224" ph="Insert into awards... " />
-            <marker date="1513112325552" expanded="true" signature="1112:1228" ph="Insert into awards... " />
-            <marker date="1513112325552" expanded="true" signature="1112:1231" ph="Insert into awards... " />
-            <marker date="1513112325552" expanded="true" signature="1618:1670" ph="Insert into studios... " />
-            <marker date="1513112325552" expanded="true" signature="1618:1696" ph="Insert into studios... " />
-            <marker date="1513112325552" expanded="true" signature="1618:1728" ph="Insert into studios... " />
-            <marker date="1513112325552" expanded="true" signature="2895:2918" ph="INSERT into participant... " />
-            <marker date="1513112325552" expanded="true" signature="2895:2955" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513112325552" expanded="true" signature="2895:2990" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513112325552" expanded="true" signature="2895:3019" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513112325552" expanded="true" signature="3366:3474" ph="INSERT into participant... " />
-            <marker date="1513112325552" expanded="true" signature="4099:4177" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1513112325552" expanded="true" signature="4099:4391" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1513112325552" expanded="true" signature="4682:4800" ph="INSERT into directs_movie... " />
-            <marker date="1513112325552" expanded="true" signature="4955:5066" ph="INSERT into writes_movie... " />
-            <marker date="1513112325552" expanded="true" signature="5220:5232" ph="INSERT into filmed_in... " />
-            <marker date="1513112325552" expanded="true" signature="5220:5272" ph="INSERT into has_studio... " />
-            <marker date="1513112325552" expanded="true" signature="5220:5273" ph="INSERT into has_studio... " />
-            <marker date="1513112325552" expanded="true" signature="5220:5291" ph="INSERT into has_studio... " />
-            <marker date="1513112325552" expanded="true" signature="5220:5293" ph="INSERT into has_studio... " />
-            <marker date="1513112325552" expanded="true" signature="5220:5316" ph="INSERT into has_studio... " />
-            <marker date="1513112325552" expanded="true" signature="6042:6111" ph="INSERT into is_remake_of... " />
-            <marker date="1513112325552" expanded="true" signature="6042:6236" ph="INSERT into is_remake_of... " />
-            <marker date="1513112325552" expanded="true" signature="6722:6819" ph="INSERT INTO acts_in... " />
-            <marker date="1513112325552" expanded="true" signature="6722:6936" ph="INSERT INTO acts_in... " />
+            <marker date="1513113681970" expanded="true" signature="1112:1161" ph="Insert into awards... " />
+            <marker date="1513113681970" expanded="true" signature="1112:1162" ph="Insert into awards... " />
+            <marker date="1513113681970" expanded="true" signature="1112:1224" ph="Insert into awards... " />
+            <marker date="1513113681970" expanded="true" signature="1112:1228" ph="Insert into awards... " />
+            <marker date="1513113681970" expanded="true" signature="1112:1231" ph="Insert into awards... " />
+            <marker date="1513113681970" expanded="true" signature="1618:1670" ph="Insert into studios... " />
+            <marker date="1513113681970" expanded="true" signature="1618:1696" ph="Insert into studios... " />
+            <marker date="1513113681970" expanded="true" signature="1618:1728" ph="Insert into studios... " />
+            <marker date="1513113681970" expanded="true" signature="2895:2918" ph="INSERT into participant... " />
+            <marker date="1513113681970" expanded="true" signature="2895:2955" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513113681970" expanded="true" signature="2895:2990" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513113681970" expanded="true" signature="2895:3019" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513113681970" expanded="true" signature="3366:3474" ph="INSERT into participant... " />
+            <marker date="1513113681970" expanded="true" signature="4099:4177" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1513113681970" expanded="true" signature="4099:4391" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1513113681970" expanded="true" signature="4682:4800" ph="INSERT into directs_movie... " />
+            <marker date="1513113681970" expanded="true" signature="5080:5143" ph="INSERT into writes_movie... " />
+            <marker date="1513113681970" expanded="true" signature="5080:5196" ph="INSERT into writes_movie... " />
+            <marker date="1513113681970" expanded="true" signature="5477:5591" ph="INSERT into movie_is_awarded... " />
+            <marker date="1513113681970" expanded="true" signature="5745:5757" ph="INSERT into filmed_in... " />
+            <marker date="1513113681970" expanded="true" signature="5745:5797" ph="INSERT into has_studio... " />
+            <marker date="1513113681970" expanded="true" signature="5745:5798" ph="INSERT into has_studio... " />
+            <marker date="1513113681970" expanded="true" signature="5745:5816" ph="INSERT into has_studio... " />
+            <marker date="1513113681970" expanded="true" signature="5745:5818" ph="INSERT into has_studio... " />
+            <marker date="1513113681970" expanded="true" signature="5745:5841" ph="INSERT into has_studio... " />
+            <marker date="1513113681970" expanded="true" signature="6567:6636" ph="INSERT into is_remake_of... " />
+            <marker date="1513113681970" expanded="true" signature="6567:6761" ph="INSERT into is_remake_of... " />
+            <marker date="1513113681970" expanded="true" signature="7247:7344" ph="INSERT INTO acts_in... " />
+            <marker date="1513113681970" expanded="true" signature="7247:7461" ph="INSERT INTO acts_in... " />
           </folding>
         </state>
       </provider>

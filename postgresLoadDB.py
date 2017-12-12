@@ -115,8 +115,16 @@ def connect():
                         cur.execute("INSERT into directs_movie (film_id , participant_id ) VALUES ( " + str(film_id) +" , " + str(direct_participant) + " );")
 
                 # loads the writer table
-                write_participant = participants.index(film['writers']['name'])
-                cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( '" + film_id + "' , '" + write_participant + "' );")
+                for writer in film['writers']:
+                    if writer['name'].lower() in participants:
+                        write_participant = participants.index(writer['name'].lower())
+                        cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( '" + str(film_id) + "' , '" + write_participant + "' );")
+
+                # loads the movie awards
+                for award in film['awards']:
+                    if award['award_type'].lower() in participants:
+                        film_award = participants.index(award['award_type'].lower())
+                        cur.execute("INSERT into movie_is_awarded(award_id, participant_id) VALUES ( '" + award_index + "' , '" + str(film_award) + "');")
 
                 # loads the has_studio table
                 this_studio = studio_list.index(film['studios']['studio'])
