@@ -7,8 +7,11 @@ Queries that don't cause errors when run are marked with an X above the SQL. Que
 O
 select movies.title, movies.year 
 from movies
-where lower(right(title, 6)) = 'george'
+where lower(right(title, 6)) = 'george' or lower(right(title, 6)) = 'George' 
 order by title
+
+For this query, we simply checked whether the last 6 characters in the title were 'george' and then ordered those movies by their title.
+Rows returned: 4
 
 2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
 X
@@ -35,31 +38,33 @@ LIMIT 1
 X
 select movies.title
 from movies, is_remake_of
-where movies.film_id != is_remake_of.remake_film_id and movies.film_id != is_remake_of.original_film_id                
+where movies.film_id != is_remake_of.remake_film_id or movies.film_id != is_remake_of.original_film_id                
 order by movies.title
 
 6) List the stagename of actors that have won an Academy Award for their role in a movie; include their name and role, the name of the movie they won the award for, and the year they won; order the list by the year the movie was made.
 X
 select participant.name, acts_in.role, movies.title, movies.year 
-from participant, movies, acts_in, award, actors_awarded
-where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and participant.participant_id = actors_awarded.participant_id and award.award_id = actors_awarded.award_id and award.award_name = 'Academy Award'
+from participant, movies, acts_in, awards, participant_is_awarded
+where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and participant.participant_id = participant_is_awarded.participant_id and awards.award_id = participant_is_awarded.award_id and awards.award_id = 0
 order by movies.year
+
+This query cannot be completed because our database doesn't connect roles to awards. Because of this, the query in our database gets actors that have won an award, but returns every role those actors have ever done rather than just the ones they did for the award. 
 
 7) Which movies, by name, won Academy Awards in 1970?
 X
 select movies.title 
-from movies, award, films_awarded
-where award.award_id = films_awarded.award_id and award.award_name = 'Academy Award' and movies.year = '1970'
+from movies, awards, movie_is_awarded
+where movies.film_id = movie_is_awarded.film_id and awards.award_id = movie_is_awarded.award_id and awards.award_id = 0 and movies.year = '1969'
 order by movies.title
 
-This is what the query will look like when we execute it. Our current database doesn't have information on awards (hasn't been coded in yet) so for now this query can't be executed.
+Academy Awards are typically awarded for movies made the year before, so we checked movies made in 1969.
 
 8) Has any original movie and an immediate remake both won an Academy Award? If so, list the name of the original and the remake along with the year for each ordered by name of the original and remake.
 X
-select movies.title, movies.year
-from movies, is_remake_of, award, films_awarded
-where movies.film_id = is_remake_of.original_film_id and movies.film_id = films_awarded.film_id and is_remake_of.remake_film_id = films_awarded.film_id and award.award_name = 'Academy Award'
-order by movies.title
+select m1.title, m1.year, m2.title, m2.year
+from movies as m1, movies as m2, is_remake_of as r, awards, movie_is_awarded
+where m1.film_id = r.original_film_id and m1.film_id = movie_is_awarded.film_id and m2.film_id = r.remake_film_id and m2.film_id = movie_is_awarded.film_id and awards.award_id = 0
+order by m1.title, m2.title
 
 Like the above query, this query can't be executed yet since we don't have info on awards in our database yet.
 
@@ -70,11 +75,17 @@ from movies
 order by length(movies.title) ASC
 LIMIT 1
 
+FOr this query, we got the title and year of every movie and ordered them by the length of their titles in ascending order, which meant the shortest title was the first row returned. Then, we limited the results to 1 entry so only that first row was shown.
+Rows returned: 1
+
 10) What movies did "George Fox" write?
 X
 select movies.title 
-from movies, writes_movie, participant
-where movies.film_id = writes_movie.film_id and writes_movie.participant_id = participant.participant_id and participant.name = 'George Fox'
+from movies, writes_movie
+where movies.film_id = writes_movie.film_id and writes_movie.writer_name = 'George Fox'
+
+Our database has writers by their name and film, so the query is simply getting the id's of the movies in the writes_movie table and then getting the name of the writer associated with those ids.
+Rows returned: 0
 
 11) Are there any actors that have played more than one role in the same movie? If so, list the movie title, the actor's name and the roles they played. Order by movie title, actor's name, and role.
 select movies.title, participant.name, acts_in.role
@@ -121,7 +132,8 @@ INCOMPLETE QUERY
 X
 select participant.name, count(movies) as movie_count
 from participant, acts_in, movies, directs_movie
-where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and movie.film_id = directs_movie.film_id and participant.participant_id = directs_movie.film_id and participant.name = 'Clint Eastwood'
+where movies.film_id = acts_in.film_id and participant.participant_id = acts_in.participant_id and movies.film_id = directs_movie.film_id and participant.participant_id = directs_movie.film_id and participant.name = 'Clint Eastwood'
+group by participant.name
 order by movie_count DESC, participant.name ASC
 
 17) What are the categories (i.e., genre) of movies that "Ronald Reagan" has appeared in as an actor? 
@@ -131,24 +143,30 @@ from movies, acts_in, participant
 where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and participant.name = 'Ronald Reagan' 
 
 18) Which studio has made the most movies and how many have they made?
-X
+O
 select studios.studio_name, count(movies) as movie_count
 from movies, studios, has_studio
 where movies.film_id = has_studio.film_id and studios.studio_id = has_studio.studio_id
 group by studios.studio_name
-order by movie_count
+order by movie_count DESC
 LIMIT 1
+
+This query selects movies that have studios and then groups them by their studio. The movies are then counted for each studio and ordered by their counts in descending order so the studio with the most movies is at the top, and then the query is limited to 1 result so only that studio is returned.
+Rows returned: 1 (mgm, 491 movies)
 
 Like with the awards, we haven't added studios to the database yet, so we can't execute this query.
 
 19) "Paramount" is a famous studio. What category (i.e., genre) of movie was most commonly made by "Paramount"?
-X
+O
 select movies.genre
 from movies, studios, has_studio
-where studios.studio_id = has_studio.studio_id and movies.film_id = has_studio.film_id and studios.studio_name = 'Paramount'
+where studios.studio_id = has_studio.studio_id and movies.film_id = has_studio.film_id and studios.studio_name = 'paramount'
 group by movies.genre
-order by count(genre)
+order by count(genre) DESC
 LIMIT 1
+
+This query is like the above query, only the movies are grouped by genres instead of studios, and the only studio we're looking for is Paramount. (lowercase in our database)
+Rows returned: 1 (comedy, 97 times)
 
 Once again, no studio info yet, so we can't do this query.
 
@@ -162,15 +180,23 @@ where movies.film_id = acts_in.film_id and directs_movie.film_id = movies.film_i
 O
 select acts_in.role_type, count(acts_in.participant_id) as role_type_count
 from acts_in
+where acts_in.role_type != ''
 group by acts_in.role_type 
 order by role_type_count DESC
+
+This query selects all the role types present in the acts_in table and counts how many times each role type shows up. (we excluded blank entries for role types) The role types and their counts are then grouped together and ordered in descending order.
+Rows returned: 11490
 
 22) For all of the generic categories for movies (e.g., "drama", "mystery"), list the name of the category (long form, if possible) and a count of how many movies are in that category in descending order of the counts.
 O
 select movies.genre, count(movies) as movie_count
 from movies
+where movies.genre != 'Null'
 group by movies.genre
 order by movie_count DESC
+
+This query is just like the above query, only we selected genres instead of role types (so we used the movies table instead of the acts_in table) and excluded null values instead of blank values.
+Rows returned: 101
 
 23) Who was the oldest actor to appear in a movie? I.e., has the largest difference between their date of birth and the release of a movie they appeared in. Give their name, rough age at the time, title of the movie, and the role they played; in the case of a tie, display them all.
 select participant.name, max(participant.date_of_death - participant.date_of_birth) as age, movies.title, acts_in.role
