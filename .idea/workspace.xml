@@ -4,7 +4,9 @@
     <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/awards.json" afterPath="$PROJECT_DIR$/Data_json/awards.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/movies.json" afterPath="$PROJECT_DIR$/Data_json/movies.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data_json/studios.json" afterPath="$PROJECT_DIR$/Data_json/studios.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postgresLoadDB.py" afterPath="$PROJECT_DIR$/postgresLoadDB.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresConnection.coverage" NAME="postgresConnection Coverage Results" MODIFIED="1507828498207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$MovieDataCuration.coverage" NAME="MovieDataCuration Coverage Results" MODIFIED="1512064876490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/moviedatabase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1513114667440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moviedatabase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1513132893890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MovieDataBase$postgresLoadDB.coverage" NAME="postgresLoadDB Coverage Results" MODIFIED="1512068419734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -34,42 +36,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1279">
-              <caret line="131" column="80" lean-forward="false" selection-start-line="131" selection-start-column="80" selection-end-line="131" selection-end-column="80" />
+            <state relative-caret-position="314">
+              <caret line="125" column="129" lean-forward="true" selection-start-line="125" selection-start-column="129" selection-end-line="125" selection-end-column="129" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
-                <marker date="1513114645638" expanded="true" signature="1112:1161" ph="Insert into awards... " />
-                <marker date="1513114645638" expanded="true" signature="1112:1162" ph="Insert into awards... " />
-                <marker date="1513114645638" expanded="true" signature="1112:1224" ph="Insert into awards... " />
-                <marker date="1513114645638" expanded="true" signature="1112:1228" ph="Insert into awards... " />
-                <marker date="1513114645638" expanded="true" signature="1112:1231" ph="Insert into awards... " />
-                <marker date="1513114645638" expanded="true" signature="1618:1670" ph="Insert into studios... " />
-                <marker date="1513114645638" expanded="true" signature="1618:1696" ph="Insert into studios... " />
-                <marker date="1513114645638" expanded="true" signature="1618:1728" ph="Insert into studios... " />
-                <marker date="1513114645638" expanded="true" signature="2895:2918" ph="INSERT into participant... " />
-                <marker date="1513114645638" expanded="true" signature="2895:2955" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513114645638" expanded="true" signature="2895:2990" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513114645638" expanded="true" signature="2895:3019" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513114645638" expanded="true" signature="3366:3474" ph="INSERT into participant... " />
-                <marker date="1513114645638" expanded="true" signature="4099:4177" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1513114645638" expanded="true" signature="4099:4391" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1513114645638" expanded="true" signature="4682:4800" ph="INSERT into directs_movie... " />
-                <marker date="1513114645638" expanded="true" signature="5080:5143" ph="INSERT into writes_movie... " />
-                <marker date="1513114645638" expanded="true" signature="5080:5196" ph="INSERT into writes_movie... " />
-                <marker date="1513114645638" expanded="true" signature="5475:5589" ph="INSERT into movie_is_awarded... " />
-                <marker date="1513114645638" expanded="true" signature="5869:5881" ph="INSERT into filmed_in... " />
-                <marker date="1513114645638" expanded="true" signature="5869:5921" ph="INSERT into has_studio... " />
-                <marker date="1513114645638" expanded="true" signature="5869:5922" ph="INSERT into has_studio... " />
-                <marker date="1513114645638" expanded="true" signature="5869:5940" ph="INSERT into has_studio... " />
-                <marker date="1513114645638" expanded="true" signature="5869:5942" ph="INSERT into has_studio... " />
-                <marker date="1513114645638" expanded="true" signature="5869:5965" ph="INSERT into has_studio... " />
-                <marker date="1513114645638" expanded="true" signature="6691:6760" ph="INSERT into is_remake_of... " />
-                <marker date="1513114645638" expanded="true" signature="6691:6885" ph="INSERT into is_remake_of... " />
-                <marker date="1513114645638" expanded="true" signature="7371:7468" ph="INSERT INTO acts_in... " />
-                <marker date="1513114645638" expanded="true" signature="7371:7585" ph="INSERT INTO acts_in... " />
+                <marker date="1513132712955" expanded="true" signature="1156:1205" ph="Insert into awards... " />
+                <marker date="1513132712955" expanded="true" signature="1156:1206" ph="Insert into awards... " />
+                <marker date="1513132712955" expanded="true" signature="1156:1268" ph="Insert into awards... " />
+                <marker date="1513132712955" expanded="true" signature="1156:1272" ph="Insert into awards... " />
+                <marker date="1513132712955" expanded="true" signature="1156:1275" ph="Insert into awards... " />
+                <marker date="1513132712955" expanded="true" signature="1694:1746" ph="Insert into studios... " />
+                <marker date="1513132712955" expanded="true" signature="1694:1772" ph="Insert into studios... " />
+                <marker date="1513132712955" expanded="true" signature="1694:1804" ph="Insert into studios... " />
+                <marker date="1513132712955" expanded="true" signature="2835:2858" ph="INSERT into participant... " />
+                <marker date="1513132712955" expanded="true" signature="2835:2895" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513132712955" expanded="true" signature="2835:2906" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513132712955" expanded="true" signature="2835:2935" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513132712955" expanded="true" signature="2835:2964" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513132712955" expanded="true" signature="3348:3456" ph="INSERT into participant... " />
+                <marker date="1513132712955" expanded="true" signature="4080:4158" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1513132712955" expanded="true" signature="4080:4372" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1513132712955" expanded="true" signature="4663:4781" ph="INSERT into directs_movie... " />
+                <marker date="1513132712955" expanded="true" signature="4960:4994" ph="INSERT into writes_movie... " />
+                <marker date="1513132712955" expanded="true" signature="4960:5019" ph="INSERT into writes_movie... " />
+                <marker date="1513132712955" expanded="true" signature="4960:5020" ph="INSERT into writes_movie... " />
+                <marker date="1513132712955" expanded="true" signature="4960:5041" ph="INSERT into writes_movie... " />
+                <marker date="1513132712955" expanded="true" signature="5320:5359" ph="INSERT into movie_is_awarded... " />
+                <marker date="1513132712955" expanded="true" signature="5320:5409" ph="INSERT into movie_is_awarded... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5706" ph="INSERT into filmed_in... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5725" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5726" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5727" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5750" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5751" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5752" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5774" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="5694:5775" ph="INSERT into has_studio... " />
+                <marker date="1513132712955" expanded="true" signature="6453:6522" ph="INSERT into is_remake_of... " />
+                <marker date="1513132712955" expanded="true" signature="6453:6647" ph="INSERT into is_remake_of... " />
+                <marker date="1513132712955" expanded="true" signature="7136:7233" ph="INSERT INTO acts_in... " />
+                <marker date="1513132712955" expanded="true" signature="7136:7350" ph="INSERT INTO acts_in... " />
               </folding>
             </state>
           </provider>
@@ -78,18 +87,18 @@
       <file leaf-file-name="awards.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/awards.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+            <state relative-caret-position="283">
+              <caret line="239" column="2" lean-forward="false" selection-start-line="239" selection-start-column="2" selection-end-line="239" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studios.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="studios.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/studios.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="1290" column="39" lean-forward="false" selection-start-line="1290" selection-start-column="38" selection-end-line="1290" selection-end-column="39" />
+            <state relative-caret-position="241">
+              <caret line="1739" column="27" lean-forward="false" selection-start-line="1739" selection-start-column="18" selection-end-line="1739" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -118,7 +127,7 @@
       <file leaf-file-name="actors.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="87021">
               <caret line="6177" column="13" lean-forward="true" selection-start-line="6177" selection-start-column="13" selection-end-line="6177" selection-end-column="13" />
               <folding />
             </state>
@@ -128,8 +137,8 @@
       <file leaf-file-name="movies.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="226580" column="23" lean-forward="false" selection-start-line="226580" selection-start-column="4" selection-end-line="226580" selection-end-column="23" />
+            <state relative-caret-position="-7685">
+              <caret line="332169" column="25" lean-forward="false" selection-start-line="332169" selection-start-column="25" selection-end-line="332169" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -139,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/Data_json/people.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="8817" column="15" lean-forward="false" selection-start-line="8817" selection-start-column="11" selection-end-line="8817" selection-end-column="15" />
+              <caret line="20642" column="18" lean-forward="false" selection-start-line="20642" selection-start-column="17" selection-end-line="20642" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -156,12 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Kenneth Branagh</find>
-      <find>`</find>
-      <find>&quot;</find>
-      <find>''</find>
-      <find>Pal</find>
-      <find>Eddie Furlong</find>
       <find>Michael Crichton</find>
       <find>A</find>
       <find>se.hicks</find>
@@ -178,14 +181,20 @@
       <find>day</find>
       <find>godf</find>
       <find>25</find>
-      <find>'</find>
       <find>&quot;award_type&quot;: &quot;emmy&quot;</find>
       <find>george</find>
-      <find>genie</find>
       <find>&quot;award_type&quot;: &quot;AA&quot;,</find>
       <find>&quot;award_type&quot;: &quot;H&quot;,</find>
       <find>&quot;award_type&quot;: &quot;&quot;,</find>
+      <find>essex</find>
+      <find>carosse</find>
       <find>famo</find>
+      <find>genie</find>
+      <find>lions</find>
+      <find>Jacques</find>
+      <find>Jacques Pr\'evert</find>
+      <find>'</find>
+      <find>E.E.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,10 +226,10 @@
         <option value="$PROJECT_DIR$/MovieDataCuration.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Misc/Queries.txt" />
-        <option value="$PROJECT_DIR$/Data_json/awards.json" />
-        <option value="$PROJECT_DIR$/Data_json/movies.json" />
-        <option value="$PROJECT_DIR$/postgresLoadDB.py" />
         <option value="$PROJECT_DIR$/Data_json/studios.json" />
+        <option value="$PROJECT_DIR$/Data_json/movies.json" />
+        <option value="$PROJECT_DIR$/Data_json/awards.json" />
+        <option value="$PROJECT_DIR$/postgresLoadDB.py" />
       </list>
     </option>
   </component>
@@ -722,22 +731,37 @@
       <option name="project" value="LOCAL" />
       <updated>1513114654341</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Bug Fix with studios.json">
+      <created>1513114745383</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513114745383</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Bug Fixes">
+      <created>1513116774866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513116774866</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21316166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.5064378" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.49356222" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.28683835" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.71316165" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.49893048" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21316166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39966556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -746,7 +770,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -754,19 +777,19 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.28683835" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115942" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950193" sideWeight="0.71316165" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31326646" sideWeight="0.49893048" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23128343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21316166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39988908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39966556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -785,7 +808,9 @@
     <MESSAGE value="Ingests awards and studios" />
     <MESSAGE value="ingest film awards from movie json to award reference and fix writer insert queryb" />
     <MESSAGE value="Bug Fix with has_studio ingestion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix with has_studio ingestion" />
+    <MESSAGE value="Bug Fix with studios.json" />
+    <MESSAGE value="Bug Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,6 +1125,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data_json/studios.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="1739" column="27" lean-forward="false" selection-start-line="1739" selection-start-column="18" selection-end-line="1739" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MovieDataCuration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
@@ -1114,14 +1147,14 @@
     <entry file="file://$PROJECT_DIR$/Data_json/people.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="8817" column="15" lean-forward="false" selection-start-line="8817" selection-start-column="11" selection-end-line="8817" selection-end-column="15" />
+          <caret line="20642" column="18" lean-forward="false" selection-start-line="20642" selection-start-column="17" selection-end-line="20642" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/actors.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="87021">
           <caret line="6177" column="13" lean-forward="true" selection-start-line="6177" selection-start-column="13" selection-end-line="6177" selection-end-column="13" />
           <folding />
         </state>
@@ -1129,64 +1162,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/movies.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="226580" column="23" lean-forward="false" selection-start-line="226580" selection-start-column="4" selection-end-line="226580" selection-end-column="23" />
+        <state relative-caret-position="-7685">
+          <caret line="332169" column="25" lean-forward="false" selection-start-line="332169" selection-start-column="25" selection-end-line="332169" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_json/awards.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+        <state relative-caret-position="283">
+          <caret line="239" column="2" lean-forward="false" selection-start-line="239" selection-start-column="2" selection-end-line="239" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1279">
-          <caret line="131" column="80" lean-forward="false" selection-start-line="131" selection-start-column="80" selection-end-line="131" selection-end-column="80" />
+        <state relative-caret-position="314">
+          <caret line="125" column="129" lean-forward="true" selection-start-line="125" selection-start-column="129" selection-end-line="125" selection-end-column="129" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1513114645638" expanded="true" signature="1112:1161" ph="Insert into awards... " />
-            <marker date="1513114645638" expanded="true" signature="1112:1162" ph="Insert into awards... " />
-            <marker date="1513114645638" expanded="true" signature="1112:1224" ph="Insert into awards... " />
-            <marker date="1513114645638" expanded="true" signature="1112:1228" ph="Insert into awards... " />
-            <marker date="1513114645638" expanded="true" signature="1112:1231" ph="Insert into awards... " />
-            <marker date="1513114645638" expanded="true" signature="1618:1670" ph="Insert into studios... " />
-            <marker date="1513114645638" expanded="true" signature="1618:1696" ph="Insert into studios... " />
-            <marker date="1513114645638" expanded="true" signature="1618:1728" ph="Insert into studios... " />
-            <marker date="1513114645638" expanded="true" signature="2895:2918" ph="INSERT into participant... " />
-            <marker date="1513114645638" expanded="true" signature="2895:2955" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513114645638" expanded="true" signature="2895:2990" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513114645638" expanded="true" signature="2895:3019" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513114645638" expanded="true" signature="3366:3474" ph="INSERT into participant... " />
-            <marker date="1513114645638" expanded="true" signature="4099:4177" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1513114645638" expanded="true" signature="4099:4391" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1513114645638" expanded="true" signature="4682:4800" ph="INSERT into directs_movie... " />
-            <marker date="1513114645638" expanded="true" signature="5080:5143" ph="INSERT into writes_movie... " />
-            <marker date="1513114645638" expanded="true" signature="5080:5196" ph="INSERT into writes_movie... " />
-            <marker date="1513114645638" expanded="true" signature="5475:5589" ph="INSERT into movie_is_awarded... " />
-            <marker date="1513114645638" expanded="true" signature="5869:5881" ph="INSERT into filmed_in... " />
-            <marker date="1513114645638" expanded="true" signature="5869:5921" ph="INSERT into has_studio... " />
-            <marker date="1513114645638" expanded="true" signature="5869:5922" ph="INSERT into has_studio... " />
-            <marker date="1513114645638" expanded="true" signature="5869:5940" ph="INSERT into has_studio... " />
-            <marker date="1513114645638" expanded="true" signature="5869:5942" ph="INSERT into has_studio... " />
-            <marker date="1513114645638" expanded="true" signature="5869:5965" ph="INSERT into has_studio... " />
-            <marker date="1513114645638" expanded="true" signature="6691:6760" ph="INSERT into is_remake_of... " />
-            <marker date="1513114645638" expanded="true" signature="6691:6885" ph="INSERT into is_remake_of... " />
-            <marker date="1513114645638" expanded="true" signature="7371:7468" ph="INSERT INTO acts_in... " />
-            <marker date="1513114645638" expanded="true" signature="7371:7585" ph="INSERT INTO acts_in... " />
+            <marker date="1513132712955" expanded="true" signature="1156:1205" ph="Insert into awards... " />
+            <marker date="1513132712955" expanded="true" signature="1156:1206" ph="Insert into awards... " />
+            <marker date="1513132712955" expanded="true" signature="1156:1268" ph="Insert into awards... " />
+            <marker date="1513132712955" expanded="true" signature="1156:1272" ph="Insert into awards... " />
+            <marker date="1513132712955" expanded="true" signature="1156:1275" ph="Insert into awards... " />
+            <marker date="1513132712955" expanded="true" signature="1694:1746" ph="Insert into studios... " />
+            <marker date="1513132712955" expanded="true" signature="1694:1772" ph="Insert into studios... " />
+            <marker date="1513132712955" expanded="true" signature="1694:1804" ph="Insert into studios... " />
+            <marker date="1513132712955" expanded="true" signature="2835:2858" ph="INSERT into participant... " />
+            <marker date="1513132712955" expanded="true" signature="2835:2895" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513132712955" expanded="true" signature="2835:2906" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513132712955" expanded="true" signature="2835:2935" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513132712955" expanded="true" signature="2835:2964" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513132712955" expanded="true" signature="3348:3456" ph="INSERT into participant... " />
+            <marker date="1513132712955" expanded="true" signature="4080:4158" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1513132712955" expanded="true" signature="4080:4372" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1513132712955" expanded="true" signature="4663:4781" ph="INSERT into directs_movie... " />
+            <marker date="1513132712955" expanded="true" signature="4960:4994" ph="INSERT into writes_movie... " />
+            <marker date="1513132712955" expanded="true" signature="4960:5019" ph="INSERT into writes_movie... " />
+            <marker date="1513132712955" expanded="true" signature="4960:5020" ph="INSERT into writes_movie... " />
+            <marker date="1513132712955" expanded="true" signature="4960:5041" ph="INSERT into writes_movie... " />
+            <marker date="1513132712955" expanded="true" signature="5320:5359" ph="INSERT into movie_is_awarded... " />
+            <marker date="1513132712955" expanded="true" signature="5320:5409" ph="INSERT into movie_is_awarded... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5706" ph="INSERT into filmed_in... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5725" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5726" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5727" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5750" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5751" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5752" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5774" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="5694:5775" ph="INSERT into has_studio... " />
+            <marker date="1513132712955" expanded="true" signature="6453:6522" ph="INSERT into is_remake_of... " />
+            <marker date="1513132712955" expanded="true" signature="6453:6647" ph="INSERT into is_remake_of... " />
+            <marker date="1513132712955" expanded="true" signature="7136:7233" ph="INSERT INTO acts_in... " />
+            <marker date="1513132712955" expanded="true" signature="7136:7350" ph="INSERT INTO acts_in... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data_json/studios.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="1290" column="39" lean-forward="false" selection-start-line="1290" selection-start-column="38" selection-end-line="1290" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>

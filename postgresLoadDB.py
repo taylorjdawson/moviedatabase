@@ -42,10 +42,12 @@ def connect():
         award_array = []
         with open('Data_json/awards.json', 'r') as f:
             awards = json.load(f)
+            for key in awards.keys():
+                award_array.append(key.lower())
             for award in awards.values():
-                award_array.append(award)
                 cur.execute("Insert into awards(award_id, award_name) VALUES ( " + str(award_id) + " , '" + award['awarding organization'] + "' );")
                 award_id += 1
+        print(str(award_array))
 
 
         print('Loading List of Studios ...')
@@ -75,12 +77,13 @@ def connect():
                 cur.execute("INSERT into participant(participant_id, date_of_birth, date_of_death, gender, name, family_name, first_name)"
                             " VALUES ( " + str(participant_id) + " , " + person['date_of_birth'] + " , " + person['date_of_death']
                             + " , '" + person['gender'] + "' , '" + person['stage_name'] + "' , '" + person['family_name'] + "' , '" + person['first_name'] + "' );")
-                participant_id += 1
 
                 for award in person['awards']:
                     if award['award_type'].lower() in award_array:
                         award_index = award_array.index(award['award_type'].lower())
-                        cur.execute("INSERT into participant_is_awarded(award_id, participant_id) VALUES ( '" + award_index + "' , '" + str(participant_id) + "');")
+                        cur.execute("INSERT into participant_is_awarded(award_id, participant_id) VALUES ( '" + str(award_index) + "' , '" + str(participant_id) + "');")
+
+                participant_id += 1
 
         print('Loading Participants...')
         # Ingest other participants like directors, producers
@@ -100,7 +103,6 @@ def connect():
         movieList = []
         with open('Data_json/movies.json', 'r') as f:
             moviesJSON = json.load(f)
-
             for film in moviesJSON.values():
                 movieList.append(film['film_id'])
                 cur.execute("INSERT into themoviedatabase.public.movies (film_id,title,year, genre) VALUES " + # TODO: Include more than one genre
@@ -114,21 +116,20 @@ def connect():
 
                 # loads the writer table
                 for writer in film['writers']:
-                    if writer['name'].lower() in participants:
-                        write_participant = participants.index(writer['name'].lower())
-                        cur.execute("INSERT into writes_movie (film_id , participant_id ) VALUES ( '" + str(film_id) + "' , '" + str(write_participant) + "' );")
+                    write_name = str(writer['name'])
+                    cur.execute("INSERT into writes_movie VALUES ( '" + str(film_id) + "' , '" + write_name + "' );")
 
                 # loads the movie awards
                 for award in film['awards']:
                     if award['award_type'].lower() in award_array:
                         film_award = award_array.index(award['award_type'].lower())
-                        cur.execute("INSERT into movie_is_awarded(award_id, participant_id) VALUES ( '" + award_index + "' , '" + str(film_award) + "');")
+                        cur.execute("INSERT into movie_is_awarded VALUES ( '" + str(film_id) + "' , '" + str(film_award) + "');")
 
                 # loads the has_studio table
                 for studio in film['studios']:
                     if studio['studio'].lower() in studio_list:
-                        this_studio = studio_list.index(studio['studio'].lower())
-                        cur.execute("INSERT into has_studio (film_id, studio_id) VALUES ( '" + film_id + "' , '" + str(this_studio) + "' );")
+                        this_studio = str(studio_list.index(studio['studio'].lower()))
+                        cur.execute("INSERT into has_studio VALUES ( '" + str(film_id) + "' , '" + this_studio + "' );")
 
                 film_id += 1
 
@@ -148,7 +149,7 @@ def connect():
                                 " VALUES ( " + str(new_Remake_ID) + " , " + str(new_Original_ID) + " , " + fraction + " );" )
 
         # Ingest Cast Lists
-        print('Loading Acts_in table')
+        print('Loading Acts_in table...')
         with open('Data_json/casts.json', 'r') as f:
             actsinJSON = json.load(f)
 
