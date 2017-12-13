@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="Fix Line Wrapping">
+    <list default="true" id="0c0412ff-695a-49b9-9d07-5bc3bd8b8ca4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovieDataCuration.py" afterPath="$PROJECT_DIR$/MovieDataCuration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postgresLoadDB.py" afterPath="$PROJECT_DIR$/postgresLoadDB.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,46 +36,46 @@
       <file leaf-file-name="postgresLoadDB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="391">
+              <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
-                <marker date="1513137594458" expanded="true" signature="1028:1077" ph="Insert into awards... " />
-                <marker date="1513137594458" expanded="true" signature="1028:1078" ph="Insert into awards... " />
-                <marker date="1513137594458" expanded="true" signature="1028:1168" ph="Insert into awards... " />
-                <marker date="1513137594458" expanded="true" signature="1028:1172" ph="Insert into awards... " />
-                <marker date="1513137594458" expanded="true" signature="1028:1175" ph="Insert into awards... " />
-                <marker date="1513137594458" expanded="true" signature="1594:1646" ph="Insert into studios... " />
-                <marker date="1513137594458" expanded="true" signature="1594:1700" ph="Insert into studios... " />
-                <marker date="1513137594458" expanded="true" signature="1594:1732" ph="Insert into studios... " />
-                <marker date="1513137594458" expanded="true" signature="2847:2870" ph="INSERT into participant... " />
-                <marker date="1513137594458" expanded="true" signature="2847:2907" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513137594458" expanded="true" signature="2847:2957" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513137594458" expanded="true" signature="2847:2986" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513137594458" expanded="true" signature="2847:3051" ph="INSERT into participant_is_awarded... " />
-                <marker date="1513137594458" expanded="true" signature="3435:3574" ph="INSERT into participant... " />
-                <marker date="1513137594458" expanded="true" signature="4226:4304" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1513137594458" expanded="true" signature="4226:4510" ph="INSERT into themoviedatabase.public.movies... " />
-                <marker date="1513137594458" expanded="true" signature="4801:4955" ph="INSERT into directs_movie... " />
-                <marker date="1513137594458" expanded="true" signature="5134:5168" ph="INSERT into writes_movie... " />
-                <marker date="1513137594458" expanded="true" signature="5134:5193" ph="INSERT into writes_movie... " />
-                <marker date="1513137594458" expanded="true" signature="5134:5194" ph="INSERT into writes_movie... " />
-                <marker date="1513137594458" expanded="true" signature="5134:5247" ph="INSERT into writes_movie... " />
-                <marker date="1513137594458" expanded="true" signature="5526:5565" ph="INSERT into movie_is_awarded... " />
-                <marker date="1513137594458" expanded="true" signature="5526:5651" ph="INSERT into movie_is_awarded... " />
-                <marker date="1513137594458" expanded="true" signature="5936:5948" ph="INSERT into filmed_in... " />
-                <marker date="1513137594458" expanded="true" signature="5936:5967" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:5968" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:5969" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:6028" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:6029" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:6030" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:6052" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="5936:6053" ph="INSERT into has_studio... " />
-                <marker date="1513137594458" expanded="true" signature="6731:6800" ph="INSERT into is_remake_of... " />
-                <marker date="1513137594458" expanded="true" signature="6731:6957" ph="INSERT into is_remake_of... " />
-                <marker date="1513137594458" expanded="true" signature="7446:7575" ph="INSERT INTO acts_in... " />
-                <marker date="1513137594458" expanded="true" signature="7446:7692" ph="INSERT INTO acts_in... " />
+                <marker date="1513138916775" expanded="true" signature="1028:1077" ph="Insert into awards... " />
+                <marker date="1513138916775" expanded="true" signature="1028:1078" ph="Insert into awards... " />
+                <marker date="1513138916775" expanded="true" signature="1028:1168" ph="Insert into awards... " />
+                <marker date="1513138916775" expanded="true" signature="1028:1172" ph="Insert into awards... " />
+                <marker date="1513138916775" expanded="true" signature="1028:1175" ph="Insert into awards... " />
+                <marker date="1513138916775" expanded="true" signature="1562:1614" ph="Insert into studios... " />
+                <marker date="1513138916775" expanded="true" signature="1562:1668" ph="Insert into studios... " />
+                <marker date="1513138916775" expanded="true" signature="1562:1700" ph="Insert into studios... " />
+                <marker date="1513138916775" expanded="true" signature="2815:2838" ph="INSERT into participant... " />
+                <marker date="1513138916775" expanded="true" signature="2815:2875" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513138916775" expanded="true" signature="2815:2925" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513138916775" expanded="true" signature="2815:2954" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513138916775" expanded="true" signature="2815:3019" ph="INSERT into participant_is_awarded... " />
+                <marker date="1513138916775" expanded="true" signature="3403:3542" ph="INSERT into participant... " />
+                <marker date="1513138916775" expanded="true" signature="4194:4272" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1513138916775" expanded="true" signature="4194:4478" ph="INSERT into themoviedatabase.public.movies... " />
+                <marker date="1513138916775" expanded="true" signature="4769:4923" ph="INSERT into directs_movie... " />
+                <marker date="1513138916775" expanded="true" signature="5102:5136" ph="INSERT into writes_movie... " />
+                <marker date="1513138916775" expanded="true" signature="5102:5161" ph="INSERT into writes_movie... " />
+                <marker date="1513138916775" expanded="true" signature="5102:5162" ph="INSERT into writes_movie... " />
+                <marker date="1513138916775" expanded="true" signature="5102:5215" ph="INSERT into writes_movie... " />
+                <marker date="1513138916775" expanded="true" signature="5494:5533" ph="INSERT into movie_is_awarded... " />
+                <marker date="1513138916775" expanded="true" signature="5494:5619" ph="INSERT into movie_is_awarded... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5916" ph="INSERT into filmed_in... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5935" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5936" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5937" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5996" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5997" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:5998" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:6020" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="5904:6021" ph="INSERT into has_studio... " />
+                <marker date="1513138916775" expanded="true" signature="6699:6768" ph="INSERT into is_remake_of... " />
+                <marker date="1513138916775" expanded="true" signature="6699:6925" ph="INSERT into is_remake_of... " />
+                <marker date="1513138916775" expanded="true" signature="7414:7543" ph="INSERT INTO acts_in... " />
+                <marker date="1513138916775" expanded="true" signature="7414:7660" ph="INSERT INTO acts_in... " />
               </folding>
             </state>
           </provider>
@@ -225,8 +225,8 @@
         <option value="$PROJECT_DIR$/Data_json/studios.json" />
         <option value="$PROJECT_DIR$/Data_json/movies.json" />
         <option value="$PROJECT_DIR$/Data_json/awards.json" />
-        <option value="$PROJECT_DIR$/postgresLoadDB.py" />
         <option value="$PROJECT_DIR$/MovieDataCuration.py" />
+        <option value="$PROJECT_DIR$/postgresLoadDB.py" />
       </list>
     </option>
   </component>
@@ -756,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513137613684</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fix Line Wrapping">
+      <created>1513138893999</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1513138893999</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1191,46 +1198,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/postgresLoadDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="391">
+          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
             <element signature="e#18#33#0" expanded="true" />
-            <marker date="1513137594458" expanded="true" signature="1028:1077" ph="Insert into awards... " />
-            <marker date="1513137594458" expanded="true" signature="1028:1078" ph="Insert into awards... " />
-            <marker date="1513137594458" expanded="true" signature="1028:1168" ph="Insert into awards... " />
-            <marker date="1513137594458" expanded="true" signature="1028:1172" ph="Insert into awards... " />
-            <marker date="1513137594458" expanded="true" signature="1028:1175" ph="Insert into awards... " />
-            <marker date="1513137594458" expanded="true" signature="1594:1646" ph="Insert into studios... " />
-            <marker date="1513137594458" expanded="true" signature="1594:1700" ph="Insert into studios... " />
-            <marker date="1513137594458" expanded="true" signature="1594:1732" ph="Insert into studios... " />
-            <marker date="1513137594458" expanded="true" signature="2847:2870" ph="INSERT into participant... " />
-            <marker date="1513137594458" expanded="true" signature="2847:2907" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513137594458" expanded="true" signature="2847:2957" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513137594458" expanded="true" signature="2847:2986" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513137594458" expanded="true" signature="2847:3051" ph="INSERT into participant_is_awarded... " />
-            <marker date="1513137594458" expanded="true" signature="3435:3574" ph="INSERT into participant... " />
-            <marker date="1513137594458" expanded="true" signature="4226:4304" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1513137594458" expanded="true" signature="4226:4510" ph="INSERT into themoviedatabase.public.movies... " />
-            <marker date="1513137594458" expanded="true" signature="4801:4955" ph="INSERT into directs_movie... " />
-            <marker date="1513137594458" expanded="true" signature="5134:5168" ph="INSERT into writes_movie... " />
-            <marker date="1513137594458" expanded="true" signature="5134:5193" ph="INSERT into writes_movie... " />
-            <marker date="1513137594458" expanded="true" signature="5134:5194" ph="INSERT into writes_movie... " />
-            <marker date="1513137594458" expanded="true" signature="5134:5247" ph="INSERT into writes_movie... " />
-            <marker date="1513137594458" expanded="true" signature="5526:5565" ph="INSERT into movie_is_awarded... " />
-            <marker date="1513137594458" expanded="true" signature="5526:5651" ph="INSERT into movie_is_awarded... " />
-            <marker date="1513137594458" expanded="true" signature="5936:5948" ph="INSERT into filmed_in... " />
-            <marker date="1513137594458" expanded="true" signature="5936:5967" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:5968" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:5969" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:6028" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:6029" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:6030" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:6052" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="5936:6053" ph="INSERT into has_studio... " />
-            <marker date="1513137594458" expanded="true" signature="6731:6800" ph="INSERT into is_remake_of... " />
-            <marker date="1513137594458" expanded="true" signature="6731:6957" ph="INSERT into is_remake_of... " />
-            <marker date="1513137594458" expanded="true" signature="7446:7575" ph="INSERT INTO acts_in... " />
-            <marker date="1513137594458" expanded="true" signature="7446:7692" ph="INSERT INTO acts_in... " />
+            <marker date="1513138916775" expanded="true" signature="1028:1077" ph="Insert into awards... " />
+            <marker date="1513138916775" expanded="true" signature="1028:1078" ph="Insert into awards... " />
+            <marker date="1513138916775" expanded="true" signature="1028:1168" ph="Insert into awards... " />
+            <marker date="1513138916775" expanded="true" signature="1028:1172" ph="Insert into awards... " />
+            <marker date="1513138916775" expanded="true" signature="1028:1175" ph="Insert into awards... " />
+            <marker date="1513138916775" expanded="true" signature="1562:1614" ph="Insert into studios... " />
+            <marker date="1513138916775" expanded="true" signature="1562:1668" ph="Insert into studios... " />
+            <marker date="1513138916775" expanded="true" signature="1562:1700" ph="Insert into studios... " />
+            <marker date="1513138916775" expanded="true" signature="2815:2838" ph="INSERT into participant... " />
+            <marker date="1513138916775" expanded="true" signature="2815:2875" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513138916775" expanded="true" signature="2815:2925" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513138916775" expanded="true" signature="2815:2954" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513138916775" expanded="true" signature="2815:3019" ph="INSERT into participant_is_awarded... " />
+            <marker date="1513138916775" expanded="true" signature="3403:3542" ph="INSERT into participant... " />
+            <marker date="1513138916775" expanded="true" signature="4194:4272" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1513138916775" expanded="true" signature="4194:4478" ph="INSERT into themoviedatabase.public.movies... " />
+            <marker date="1513138916775" expanded="true" signature="4769:4923" ph="INSERT into directs_movie... " />
+            <marker date="1513138916775" expanded="true" signature="5102:5136" ph="INSERT into writes_movie... " />
+            <marker date="1513138916775" expanded="true" signature="5102:5161" ph="INSERT into writes_movie... " />
+            <marker date="1513138916775" expanded="true" signature="5102:5162" ph="INSERT into writes_movie... " />
+            <marker date="1513138916775" expanded="true" signature="5102:5215" ph="INSERT into writes_movie... " />
+            <marker date="1513138916775" expanded="true" signature="5494:5533" ph="INSERT into movie_is_awarded... " />
+            <marker date="1513138916775" expanded="true" signature="5494:5619" ph="INSERT into movie_is_awarded... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5916" ph="INSERT into filmed_in... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5935" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5936" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5937" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5996" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5997" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:5998" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:6020" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="5904:6021" ph="INSERT into has_studio... " />
+            <marker date="1513138916775" expanded="true" signature="6699:6768" ph="INSERT into is_remake_of... " />
+            <marker date="1513138916775" expanded="true" signature="6699:6925" ph="INSERT into is_remake_of... " />
+            <marker date="1513138916775" expanded="true" signature="7414:7543" ph="INSERT INTO acts_in... " />
+            <marker date="1513138916775" expanded="true" signature="7414:7660" ph="INSERT INTO acts_in... " />
           </folding>
         </state>
       </provider>

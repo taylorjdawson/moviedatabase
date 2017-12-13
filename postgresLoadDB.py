@@ -37,7 +37,6 @@ def connect():
                 cur.execute("Insert into awards(award_id, award_name) VALUES ( " + str(award_id)
                             + " , '" + award['awarding organization'] + "' );")
                 award_id += 1
-        print(str(award_array))
 
 
         print('Loading List of Studios ...')
