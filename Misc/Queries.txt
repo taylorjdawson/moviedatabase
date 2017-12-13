@@ -13,8 +13,8 @@ order by title
 2) Has any actor ever appeared in both a movie and an immediate remake of an immediate remake? If so, list the actor's stagename, the movie titles, the years, and the role. Order by stagename, year, and movie title.
 X
 select participant.name, movies.title, movies.year, acts_in.role
-from movies, participant, acts_in, is_remake_of
-where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and is_remake_of.remake_film_id = acts_in.film_id and is_remake_of.original_film_id = acts_in.film_id and movies.film_id = is_remake_of.remake_film_id and  movies.film_id = is_remake_of.original_film_id 
+from movies, participant, acts_in, is_remake_of as r1, is_remake_of as r2
+where movies.film_id = acts_in.film_id and acts_in.participant_id = participant.participant_id and r1.remake_film_id = movies.film_id and r2.remake_film_id = movies.film_id and r1.remake_film_id = acts_in.film_id and r2.remake_film_id = acts_in.film_id and r1.remake_film_id = r2.original_film_id
 order by participant.name, movies.year, movies.title
 
 3) Which movie immediate remake is most similar to the original (i.e., has the highest percentage)? Show the title, year, director for the original movie and the remake along with the percentage of similarity between them; in the case of a tie, display them all.
